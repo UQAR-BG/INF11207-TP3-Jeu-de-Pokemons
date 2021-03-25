@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "INF11207-TP3-Jeu-de-Pokemons/1.0.0": {
+        "runtime": {
+          "INF11207-TP3-Jeu-de-Pokemons.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "INF11207-TP3-Jeu-de-Pokemons/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

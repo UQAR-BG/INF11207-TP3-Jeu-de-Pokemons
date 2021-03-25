@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:INF11207_TP3_Jeu_de_Pokemons"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        
+        Title="Bienvenue" 
+        Height="450" 
+        Width="800" 
+        MinHeight="450" 
+        MinWidth="800" 
+        WindowStartupLocation="CenterScreen">
 
+    <Grid>
+        <Grid.Resources>
+            <Style BasedOn="{StaticResource AccueilLabelStyle}" TargetType="{x:Type Label}" />
+            <Style BasedOn="{StaticResource AccueilButtonStyle}" TargetType="{x:Type Button}" />
+        </Grid.Resources>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.5*" />
+        </Grid.RowDefinitions>
+
+        <Label 
+            Content="Bienvenue dans le jeu de Pokémons" 
+            Grid.Row="0"
+            FontSize="30"
+            FontWeight="Bold" />
+
+        <Label 
+            Content="Dans le cadre du cours INF11207" 
+            Grid.Row="1" 
+            FontSize="15" />
+
+        <Button 
+            x:Name="btnNouvellePartie"
+            Content="Commencer une nouvelle partie"
+            Grid.Row="2" />
+
+        <Button 
+            x:Name="btnChargerSauvegarde"
+            Content="Charger une sauvegarde" 
+            Grid.Row="3" />
+
+        <Label 
+            Content="Auteur: Bastien Goulet" 
+            Grid.Row="4" />
     </Grid>
 </Window>

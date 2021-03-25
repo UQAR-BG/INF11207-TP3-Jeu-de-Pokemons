@@ -1,5 +1,5 @@
 ﻿INF11207-TP3-Jeu-de-Pokemons
-1.0.0.0
+
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\App.xaml
-2558564495
+11407045341
 
-61890522410
+3-1233169557
 193-1891726104
-MainWindow.xaml;Views\CreationJoueur.xaml;
+MainWindow.xaml;
 
-True
+False
 
