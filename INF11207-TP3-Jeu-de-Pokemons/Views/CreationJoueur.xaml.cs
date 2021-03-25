@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
+using System.Text.RegularExpressions;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
 {
@@ -22,6 +12,12 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         public CreationJoueur()
         {
             InitializeComponent();
+        }
+
+        private void VerifierSiEntreeEstNombre(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }
