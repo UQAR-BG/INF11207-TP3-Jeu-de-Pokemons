@@ -1,16 +1,16 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Interfaces;
-using System.Windows;
 using System.Text.RegularExpressions;
+using System.Windows;
 using System.Windows.Input;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
 {
     /// <summary>
-    /// Interaction logic for CreationJoueur.xaml
+    /// Interaction logic for LancementCombat.xaml
     /// </summary>
-    public partial class CreationJoueur : Window, INombreEnEntree
+    public partial class LancementCombat : Window, INombreEnEntree
     {
-        public CreationJoueur()
+        public LancementCombat()
         {
             InitializeComponent();
         }

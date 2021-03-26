@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\App.xaml
-21801824012
+5637204836
 
-6-606343746
+10-576743182
 193-1891726104
-Views\CreationJoueur.xaml;Views\MainWindow.xaml;
+Views\ChoixAttaque.xaml;Views\CreationJoueur.xaml;Views\LancementCombat.xaml;Views\MainWindow.xaml;Views\UserControls\Menu.xaml;
 
 False
 

@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="INF11207_TP3_Jeu_de_Pokemons.Views.Menu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             
+             d:DesignHeight="50" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button
+            x:Name="btnJoueur"
+            Content="Joueur"
+            Grid.Column="0"
+            FontSize="15"/>
+
+        <Button
+            x:Name="btnPokemons"
+            Content="Pokémons"
+            Grid.Column="1"
+            FontSize="15"/>
+
+        <Button
+            x:Name="btnInventaire"
+            Content="Inventaire"
+            Grid.Column="2"
+            FontSize="15"/>
+
+        <Button
+            x:Name="btnCombat"
+            Content="Combats"
+            Grid.Column="3"
+            FontSize="15"/>
+
+        <Button
+            x:Name="btnStats"
+            Content="Statistiques"
+            Grid.Column="4"
+            FontSize="15"/>
+    </Grid>
+</UserControl>

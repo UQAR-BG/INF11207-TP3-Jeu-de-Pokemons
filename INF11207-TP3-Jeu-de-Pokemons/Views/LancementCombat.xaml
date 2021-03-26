@@ -1,0 +1,81 @@
+﻿<Window x:Class="INF11207_TP3_Jeu_de_Pokemons.Views.LancementCombat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:control="clr-namespace:INF11207_TP3_Jeu_de_Pokemons.Views"
+        mc:Ignorable="d"
+        
+        Title="LancementCombat" 
+        Height="350" 
+        Width="600" 
+        MinHeight="350" 
+        MinWidth="600" 
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*" />
+            <ColumnDefinition Width="0.6*" />
+        </Grid.ColumnDefinitions>
+
+        <control:Menu 
+            Grid.ColumnSpan="2"
+            Grid.Column="0"
+            Grid.Row="0"/>
+
+        <Label 
+            Content="Lancer un nouveau combat"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Grid.ColumnSpan="2"
+            Grid.Column="0"
+            Grid.Row="1"
+            FontSize="30"/>
+
+        <Label 
+            Content="Votre mise:"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Right"
+            Margin="0,0,50,0"
+            Grid.Column="0"
+            Grid.Row="2"
+            FontSize="15" />
+
+        <TextBox 
+            x:Name="txtMise"
+            Height="25"
+            Margin="0,0,130,0"
+            Grid.Column="1"
+            Grid.Row="2"
+            PreviewTextInput="VerifierSiEntreeEstNombre"/>
+
+        <Button
+            x:Name="btnLancerCombat"
+            Content="Lancer un combat"
+            HorizontalAlignment="Center"
+            Grid.ColumnSpan="2"
+            Grid.Column="0"
+            Grid.Row="3"
+            Height="50"
+            Padding="30,0,30,0"
+            FontSize="20"/>
+
+        <Label 
+            x:Name="lblStatutInvitation"
+            Content="Statut de l'invitation: 'statut'"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Grid.ColumnSpan="2"
+            Grid.Column="0"
+            Grid.Row="4"
+            FontSize="15"/>
+    </Grid>
+</Window>

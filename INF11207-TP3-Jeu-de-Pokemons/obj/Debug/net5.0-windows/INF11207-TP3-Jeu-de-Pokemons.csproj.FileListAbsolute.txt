@@ -5,7 +5,6 @@ C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Poke
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\bin\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.dll
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\bin\Debug\net5.0-windows\ref\INF11207-TP3-Jeu-de-Pokemons.dll
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\bin\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.pdb
-C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.csprojAssemblyReference.cache
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\App.g.cs
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons_MarkupCompile.cache
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\App.baml
@@ -22,3 +21,11 @@ C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Poke
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\CreationJoueur.baml
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\MainWindow.g.cs
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\MainWindow.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\LancementCombat.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\LancementCombat.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons_MarkupCompile.lref
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\Menu.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\Menu.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\ChoixAttaque.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\ChoixAttaque.g.cs
