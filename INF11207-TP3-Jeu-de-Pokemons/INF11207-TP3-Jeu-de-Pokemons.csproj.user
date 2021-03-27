@@ -10,6 +10,12 @@
     <Compile Update="Views\ChoixAttaque.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Statistiques.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\JaugeXp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\Menu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +28,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\ChoixAttaque.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Statistiques.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\JaugeXp.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\Menu.xaml">
