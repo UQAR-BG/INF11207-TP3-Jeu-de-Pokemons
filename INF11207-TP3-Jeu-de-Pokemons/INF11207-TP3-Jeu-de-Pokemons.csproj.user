@@ -10,6 +10,9 @@
     <Compile Update="Views\ChoixAttaque.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Joueur.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Statistiques.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,9 +28,15 @@
     <Compile Update="Views\LancementCombat.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\UserControls\PokemonSimple.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\ChoixAttaque.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Joueur.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Statistiques.xaml">
@@ -46,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\CreationJoueur.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\PokemonSimple.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
