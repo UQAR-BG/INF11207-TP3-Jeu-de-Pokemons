@@ -1,8 +1,8 @@
-﻿<UserControl x:Class="INF11207_TP3_Jeu_de_Pokemons.Views.UserControls.ActionsPokemonAchete"
+﻿<UserControl x:Class="INF11207_TP3_Jeu_de_Pokemons.Views.UserControls.ActionsPokemonDebloque"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
              
              d:DesignHeight="100" d:DesignWidth="300">
@@ -11,17 +11,26 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Label
+            x:Name="lblPrix"
+            HorizontalAlignment="Left"
+            Content="Prix: "
+            Grid.Row="0"
+            FontSize="15"/>
+
         <Button
-            x:Name="btnModifier"
-            Content="Changer"
+            x:Name="btnAcheter"
+            Content="Acheter"
+            Grid.Row="1"
             Background="Gray"/>
 
         <Button
-            x:Name="btnDesequiper"
-            Content="Déséquiper"
-            Grid.Row="1"
+            x:Name="btnEquiper"
+            Content="Équiper"
+            Grid.Row="2"
             Background="Gray"/>
     </Grid>
 </UserControl>
