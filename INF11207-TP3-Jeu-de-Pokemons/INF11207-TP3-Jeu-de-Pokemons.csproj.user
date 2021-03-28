@@ -13,7 +13,16 @@
     <Compile Update="Views\Joueur.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pokemons.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Statistiques.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\ActionsPokemonAchete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\AttaqueCondense.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\UserControls\JaugeXp.xaml.cs">
@@ -28,6 +37,9 @@
     <Compile Update="Views\LancementCombat.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\UserControls\PokemonDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\PokemonSimple.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -39,7 +51,16 @@
     <Page Update="Views\Joueur.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Pokemons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Statistiques.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\ActionsPokemonAchete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\AttaqueCondense.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\JaugeXp.xaml">
@@ -55,6 +76,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\CreationJoueur.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\PokemonDetails.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserControls\PokemonSimple.xaml">

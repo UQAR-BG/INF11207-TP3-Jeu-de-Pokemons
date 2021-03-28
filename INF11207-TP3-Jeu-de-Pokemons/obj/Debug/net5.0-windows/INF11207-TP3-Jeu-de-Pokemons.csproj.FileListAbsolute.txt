@@ -37,3 +37,13 @@ C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Poke
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\Joueur.baml
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\PokemonSimple.baml
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\PokemonSimple.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\PokemonDetails.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\Pokemons.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\PokemonDetails.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\Pokemons.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\AttaqueCondense.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\AttaqueCondense.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\ActionsPokemonAchete.baml
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\Views\UserControls\ActionsPokemonAchete.g.cs
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\bin\Debug\net5.0-windows\Resources\Images\pokemon.png
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons_Content.g.cs

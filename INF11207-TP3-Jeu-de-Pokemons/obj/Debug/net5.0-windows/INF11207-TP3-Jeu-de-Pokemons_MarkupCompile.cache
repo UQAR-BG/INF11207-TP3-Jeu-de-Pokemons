@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\App.xaml
-9-1185612253
-
-12-2103443691
+13493853808
+1-1766176868
+16-1418821752
 193-1891726104
-Views\ChoixAttaque.xaml;Views\CreationJoueur.xaml;Views\Joueur.xaml;Views\LancementCombat.xaml;Views\MainWindow.xaml;Views\Statistiques.xaml;Views\UserControls\JaugeXp.xaml;Views\UserControls\Menu.xaml;Views\UserControls\PokemonSimple.xaml;
+Views\ChoixAttaque.xaml;Views\CreationJoueur.xaml;Views\Joueur.xaml;Views\LancementCombat.xaml;Views\MainWindow.xaml;Views\Pokemons.xaml;Views\Statistiques.xaml;Views\UserControls\ActionsPokemonAchete.xaml;Views\UserControls\AttaqueCondense.xaml;Views\UserControls\JaugeXp.xaml;Views\UserControls\Menu.xaml;Views\UserControls\PokemonDetails.xaml;Views\UserControls\PokemonSimple.xaml;
 
 False
 
