@@ -28,7 +28,7 @@
         </Grid.ColumnDefinitions>
 
         <Image 
-            Source="/Resources/Images/pokemon.png"
+            Source="/Resources/Images/1.png"
             Grid.ColumnSpan="2"/>
 
         <Label
