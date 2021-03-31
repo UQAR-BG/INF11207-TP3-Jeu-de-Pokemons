@@ -8,58 +8,66 @@
              d:DesignHeight="50" d:DesignWidth="400">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*"/>
-            <ColumnDefinition Width="1.5*"/>
-            <ColumnDefinition Width="0.6*"/>
+            <ColumnDefinition Width="1.4*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="0.8*"/>
-            <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
 
         <Button 
             x:Name="btnPokemon"
             Grid.ColumnSpan="6"/>
 
-        <Label
-            x:Name="lblNumero"
-            Content="1:"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            FontSize="15"/>
+        <StackPanel Orientation="Horizontal">
+            <Label
+                x:Name="lblNumero"
+                Content="1:"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="15"/>
 
-        <Label
-            x:Name="lblNom"
-            Content="Charizard"
-            VerticalAlignment="Center"
-            Grid.Column="1"
-            FontSize="15"/>
+            <Label
+                x:Name="lblNom"
+                Content="Charizard"
+                VerticalAlignment="Center"
+                Grid.Column="1"
+                FontSize="15"/>
+        </StackPanel>
 
-        <Label
-            Content="Type:"
-            VerticalAlignment="Center"
-            Grid.Column="2"
-            FontSize="15"/>
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Column="1">
+            <Label
+                Content="Type:"
+                VerticalAlignment="Center"
+                Grid.Column="2"
+                FontSize="15"/>
 
-        <Label
-            x:Name="lblType"
-            Content="Feu"
-            VerticalAlignment="Center"
-            Grid.Column="3"
-            FontSize="15"/>
+            <Label
+                x:Name="lblType"
+                Content="Feu"
+                VerticalAlignment="Center"
+                Grid.Column="3"
+                FontSize="15"/>
+        </StackPanel>
 
-        <Label
-            Content="Niveau:"
-            VerticalAlignment="Center"
-            Grid.Column="4"
-            FontSize="15"/>
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.Column="2">
+            <Label
+                Content="Niveau:"
+                VerticalAlignment="Center"
+                Grid.Column="4"
+                FontSize="15"/>
 
-        <Label
-            x:Name="lblNiveau"
-            Content="12"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Grid.Column="5"
-            Margin="0,0,10,0"
-            FontSize="15"/>
+            <Label
+                x:Name="lblNiveau"
+                Content="12"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Grid.Column="5"
+                Margin="0,0,10,0"
+                FontSize="15"/>
+        </StackPanel>
+        
     </Grid>
 </UserControl>

@@ -31,66 +31,105 @@
             Source="/Resources/Images/1.png"
             Grid.ColumnSpan="2"/>
 
-        <Label
-            x:Name="lblNom"
-            Content="Nom: "
-            VerticalAlignment="Center"
-            Grid.ColumnSpan="2"
-            Grid.Row="1"
-            Margin="10,0,0,0"
-            FontSize="15"/>
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.ColumnSpan="2" 
+            Grid.Row="1">
+            <Label
+                Content="Nom: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
 
-        <Label
-            x:Name="lblType"
-            Content="Type: "
-            VerticalAlignment="Center"
-            Grid.ColumnSpan="2"
-            Grid.Row="2"
-            Margin="10,0,0,0"
-            FontSize="15"/>
+            <Label
+                x:Name="lblNom"
+                Content="'nom'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
 
-        <Label
-            x:Name="lblDescription"
-            Content="Description: "
-            VerticalAlignment="Center"
-            Grid.ColumnSpan="2"
-            Grid.Row="3"
-            Margin="10,0,0,0"
-            FontSize="15"/>
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.ColumnSpan="2" 
+            Grid.Row="2">
+            <Label
+                Content="Type: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <Label
+                x:Name="lblType"
+                Content="'type'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
+
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.ColumnSpan="2" 
+            Grid.Row="3">
+            <Label
+                Content="Description: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <Label
+                x:Name="lblDescription"
+                Content="'description'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
 
         <control:JaugeXp 
                 Grid.RowSpan="3"
                 Grid.Row="4"/>
 
-        <Label
-            x:Name="lblHp"
-            Content="HP: "
-            VerticalAlignment="Center"
-            Grid.ColumnSpan="2"
+        <StackPanel 
+            Orientation="Horizontal" 
             Grid.Column="1"
-            Grid.Row="4"
-            Margin="10,0,0,0"
-            FontSize="12"/>
+            Grid.Row="4">
+            <Label
+                Content="HP: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
 
-        <Label
-            x:Name="lblAtk"
-            Content="ATK: "
-            VerticalAlignment="Center"
-            Grid.ColumnSpan="2"
-            Grid.Column="1"
-            Grid.Row="5"
-            Margin="10,0,0,0"
-            FontSize="12"/>
+            <Label
+                x:Name="lblHp"
+                Content="'hp'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
 
-        <Label
-            x:Name="lblDef"
-            Content="DEF: "
-            VerticalAlignment="Center"
-            Grid.ColumnSpan="2"
+        <StackPanel 
+            Orientation="Horizontal" 
             Grid.Column="1"
-            Grid.Row="6"
-            Margin="10,0,0,0"
-            FontSize="12"/>
+            Grid.Row="5">
+            <Label
+                Content="ATK: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <Label
+                x:Name="lblAtk"
+                Content="'atk'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
+
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.Column="1"
+            Grid.Row="6">
+            <Label
+                Content="DEF: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <Label
+                x:Name="lblDef"
+                Content="'def'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
 
         <control:AttaqueCondense
             Background="#FF008080"

@@ -13,32 +13,54 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.6*"/>
-            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Label
-            x:Name="lblAttaque"
-            Content="Attaque: "
-            VerticalAlignment="Center"
-            Grid.ColumnSpan="2"
-            Margin="10,0,0,0"
-            FontSize="15"/>
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.ColumnSpan="2">
+            <Label
+                Content="Attaque: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
 
-        <Label
-            x:Name="lblType"
-            Content="Type: "
-            VerticalAlignment="Center"
-            Grid.Row="1"
-            Margin="10,0,0,0"
-            FontSize="15"/>
+            <Label
+                x:Name="lblAttaque"
+                Content="'attaque'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
 
-        <Label
-            x:Name="lblDegats"
-            Content="Dégâts: "
-            VerticalAlignment="Center"
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.Row="1">
+            <Label
+                Content="Type: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <Label
+                x:Name="lblType"
+                Content="'type'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
+
+        <StackPanel 
+            Orientation="Horizontal" 
             Grid.Column="1"
-            Grid.Row="1"
-            FontSize="15"/>
+            Grid.Row="1">
+            <Label
+                Content="Dégâts: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <Label
+                x:Name="lblDegats"
+                Content="'dégâts'"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
     </Grid>
 </UserControl>

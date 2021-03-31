@@ -21,11 +21,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.4*" />
-            <ColumnDefinition Width="0.6*" />
-        </Grid.ColumnDefinitions>
-
         <control:Menu 
             Grid.ColumnSpan="2"/>
 
@@ -38,22 +33,22 @@
             Grid.Row="1"
             FontSize="30"/>
 
-        <Label 
-            Content="Votre mise:"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Right"
-            Margin="0,0,50,0"
-            Grid.Column="0"
-            Grid.Row="2"
-            FontSize="15" />
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Grid.Row="2">
+            <Label 
+                Content="Votre mise:"
+                VerticalAlignment="Center"
+                Margin="0,0,20,0"
+                FontSize="15" />
 
-        <TextBox 
-            x:Name="txtMise"
-            Height="25"
-            Margin="0,0,130,0"
-            Grid.Column="1"
-            Grid.Row="2"
-            PreviewTextInput="VerifierSiEntreeEstNombre"/>
+            <TextBox 
+                x:Name="txtMise"
+                Height="25"
+                MinWidth="200"
+                PreviewTextInput="VerifierSiEntreeEstNombre"/>
+        </StackPanel>
 
         <Button
             x:Name="btnLancerCombat"
