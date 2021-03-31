@@ -3,11 +3,11 @@
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
 {
     /// <summary>
-    /// Interaction logic for Pokemons.xaml
+    /// Interaction logic for Accueil.xaml
     /// </summary>
-    public partial class Pokemons : UserControl
+    public partial class Accueil : UserControl
     {
-        public Pokemons()
+        public Accueil()
         {
             InitializeComponent();
         }

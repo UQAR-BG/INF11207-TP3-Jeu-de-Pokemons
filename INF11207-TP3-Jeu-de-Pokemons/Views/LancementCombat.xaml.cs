@@ -1,6 +1,6 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Interfaces;
 using System.Text.RegularExpressions;
-using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
@@ -8,7 +8,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
     /// <summary>
     /// Interaction logic for LancementCombat.xaml
     /// </summary>
-    public partial class LancementCombat : Window, INombreEnEntree
+    public partial class LancementCombat : UserControl, INombreEnEntree
     {
         public LancementCombat()
         {

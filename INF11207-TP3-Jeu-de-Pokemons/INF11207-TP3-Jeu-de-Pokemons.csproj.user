@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\Accueil.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ChoixAttaque.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -51,6 +54,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\Accueil.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ChoixAttaque.xaml">
       <SubType>Designer</SubType>
     </Page>
