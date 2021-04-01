@@ -4,27 +4,27 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
     public abstract class Jauge : Binding
     {
-        private int valeurActuelle;
-        private readonly int valeurMax;
+        private int value;
+        private readonly int maxValue;
 
-        public int ValeurActuelle
+        public int Value
         {
-            get { return valeurActuelle; }
+            get { return value; }
             set
             {
-                if (valeurActuelle != value)
+                if (this.value != value)
                 {
-                    valeurActuelle = value;
+                    this.value = value;
                     OnPropertyChanged();
                 }
             }
         }
 
-        public int ValeurMax { get { return valeurMax; } }
+        public int MaxValue { get { return maxValue; } }
 
-        public Jauge(int valeurMax)
+        public Jauge(int maxValue)
         {
-            this.valeurMax = valeurMax;
+            this.maxValue = maxValue;
         }
 
         public abstract void AugmenterNiveau(Personnage personnage);

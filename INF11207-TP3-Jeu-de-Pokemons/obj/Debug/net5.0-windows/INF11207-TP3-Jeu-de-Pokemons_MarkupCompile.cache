@@ -11,8 +11,8 @@ false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\App.xaml
 16-113074410
-151-562257455
-41-1367782416
+1531954824134
+421606085387
 194-921464286
 Views\Accueil.xaml;Views\ChoixAttaque.xaml;Views\CreationJoueur.xaml;Views\Inventaire.xaml;Views\Joueur.xaml;Views\LancementCombat.xaml;Views\MainWindow.xaml;Views\Pokemons.xaml;Views\Statistiques.xaml;Views\UserControls\ActionsPokemonAchete.xaml;Views\UserControls\ActionsPokemonDebloque.xaml;Views\UserControls\AttaqueCondense.xaml;Views\UserControls\JaugeXp.xaml;Views\UserControls\Menu.xaml;Views\UserControls\PokemonDetails.xaml;Views\UserControls\PokemonSimple.xaml;
 

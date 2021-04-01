@@ -7,7 +7,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         protected bool isValid;
 
         private string name;
-        private int niveau;
+        private int level;
         private JaugeXp xpGauge;
 
         public string Name
@@ -23,14 +23,14 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public int Niveau
+        public int Level
         {
-            get { return niveau; }
+            get { return level; }
             set
             {
-                if (niveau != value)
+                if (level != value)
                 {
-                    niveau = value;
+                    level = value;
                     OnPropertyChanged();
                 }
             }
@@ -49,10 +49,10 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public Personnage(string name = "", int niveau = 1, int experiencePerLevel = 100)
+        public Personnage(string name = "", int level = 1, int experiencePerLevel = 100)
         {
             Name = name;
-            Niveau = niveau;
+            Level = level;
             XpGauge = new JaugeXp(experiencePerLevel);
         }
 

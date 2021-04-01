@@ -3,19 +3,22 @@
     public enum OrigineType
     {
         Normal,
-        Feu,
-        Eau,
-        Electrique,
-        Herbe,
-        Glace,
-        Combat,
+        Fire,
+        Water,
+        Electric,
+        Grass,
+        Ice,
+        Fighting,
         Poison,
-        Terre,
-        Vol,
-        Psychique,
-        Insecte,
-        Pierre,
-        Fantome,
-        Dragon
+        Ground,
+        Steel,
+        Flying,
+        Psychic,
+        Bug,
+        Rock,
+        Dark,
+        Ghost,
+        Dragon,
+        Fairy
     }
 }

@@ -5,33 +5,44 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
     public class Attaque : Binding
     {
-        private string nom;
-        private int degats;
+        private string name;
+        private double damage;
         private OrigineType type;
 
-        public OrigineType Type { get; private set; }
-
-        public string Nom
+        public OrigineType Type
         {
-            get { return nom; }
+            get { return type; }
             set
             {
-                if (nom != value)
+                if (type != value)
                 {
-                    nom = value;
+                    type = value;
                     OnPropertyChanged();
                 }
             }
         }
 
-        public int Degats
+        public string Name
         {
-            get { return degats; }
+            get { return name; }
             set
             {
-                if (degats != value)
+                if (name != value)
                 {
-                    degats = value;
+                    name = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public double Damage
+        {
+            get { return damage; }
+            set
+            {
+                if (damage != value)
+                {
+                    damage = value;
                     OnPropertyChanged();
                 }
             }

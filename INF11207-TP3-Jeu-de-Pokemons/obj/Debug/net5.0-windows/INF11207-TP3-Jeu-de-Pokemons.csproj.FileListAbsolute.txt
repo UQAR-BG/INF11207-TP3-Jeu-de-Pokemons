@@ -203,6 +203,8 @@ C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Poke
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\ref\INF11207-TP3-Jeu-de-Pokemons.dll
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.pdb
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.genruntimeconfig.cache
-C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.csprojAssemblyReference.cache
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.csproj.CopyComplete
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\bin\Debug\net5.0-windows\Resources\Data\AttacksEffectiveness.json
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\bin\Debug\net5.0-windows\Resources\Data\PokemonInfo.json
+C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\obj\Debug\net5.0-windows\INF11207-TP3-Jeu-de-Pokemons.csprojAssemblyReference.cache

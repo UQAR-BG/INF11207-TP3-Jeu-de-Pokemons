@@ -1,4 +1,6 @@
-﻿namespace INF11207_TP3_Jeu_de_Pokemons.Models
+﻿using System.Collections.Generic;
+
+namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
     public class Dresseur : Personnage
     {

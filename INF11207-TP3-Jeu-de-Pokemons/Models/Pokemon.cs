@@ -7,8 +7,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
     {
         private int id;
         private string description;
-        private int pointsAttaque;
-        private int pointsDefense;
+        private int atk;
+        private int def;
         private int health;
         private JaugeVie hpGauge;
         private string image;
@@ -32,27 +32,27 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public int PointsAttaque
+        public int ATK
         {
-            get { return pointsAttaque; }
+            get { return atk; }
             set
             {
-                if (pointsAttaque != value)
+                if (atk != value)
                 {
-                    pointsAttaque = value;
+                    atk = value;
                     OnPropertyChanged();
                 }
             }
         }
 
-        public int PointsDefense
+        public int DEF
         {
-            get { return pointsDefense; }
+            get { return def; }
             set
             {
-                if (pointsDefense != value)
+                if (def != value)
                 {
-                    pointsDefense = value;
+                    def = value;
                     OnPropertyChanged();
                 }
             }
@@ -111,14 +111,14 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public Pokemon(int id, string nom, string description, int pointsAttaque, int pointsDefense, 
+        public Pokemon(int id, string nom, string description, int atk, int def, 
             List<OrigineType> types, int health, string image, int niveau, int experiencePerLevel, List<Attaque> attaques) 
             : base(nom, niveau, experiencePerLevel)
         {
             Id = id;
             Description = description;
-            PointsAttaque = pointsAttaque;
-            PointsDefense = pointsDefense;
+            ATK = atk;
+            DEF = def;
             Types = types;
             Health = health;
             Image = image;

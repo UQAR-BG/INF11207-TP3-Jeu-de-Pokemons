@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Data\AttacksEffectiveness.json" />
+    <None Remove="Resources\Data\PokemonInfo.json" />
     <None Remove="Resources\Images\1.png" />
     <None Remove="Resources\Images\10.png" />
     <None Remove="Resources\Images\100.png" />
@@ -162,6 +164,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Resources\Data\AttacksEffectiveness.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Data\PokemonInfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Images\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

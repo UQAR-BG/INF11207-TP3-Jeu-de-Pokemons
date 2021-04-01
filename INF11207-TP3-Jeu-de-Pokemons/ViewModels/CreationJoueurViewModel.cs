@@ -1,6 +1,5 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
@@ -32,6 +31,13 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             using (StreamWriter sauvegarde = File.CreateText("joueur.json"))
             {
                 sauvegarde.Write(serializedDresseur);
+            }
+
+            List<Pokemon> pokemons;
+            using (StreamReader fichierPokemons = File.OpenText("Resources/Data/PokemonInfo.json"))
+            {
+                JsonSerializer serializer = new JsonSerializer();
+                pokemons = (List<Pokemon>)serializer.Deserialize(fichierPokemons, typeof(List<Pokemon>));
             }
         }
     }
