@@ -8,6 +8,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private int age;
         private int money;
 
+        public GuidePourDebloquerPokemons Guide { get; set; }
+        public DepotPokemons Depot { get; set; }
+
         public string FirstName
         {
             get { return firstName; }
@@ -52,11 +55,13 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             get { return isValid; }
         }
 
-        public Dresseur(string name = "", string firstName = "", int age = 18, int niveau = 1, int experience = 100, int money = 5000) : base(name, niveau, experience)
+        public Dresseur(string name = "", string firstName = "", int age = 18, int level = 1, int experience = 100, int money = 5000) : base(name, level, experience)
         {
             FirstName = firstName;
             Age = age;
             Money = money;
+            Guide = new GuidePourDebloquerPokemons(level);
+            Depot = new DepotPokemons(level);
         }
 
         protected override void SetIsValid()

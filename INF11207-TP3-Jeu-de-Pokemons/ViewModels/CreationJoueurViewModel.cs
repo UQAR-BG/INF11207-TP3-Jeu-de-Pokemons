@@ -26,9 +26,10 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         private void CreerJoueur()
         {
             MessageBox.Show($"Le joueur {Dresseur.FirstName} {Dresseur.Name}", "Joueur créé", MessageBoxButton.OK);
+            int i = 0;
 
-            string serializedDresseur = JsonConvert.SerializeObject(Dresseur, Formatting.Indented);
-            using (StreamWriter sauvegarde = File.CreateText("joueur.json"))
+            /*string serializedDresseur = JsonConvert.SerializeObject(Dresseur, Formatting.Indented);
+            using (StreamWriter sauvegarde = File.CreateText("Resources/Data/Joueur.json"))
             {
                 sauvegarde.Write(serializedDresseur);
             }
@@ -38,7 +39,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             {
                 JsonSerializer serializer = new JsonSerializer();
                 pokemons = (List<Pokemon>)serializer.Deserialize(fichierPokemons, typeof(List<Pokemon>));
-            }
+            }*/
         }
     }
 }

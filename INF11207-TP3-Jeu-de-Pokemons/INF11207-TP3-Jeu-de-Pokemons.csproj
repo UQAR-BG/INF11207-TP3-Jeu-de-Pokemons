@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <None Remove="Resources\Data\AttacksEffectiveness.json" />
+    <None Remove="Resources\Data\CorrespondanceNiveauPokemons.json" />
+    <None Remove="Resources\Data\PokemonAcheteParDefaut.json" />
     <None Remove="Resources\Data\PokemonInfo.json" />
     <None Remove="Resources\Images\1.png" />
     <None Remove="Resources\Images\10.png" />
@@ -165,6 +167,12 @@
 
   <ItemGroup>
     <Content Include="Resources\Data\AttacksEffectiveness.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Data\CorrespondanceNiveauPokemons.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Data\PokemonAcheteParDefaut.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Data\PokemonInfo.json">

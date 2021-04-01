@@ -1,0 +1,47 @@
+[
+	{
+		"Id": 1,
+		"Name": "Bulbasaur",
+		"Image": "Resources/Images/1.png",
+		"Level": 1,
+		"Description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+		"Types": [
+			"Poison",
+			"Grass"
+		],
+		"ATK": 1,
+		"DEF": 1,
+		"Evolution": {
+			"Level": 16,
+			"To": "Ivysaur"
+		},
+		"Attacks": [
+			{
+				"Name": "Vine Whip",
+				"Type": "Grass",
+				"Damage": 5.4
+			},
+			{
+				"Name": "Tackle",
+				"Type": "Normal",
+				"Damage": 5.45
+			},
+			{
+				"Name": "Sludge Bomb",
+				"Type": "Poison",
+				"Damage": 10.6
+			},
+			{
+				"Name": "Seed Bomb",
+				"Type": "Grass",
+				"Damage": 8.35
+			},
+			{
+				"Name": "Power Whip",
+				"Type": "Grass",
+				"Damage": 12.5
+			}
+		],
+		"Health": 45
+	}
+]

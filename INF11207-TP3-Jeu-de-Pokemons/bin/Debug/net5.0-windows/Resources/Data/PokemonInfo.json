@@ -9,8 +9,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 16,
             "To": "Ivysaur"
@@ -54,8 +54,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 32,
             "To": "Venusaur"
@@ -99,8 +99,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -140,8 +140,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 16,
             "To": "Charmeleon"
@@ -184,8 +184,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 36,
             "To": "Charizard"
@@ -229,8 +229,8 @@
             "Flying",
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -270,8 +270,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 16,
             "To": "Wartortle"
@@ -314,8 +314,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 36,
             "To": "Blastoise"
@@ -358,8 +358,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -399,8 +399,8 @@
         "Types": [
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 7,
             "To": "Metapod"
@@ -433,8 +433,8 @@
         "Types": [
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 10,
             "To": "Butterfree"
@@ -468,8 +468,8 @@
             "Flying",
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -510,8 +510,8 @@
             "Poison",
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 7,
             "To": "Kakuna"
@@ -545,8 +545,8 @@
             "Poison",
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 10,
             "To": "Beedrill"
@@ -580,8 +580,8 @@
             "Poison",
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -622,8 +622,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 18,
             "To": "Pidgeotto"
@@ -667,8 +667,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 36,
             "To": "Pidgeot"
@@ -712,8 +712,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -753,8 +753,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 20,
             "To": "Raticate"
@@ -797,8 +797,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -839,8 +839,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 20,
             "To": "Fearow"
@@ -884,8 +884,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -925,8 +925,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 22,
             "To": "Arbok"
@@ -969,8 +969,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1010,8 +1010,8 @@
         "Types": [
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1051,8 +1051,8 @@
         "Types": [
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1092,8 +1092,8 @@
         "Types": [
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 22,
             "To": "Sandslash"
@@ -1136,8 +1136,8 @@
         "Types": [
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1177,8 +1177,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 16,
             "To": "Nidorina"
@@ -1221,8 +1221,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1263,8 +1263,8 @@
             "Poison",
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1304,8 +1304,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 16,
             "To": "Nidorino"
@@ -1348,8 +1348,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1390,8 +1390,8 @@
             "Poison",
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1431,8 +1431,8 @@
         "Types": [
             "Fairy"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1472,8 +1472,8 @@
         "Types": [
             "Fairy"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1513,8 +1513,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1554,8 +1554,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1596,8 +1596,8 @@
             "Normal",
             "Fairy"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1643,8 +1643,8 @@
             "Normal",
             "Fairy"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1685,8 +1685,8 @@
             "Flying",
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 22,
             "To": "Golbat"
@@ -1730,8 +1730,8 @@
             "Flying",
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1772,8 +1772,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 21,
             "To": "Gloom"
@@ -1817,8 +1817,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1859,8 +1859,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1901,8 +1901,8 @@
             "Bug",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 24,
             "To": "Parasect"
@@ -1946,8 +1946,8 @@
             "Bug",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -1988,8 +1988,8 @@
             "Poison",
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 31,
             "To": "Venomoth"
@@ -2033,8 +2033,8 @@
             "Poison",
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2074,8 +2074,8 @@
         "Types": [
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 26,
             "To": "Dugtrio"
@@ -2123,8 +2123,8 @@
         "Types": [
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2169,8 +2169,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 28,
             "To": "Persian"
@@ -2213,8 +2213,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2254,8 +2254,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 33,
             "To": "Golduck"
@@ -2298,8 +2298,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2339,8 +2339,8 @@
         "Types": [
             "Fighting"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 28,
             "To": "Primeape"
@@ -2383,8 +2383,8 @@
         "Types": [
             "Fighting"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2424,8 +2424,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2465,8 +2465,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2506,8 +2506,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 25,
             "To": "Poliwhirl"
@@ -2550,8 +2550,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2592,8 +2592,8 @@
             "Fighting",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2633,8 +2633,8 @@
         "Types": [
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 16,
             "To": "Kadabra"
@@ -2672,8 +2672,8 @@
         "Types": [
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2713,8 +2713,8 @@
         "Types": [
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2754,8 +2754,8 @@
         "Types": [
             "Fighting"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 28,
             "To": "Machoke"
@@ -2798,8 +2798,8 @@
         "Types": [
             "Fighting"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2839,8 +2839,8 @@
         "Types": [
             "Fighting"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2881,8 +2881,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 21,
             "To": "Weepinbell"
@@ -2926,8 +2926,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -2968,8 +2968,8 @@
             "Poison",
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3010,8 +3010,8 @@
             "Poison",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 30,
             "To": "Tentacruel"
@@ -3055,8 +3055,8 @@
             "Poison",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3097,8 +3097,8 @@
             "Ground",
             "Rock"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 25,
             "To": "Graveler"
@@ -3142,8 +3142,8 @@
             "Ground",
             "Rock"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3189,8 +3189,8 @@
             "Ground",
             "Rock"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3235,8 +3235,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 40,
             "To": "Rapidash"
@@ -3279,8 +3279,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3321,8 +3321,8 @@
             "Water",
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3363,8 +3363,8 @@
             "Water",
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3405,8 +3405,8 @@
             "Steel",
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 30,
             "To": "Magneton"
@@ -3450,8 +3450,8 @@
             "Steel",
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3492,8 +3492,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3534,8 +3534,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 31,
             "To": "Dodrio"
@@ -3579,8 +3579,8 @@
             "Normal",
             "Flying"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3620,8 +3620,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 34,
             "To": "Dewgong"
@@ -3670,8 +3670,8 @@
             "Water",
             "Ice"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3711,8 +3711,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 38,
             "To": "Muk"
@@ -3760,8 +3760,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3806,8 +3806,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3848,8 +3848,8 @@
             "Water",
             "Ice"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3890,8 +3890,8 @@
             "Poison",
             "Ghost"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 25,
             "To": "Haunter"
@@ -3935,8 +3935,8 @@
             "Poison",
             "Ghost"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -3977,8 +3977,8 @@
             "Poison",
             "Ghost"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4024,8 +4024,8 @@
             "Ground",
             "Rock"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4065,8 +4065,8 @@
         "Types": [
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 26,
             "To": "Hypno"
@@ -4109,8 +4109,8 @@
         "Types": [
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4150,8 +4150,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 28,
             "To": "Kingler"
@@ -4194,8 +4194,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4235,8 +4235,8 @@
         "Types": [
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 30,
             "To": "Electrode"
@@ -4279,8 +4279,8 @@
         "Types": [
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4321,8 +4321,8 @@
             "Grass",
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4358,8 +4358,8 @@
             "Grass",
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4399,8 +4399,8 @@
         "Types": [
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 28,
             "To": "Marowak"
@@ -4443,8 +4443,8 @@
         "Types": [
             "Ground"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4484,8 +4484,8 @@
         "Types": [
             "Fighting"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4530,8 +4530,8 @@
         "Types": [
             "Fighting"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4576,8 +4576,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4617,8 +4617,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 35,
             "To": "Weezing"
@@ -4661,8 +4661,8 @@
         "Types": [
             "Poison"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4703,8 +4703,8 @@
             "Ground",
             "Rock"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 42,
             "To": "Rhydon"
@@ -4748,8 +4748,8 @@
             "Ground",
             "Rock"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4789,8 +4789,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4835,8 +4835,8 @@
         "Types": [
             "Grass"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4871,8 +4871,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4912,8 +4912,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 32,
             "To": "Seadra"
@@ -4956,8 +4956,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -4997,8 +4997,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 33,
             "To": "Seaking"
@@ -5041,8 +5041,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5082,8 +5082,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5129,8 +5129,8 @@
             "Water",
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5181,8 +5181,8 @@
             "Fairy",
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5223,8 +5223,8 @@
             "Flying",
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5265,8 +5265,8 @@
             "Ice",
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5306,8 +5306,8 @@
         "Types": [
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5347,8 +5347,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5388,8 +5388,8 @@
         "Types": [
             "Bug"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5429,8 +5429,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5470,8 +5470,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 20,
             "To": "Gyarados"
@@ -5500,8 +5500,8 @@
             "Flying",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5542,8 +5542,8 @@
             "Water",
             "Ice"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5583,8 +5583,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5609,8 +5609,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5650,8 +5650,8 @@
         "Types": [
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5686,8 +5686,8 @@
         "Types": [
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5722,8 +5722,8 @@
         "Types": [
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5758,8 +5758,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5805,8 +5805,8 @@
             "Rock",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 40,
             "To": "Omastar"
@@ -5850,8 +5850,8 @@
             "Rock",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5897,8 +5897,8 @@
             "Rock",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 40,
             "To": "Kabutops"
@@ -5942,8 +5942,8 @@
             "Rock",
             "Water"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -5984,8 +5984,8 @@
             "Flying",
             "Rock"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -6025,8 +6025,8 @@
         "Types": [
             "Normal"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -6067,8 +6067,8 @@
             "Flying",
             "Ice"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -6104,8 +6104,8 @@
             "Flying",
             "Electric"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -6141,8 +6141,8 @@
             "Flying",
             "Fire"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -6177,8 +6177,8 @@
         "Types": [
             "Dragon"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 30,
             "To": "Dragonair"
@@ -6216,8 +6216,8 @@
         "Types": [
             "Dragon"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {
             "Level": 55,
             "To": "Dragonite"
@@ -6256,8 +6256,8 @@
             "Flying",
             "Dragon"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -6297,8 +6297,8 @@
         "Types": [
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
@@ -6338,8 +6338,8 @@
         "Types": [
             "Psychic"
         ],
-        "ATK": 5,
-		"DEF": 5,
+        "ATK": 1,
+		"DEF": 1,
 		"Evolution": {},
         "Attacks": [
             {
