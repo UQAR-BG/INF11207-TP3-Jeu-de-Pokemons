@@ -3,17 +3,17 @@ using System.Windows.Input;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 {
-    public class RelayCommand<T> : ICommand
+    public class RelayCommandWithParam<T> : ICommand
     {
         private readonly Predicate<T> _canExecute;
         private readonly Action<T> _execute;
 
-        public RelayCommand(Action<T> execute)
+        public RelayCommandWithParam(Action<T> execute)
         {
             _execute = execute;
         }
 
-        public RelayCommand(Predicate<T> canExecute, Action<T> execute)
+        public RelayCommandWithParam(Predicate<T> canExecute, Action<T> execute)
         {
             _canExecute = canExecute;
             _execute = execute;

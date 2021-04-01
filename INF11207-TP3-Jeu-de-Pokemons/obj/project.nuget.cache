@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RLayOm941emA/eNAgbxj5z7+3cObs2zaGCAKni6cohev8J/47/qv2NJV0x2iJ2cS0XZrwzmbabpTT4Y/yVH8Cg==",
+  "dgSpecHash": "VmKkeMaAJ78r0NOhDJjGG1+boIQzQmXI8WS0HL44drH0K6nBwpUgEPdk+sz9qlkVR/M2JD/wxwJwqyR57euOBw==",
   "success": true,
   "projectFilePath": "C:\\Universite\\POO2\\TP3 - Jeu de pokemons Bastien Goulet\\INF11207-TP3-Jeu-de-Pokemons\\INF11207-TP3-Jeu-de-Pokemons\\INF11207-TP3-Jeu-de-Pokemons.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\basti\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

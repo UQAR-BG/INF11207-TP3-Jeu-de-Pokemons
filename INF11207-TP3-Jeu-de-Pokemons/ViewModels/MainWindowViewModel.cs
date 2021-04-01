@@ -18,12 +18,12 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             set { SetProperty(ref _vueActuelle, value); }
         }
 
-        public RelayCommand<string> CommandeNavigation { get; private set; }
+        public RelayCommandWithParam<string> CommandeNavigation { get; private set; }
 
         public MainWindowViewModel()
         {
             VueActuelle = accueilViewModel;
-            CommandeNavigation = new RelayCommand<string>(Navigation);
+            CommandeNavigation = new RelayCommandWithParam<string>(Navigation);
         }
 
         private void Navigation(string destination)

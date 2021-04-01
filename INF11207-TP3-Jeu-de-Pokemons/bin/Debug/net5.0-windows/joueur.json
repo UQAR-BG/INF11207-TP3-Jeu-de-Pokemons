@@ -1,0 +1,12 @@
+{
+  "FirstName": "Bastien",
+  "Name": "Goulet",
+  "Age": 18,
+  "Money": 5000,
+  "IsValid": true,
+  "Niveau": 1,
+  "XpGauge": {
+    "ValeurActuelle": 0,
+    "ValeurMax": 100
+  }
+}

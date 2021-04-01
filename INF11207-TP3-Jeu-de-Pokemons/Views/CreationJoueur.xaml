@@ -45,11 +45,11 @@
             FontSize="15" />
 
         <TextBox 
-            x:Name="txtPrenom"
             Height="25"
             Margin="0,0,130,0"
             Grid.Column="1"
-            Grid.Row="1"/>
+            Grid.Row="1"
+            Text="{Binding Dresseur.FirstName, UpdateSourceTrigger=PropertyChanged}"/>
 
         <Label 
             Content="Nom:"
@@ -61,11 +61,11 @@
             FontSize="15" />
 
         <TextBox 
-            x:Name="txtNom"
             Height="25"
             Margin="0,0,130,0"
             Grid.Column="1"
-            Grid.Row="2"/>
+            Grid.Row="2"
+            Text="{Binding Dresseur.Name, UpdateSourceTrigger=PropertyChanged}"/>
 
         <Label 
             Content="Âge:"
@@ -77,17 +77,16 @@
             FontSize="15" />
 
         <TextBox 
-            x:Name="txtAge"
             HorizontalAlignment="Left"
             Height="25"
             Width="100"
             Grid.Column="1"
             Grid.Row="3"
-            PreviewTextInput="VerifierSiEntreeEstNombre"/>
+            PreviewTextInput="VerifierSiEntreeEstNombre"
+            Text="{Binding Dresseur.Age, UpdateSourceTrigger=PropertyChanged}"/>
 
         <Label 
-            x:Name="lblMessageArgent"
-            Content="Vous débuterez la partie avec ???$"
+            Content="Vous débuterez la partie avec 5000$"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
             Grid.ColumnSpan="2"
@@ -106,17 +105,16 @@
             </Grid.ColumnDefinitions>
 
             <Button
-                x:Name="btnCreer"
                 Content="Créer"
                 HorizontalAlignment="Right"
                 Grid.Column="0"
                 Height="50"
                 MinWidth="120"
                 Margin="0,0,30,20"
-                FontSize="20"/>
+                FontSize="20"
+                Command="{Binding CommandeCreerJoueur}"/>
 
             <Button
-                x:Name="btnAnnuler"
                 Content="Annuler"
                 HorizontalAlignment="Left"
                 Grid.Column="1"

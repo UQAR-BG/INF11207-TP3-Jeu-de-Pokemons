@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Text.RegularExpressions;
 using System.Windows.Input;
+using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
 {
@@ -13,6 +14,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         public CreationJoueur()
         {
             InitializeComponent();
+            DataContext = new CreationJoueurViewModel();
         }
 
         public void VerifierSiEntreeEstNombre(object sender, TextCompositionEventArgs e)
