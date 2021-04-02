@@ -40,7 +40,8 @@
         <Button 
             x:Name="btnChargerSauvegarde"
             Content="Charger une sauvegarde" 
-            Grid.Row="3" />
+            Grid.Row="3"
+            Command="{Binding CommandeChargerSauvegarde}"/>
 
         <Label 
             Content="Auteur: Bastien Goulet" 

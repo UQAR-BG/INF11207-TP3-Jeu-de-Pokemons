@@ -12,18 +12,30 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Services
             return File.Exists(nomFichier);
         }
 
-        public static bool Sauvegarder<T>(T objetASauvegarder)
+        public static bool Sauvegarder<T>(T objetASauvegarder, string nomFichier)
         {
             bool sauvegardeReussie = true;
 
-
+            try
+            {
+                string objetSerialise = JsonConvert.SerializeObject(objetASauvegarder, Formatting.Indented);
+                using (StreamWriter sauvegarde = File.CreateText(nomFichier))
+                {
+                    sauvegarde.Write(objetSerialise);
+                }
+            }
+            catch (Exception)
+            {
+                sauvegardeReussie = false;
+            }
 
             return sauvegardeReussie;
         }
 
-        public static T Charger<T>(string nomFichier) where T : new()
+        public static bool Charger<T>(out T objetACharger, string nomFichier) where T : new()
         {
-            T objetACharger;
+            bool chargementReussi = true;
+            objetACharger = new();
 
             try
             {
@@ -32,12 +44,12 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Services
                     JsonSerializer serializer = new JsonSerializer();
                     objetACharger = (T)serializer.Deserialize(contenuFichier, typeof(T));
                 }
-            } catch (IOException)
+            } catch (Exception)
             {
-                objetACharger = new();
+                chargementReussi = false;
             }
 
-            return objetACharger;
+            return chargementReussi;
         }
     }
 }

@@ -5,7 +5,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
     public class Pokemon : Personnage
     {
-        private int id;
         private string description;
         private int atk;
         private int def;
@@ -16,8 +15,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private List<Attaque> attacks;
 
         public int Id { get; set; }
-
         public List<OrigineType> Types { get; set; }
+        public Evolution Evolution { get; set; }
 
         public string Description
         {
@@ -111,12 +110,13 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public Pokemon(int id, string nom, string description, int atk, int def, 
+        public Pokemon(int id, string nom, string description, int atk, int def, Evolution evolution,
             List<OrigineType> types, int health, string image, int niveau, int experiencePerLevel, List<Attaque> attaques) 
             : base(nom, niveau, experiencePerLevel)
         {
             Id = id;
             Description = description;
+            Evolution = evolution;
             ATK = atk;
             DEF = def;
             Types = types;

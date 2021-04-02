@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
+using System.Windows.Controls;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
 {
@@ -10,6 +12,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         public Accueil()
         {
             InitializeComponent();
+            DataContext = new AccueilViewModel(new WindowSize(450, 800));
         }
     }
 }

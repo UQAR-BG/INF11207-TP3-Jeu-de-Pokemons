@@ -1,6 +1,7 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Services;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
@@ -25,8 +26,14 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         private void LireCorrespondances()
         {
-            string nomFichier = "Resources/Data/CorrespondanceNiveauPokemons.json";
-            CorrespondanceNiveauPokemon = Loader.Charger<Dictionary<int, List<int>>>(nomFichier);
+            Dictionary<int, List<int>> correspondance;
+
+            if (!Loader.Charger(out correspondance, "Resources/Data/CorrespondanceNiveauPokemons.json"))
+            {
+                MessageBox.Show("Le fichier CorrespondanceNiveauPokemons.json est manquant. Le jeu pourra donc rencontrer des comportements étranges.",
+                    "Données manquantes", MessageBoxButton.OK);
+            }
+            CorrespondanceNiveauPokemon = correspondance;
         }
 
         private void AppliquerCorrespondance(int niveauDresseur)

@@ -1,7 +1,7 @@
 ﻿<Application x:Class="INF11207_TP3_Jeu_de_Pokemons.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="Views/CreationJoueur.xaml">
+             StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
         <Style x:Key="AccueilLabelStyle" TargetType="{x:Type Label}">
             <Setter Property="VerticalAlignment" Value="Center" />

@@ -1,6 +1,7 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Services;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
@@ -31,7 +32,14 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         private void ChargerDepotParDefaut()
         {
-            PokemonsAchetes = Loader.Charger<List<Pokemon>>("Resources/Data/PokemonAcheteParDefaut.json");
+            List<Pokemon> pokemonsAchetes;
+
+            if (!Loader.Charger(out pokemonsAchetes, "Resources/Data/PokemonAcheteParDefaut.json"))
+            {
+                MessageBox.Show("Le fichier PokemonAcheteParDefaut.json est manquant. Le jeu pourra donc rencontrer des comportements étranges.",
+                    "Données manquantes", MessageBoxButton.OK);
+            }
+            PokemonsAchetes = pokemonsAchetes;
             PokemonsEquipes[0] = PokemonsAchetes[0];
         }
     }

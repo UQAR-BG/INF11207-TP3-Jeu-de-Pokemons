@@ -26,7 +26,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             CommandeNavigation = new RelayCommandWithParam<string>(Navigation);
         }
 
-        private void Navigation(string destination)
+        public void Navigation(string destination)
         {
             switch (destination)
             {

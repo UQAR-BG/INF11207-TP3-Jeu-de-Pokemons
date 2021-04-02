@@ -1,4 +1,5 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+using INF11207_TP3_Jeu_de_Pokemons.Services;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
@@ -26,7 +27,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         private void CreerJoueur()
         {
             MessageBox.Show($"Le joueur {Dresseur.FirstName} {Dresseur.Name}", "Joueur créé", MessageBoxButton.OK);
-            int i = 0;
 
             /*string serializedDresseur = JsonConvert.SerializeObject(Dresseur, Formatting.Indented);
             using (StreamWriter sauvegarde = File.CreateText("Resources/Data/Joueur.json"))
@@ -39,6 +39,13 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             {
                 JsonSerializer serializer = new JsonSerializer();
                 pokemons = (List<Pokemon>)serializer.Deserialize(fichierPokemons, typeof(List<Pokemon>));
+            }
+
+            Loader.Sauvegarder(Dresseur, "Resources/Save/Sauvegarde.json");
+            List<Pokemon> pokemons;
+            if (!Loader.Charger(out pokemons, "Resources/Data/PokemonInfo.json"))
+            {
+                MessageBox.Show("La liste des pokémons de base n'a pas pu être chargée.", "Problème", MessageBoxButton.OK);
             }*/
         }
     }

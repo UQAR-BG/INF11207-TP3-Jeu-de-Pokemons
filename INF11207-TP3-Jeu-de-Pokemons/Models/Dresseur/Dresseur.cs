@@ -10,6 +10,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public GuidePourDebloquerPokemons Guide { get; set; }
         public DepotPokemons Depot { get; set; }
+        public Statistiques Statistiques { get; set; }
 
         public string FirstName
         {
@@ -62,6 +63,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             Money = money;
             Guide = new GuidePourDebloquerPokemons(level);
             Depot = new DepotPokemons(level);
+            Statistiques = new Statistiques(money, 1);
         }
 
         protected override void SetIsValid()

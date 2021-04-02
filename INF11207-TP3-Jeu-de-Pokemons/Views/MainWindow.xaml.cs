@@ -12,7 +12,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
+            DataContext = Game.MainWindow;
         }
     }
 }
