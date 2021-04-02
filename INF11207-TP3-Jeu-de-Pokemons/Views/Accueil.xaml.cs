@@ -12,7 +12,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         public Accueil()
         {
             InitializeComponent();
-            DataContext = new AccueilViewModel(new WindowSize(450, 800));
+            DataContext = Game.VueActuelle;
         }
     }
 }

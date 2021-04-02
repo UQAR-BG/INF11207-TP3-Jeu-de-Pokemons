@@ -10,15 +10,15 @@
         Title="Jeu de pokémons" 
         Height="{Binding VueActuelle.WindowSize.Height, Mode=TwoWay}"
         Width="{Binding VueActuelle.WindowSize.Width, Mode=TwoWay}"
-        WindowStartupLocation="CenterScreen">
-
-    <Window.DataContext>
-        <ViewModels:MainWindowViewModel/>
-    </Window.DataContext>
-
+        WindowStartupLocation="CenterScreen" 
+        Closing="Window_Closing">
+    
     <Window.Resources>
         <DataTemplate DataType="{x:Type ViewModels:AccueilViewModel}">
             <Views:Accueil />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:CreationJoueurViewModel}">
+            <Views:CreationJoueur />
         </DataTemplate>
         <DataTemplate DataType="{x:Type ViewModels:JoueurViewModel}">
             <Views:Joueur />

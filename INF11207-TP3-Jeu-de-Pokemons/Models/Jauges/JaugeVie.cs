@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
@@ -13,6 +14,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         {
             Value = maxValue;
         }
+
+        [JsonConstructor]
+        public JaugeVie() { }
 
         public override void AugmenterNiveau(Personnage personnage)
         {

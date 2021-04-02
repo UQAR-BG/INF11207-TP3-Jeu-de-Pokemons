@@ -1,4 +1,5 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+using System.ComponentModel;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 {
@@ -6,6 +7,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
     {
         private BaseViewModel _vueActuelle;
         private AccueilViewModel accueilViewModel = new AccueilViewModel(new WindowSize(450, 800));
+        private CreationJoueurViewModel creationJoueurViewModel = new CreationJoueurViewModel(new WindowSize(450, 600));
         private JoueurViewModel joueurViewModel = new JoueurViewModel(new WindowSize(450, 800));
         private PokemonsViewModel pokemonsViewModel = new PokemonsViewModel(new WindowSize(850, 850));
         private InventaireViewModel inventaireViewModel = new InventaireViewModel(new WindowSize(900, 800));
@@ -30,6 +32,12 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         {
             switch (destination)
             {
+                case "accueil":
+                    VueActuelle = accueilViewModel;
+                    break;
+                case "creationjoueur":
+                    VueActuelle = creationJoueurViewModel;
+                    break;
                 case "joueur":
                     VueActuelle = joueurViewModel;
                     break;

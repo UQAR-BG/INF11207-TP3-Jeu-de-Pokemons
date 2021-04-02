@@ -33,12 +33,11 @@
             FontSize="15" />
 
         <Button 
-            x:Name="btnNouvellePartie"
             Content="Commencer une nouvelle partie"
-            Grid.Row="2" />
+            Grid.Row="2"
+            Command="{Binding CommandeCommencerUnePartie}"/>
 
         <Button 
-            x:Name="btnChargerSauvegarde"
             Content="Charger une sauvegarde" 
             Grid.Row="3"
             Command="{Binding CommandeChargerSauvegarde}"/>

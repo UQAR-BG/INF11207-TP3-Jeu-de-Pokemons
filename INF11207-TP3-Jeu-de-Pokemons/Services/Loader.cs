@@ -1,6 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.IO;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Services
@@ -24,7 +22,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Services
                     sauvegarde.Write(objetSerialise);
                 }
             }
-            catch (Exception)
+            catch (JsonSerializationException)
             {
                 sauvegardeReussie = false;
             }
@@ -36,7 +34,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Services
         {
             bool chargementReussi = true;
             objetACharger = new();
-
+            
             try
             {
                 using (StreamReader contenuFichier = File.OpenText(nomFichier))
@@ -44,7 +42,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Services
                     JsonSerializer serializer = new JsonSerializer();
                     objetACharger = (T)serializer.Deserialize(contenuFichier, typeof(T));
                 }
-            } catch (Exception)
+            } catch (JsonSerializationException)
             {
                 chargementReussi = false;
             }

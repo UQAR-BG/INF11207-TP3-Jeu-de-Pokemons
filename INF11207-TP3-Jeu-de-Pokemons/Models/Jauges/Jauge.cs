@@ -27,6 +27,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             this.maxValue = maxValue;
         }
 
+        public Jauge() { }
+
         public abstract void AugmenterNiveau(Personnage personnage);
 
         public virtual void DiminuerVie(int montant)

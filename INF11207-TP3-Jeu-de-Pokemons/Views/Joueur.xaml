@@ -140,7 +140,6 @@
         </Grid>
 
         <Button
-            x:Name="btnSauvegarder"
             Content="Sauvegarder"
             HorizontalAlignment="Right"
             Grid.Row="3"
@@ -148,10 +147,10 @@
             Width="120"
             Margin="0,0,30,0"
             Padding="10"
-            FontSize="15"/>
+            FontSize="15"
+            Command="{Binding CommandeSauvegarder}"/>
 
         <Button
-            x:Name="btnQuitter"
             Content="Quitter"
             HorizontalAlignment="Left"
             Grid.Column="1"

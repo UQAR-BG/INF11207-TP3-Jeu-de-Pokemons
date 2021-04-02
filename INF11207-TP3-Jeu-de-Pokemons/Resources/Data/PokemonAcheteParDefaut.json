@@ -42,6 +42,14 @@
 				"Damage": 12.5
 			}
 		],
-		"Health": 45
+		"Health": 45,
+		"HpGauge": {
+          "Value": 45,
+          "MaxValue": 45
+        },
+		"XpGauge": {
+          "Value": 0,
+          "MaxValue": 100
+        }
 	}
 ]

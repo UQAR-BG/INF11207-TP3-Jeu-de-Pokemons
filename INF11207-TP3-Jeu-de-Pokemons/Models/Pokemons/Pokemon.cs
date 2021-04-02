@@ -1,4 +1,5 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
@@ -110,19 +111,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public Pokemon(int id, string nom, string description, int atk, int def, Evolution evolution,
-            List<OrigineType> types, int health, string image, int niveau, int experiencePerLevel, List<Attaque> attaques) 
-            : base(nom, niveau, experiencePerLevel)
-        {
-            Id = id;
-            Description = description;
-            Evolution = evolution;
-            ATK = atk;
-            DEF = def;
-            Types = types;
-            Health = health;
-            Image = image;
-            Attacks = attaques;
-        }
+        [JsonConstructor]
+        public Pokemon() : base("", 1, 100) { }
     }
 }

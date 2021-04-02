@@ -1,5 +1,5 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
-using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
+﻿using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
+using System.ComponentModel;
 using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
@@ -13,6 +13,15 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         {
             InitializeComponent();
             DataContext = Game.MainWindow;
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            MessageBoxResult reponse =  MessageBox.Show("Souhaitez-vous sauvegarder avant de quitter?", "Quitter", MessageBoxButton.YesNo);
+            if (reponse == MessageBoxResult.Yes)
+            {
+                Game.Sauvegarder();
+            }
         }
     }
 }

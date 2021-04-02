@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
@@ -56,7 +56,10 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             get { return isValid; }
         }
 
-        public Dresseur(string name = "", string firstName = "", int age = 18, int level = 1, int experience = 100, int money = 5000) : base(name, level, experience)
+        [JsonConstructor]
+        public Dresseur() { }
+
+        public Dresseur(int level, string name = "", string firstName = "", int age = 18, int experience = 100, int money = 5000) : base(name, level, experience)
         {
             FirstName = firstName;
             Age = age;
