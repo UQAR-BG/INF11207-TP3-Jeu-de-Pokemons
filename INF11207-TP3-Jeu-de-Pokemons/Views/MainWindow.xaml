@@ -41,7 +41,8 @@
         <Menu 
             x:Name="BarreNavigation"
             IsMainMenu="True"
-            Grid.Row="0">
+            Grid.Row="0"
+            Visibility="{Binding PeutAfficherMenu}">
             <MenuItem 
                 Header="Joueur" 
                 Command="{Binding CommandeNavigation}"

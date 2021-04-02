@@ -1,10 +1,12 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
-using System.ComponentModel;
+using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 {
     public class MainWindowViewModel : BaseViewModel
     {
+        private Visibility _peutAfficherMenu = Visibility.Visible;
+
         private BaseViewModel _vueActuelle;
         private AccueilViewModel accueilViewModel = new AccueilViewModel(new WindowSize(450, 800));
         private CreationJoueurViewModel creationJoueurViewModel = new CreationJoueurViewModel(new WindowSize(450, 600));
@@ -14,10 +16,20 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         private StatsViewModel statsViewModel = new StatsViewModel(new WindowSize(500, 800));
         private LancementCombatViewModel lancementCombatViewModel = new LancementCombatViewModel(new WindowSize(350, 600));
 
+        public Visibility PeutAfficherMenu
+        {
+            get { return _peutAfficherMenu; }
+            set { SetProperty(ref _peutAfficherMenu, value); }
+        }
+
         public BaseViewModel VueActuelle
         {
             get { return _vueActuelle; }
-            set { SetProperty(ref _vueActuelle, value); }
+            set 
+            { 
+                SetProperty(ref _vueActuelle, value);
+                VerifierSiPeutAfficherMenu();
+            }
         }
 
         public RelayCommandWithParam<string> CommandeNavigation { get; private set; }
@@ -57,6 +69,12 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
                     VueActuelle = VueActuelle;
                     break;
             }
+        }
+
+        private void VerifierSiPeutAfficherMenu()
+        {
+            Visibility visibiliteMenu = VueActuelle is not AccueilViewModel && VueActuelle is not CreationJoueurViewModel ? Visibility.Visible : Visibility.Hidden;
+            PeutAfficherMenu = visibiliteMenu;
         }
     }
 }
