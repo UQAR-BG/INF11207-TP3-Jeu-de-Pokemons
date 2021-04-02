@@ -51,6 +51,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
+        public string PrintMoney
+        {
+            get { return $"{Money}$"; }
+        }
+
         public bool IsValid
         {
             get { return isValid; }

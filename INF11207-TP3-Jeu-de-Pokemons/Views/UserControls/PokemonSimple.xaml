@@ -13,21 +13,17 @@
             <ColumnDefinition Width="0.8*"/>
         </Grid.ColumnDefinitions>
 
-        <Button 
-            x:Name="btnPokemon"
-            Grid.ColumnSpan="6"/>
+        <Button Grid.ColumnSpan="6"/>
 
         <StackPanel Orientation="Horizontal">
             <Label
-                x:Name="lblNumero"
-                Content="1:"
+                Content="{Binding PrintOrdre}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 FontSize="15"/>
 
             <Label
-                x:Name="lblNom"
-                Content="Charizard"
+                Content="{Binding Pokemon.Name}"
                 VerticalAlignment="Center"
                 Grid.Column="1"
                 FontSize="15"/>
@@ -43,8 +39,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblType"
-                Content="Feu"
+                Content="{Binding Pokemon.Types[0]}"
                 VerticalAlignment="Center"
                 Grid.Column="3"
                 FontSize="15"/>
@@ -60,8 +55,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblNiveau"
-                Content="12"
+                Content="{Binding Pokemon.Level}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 Grid.Column="5"

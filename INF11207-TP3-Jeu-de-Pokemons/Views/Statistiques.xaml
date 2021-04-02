@@ -57,8 +57,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblMontant"
-                Content="'montant'$"
+                Content="{Binding Dresseur.PrintMoney}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -74,8 +73,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblMontantTotal"
-                Content="'montant'$"
+                Content="{Binding Dresseur.Statistiques.PrintMontantAccumule}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -91,8 +89,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblMontantDepense"
-                Content="'montant'$"
+                Content="{Binding Dresseur.Statistiques.PrintMontantDepense}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -108,8 +105,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblPokemonsAchetes"
-                Content="'nombre de pokémons'"
+                Content="{Binding Dresseur.Statistiques.PokemonsAchetes}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -125,8 +121,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblPokemonsDebloques"
-                Content="'nombre de pokémons'"
+                Content="{Binding Dresseur.Statistiques.PokemonsDebloques}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -149,8 +144,8 @@
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition Width="0.4*"/>
             </Grid.ColumnDefinitions>
 
             <Label
@@ -161,8 +156,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblNbreCombatsTotal"
-                Content="'nombre de combats'"
+                Content="{Binding Dresseur.Statistiques.CombatsTotal}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -178,8 +172,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblNbreCombatsGagnes"
-                Content="'nombre de combats'"
+                Content="{Binding Dresseur.Statistiques.CombatsGagnes}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -195,8 +188,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblNbreCombatsPerdus"
-                Content="'nombre de combats'"
+                Content="{Binding Dresseur.Statistiques.CombatsPerdus}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"

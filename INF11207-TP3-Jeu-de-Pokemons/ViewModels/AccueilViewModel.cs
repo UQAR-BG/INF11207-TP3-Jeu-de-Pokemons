@@ -43,6 +43,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             if (Loader.Charger(out sauvegarde, Game.CheminVersSauvegarde))
             {
                 Game.Dresseur = sauvegarde;
+                Game.Dresseur.Depot.RechargerEmplacements();
                 MessageBox.Show("Sauvegarde chargée avec succès.", "Sauvegarde chargée", MessageBoxButton.OK);
                 Game.Naviguer("joueur");
             }

@@ -53,7 +53,7 @@
 
             <Label
                 x:Name="lblPrenom"
-                Content="'prénom'"
+                Content="{Binding Dresseur.FirstName}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -69,7 +69,7 @@
 
             <Label
                 x:Name="lblNom"
-                Content="'nom'"
+                Content="{Binding Dresseur.Name}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -86,7 +86,7 @@
 
             <Label
                 x:Name="lblAge"
-                Content="'âge' ans"
+                Content="{Binding Dresseur.Age}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -103,7 +103,7 @@
 
             <Label
                 x:Name="lblMontant"
-                Content="'montant'$"
+                Content="{Binding Dresseur.PrintMoney}"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Left"
                 Grid.Column="1"
@@ -128,15 +128,18 @@
             </Grid.RowDefinitions>
 
             <control:PokemonSimple
-                Margin="20"/>
-            
+                Margin="20"
+                DataContext="{Binding Dresseur.Depot.PokemonsEquipes[0]}"/>
+
             <control:PokemonSimple
                 Grid.Row="1"
-                Margin="20"/>
-            
+                Margin="20"
+                DataContext="{Binding Dresseur.Depot.PokemonsEquipes[1]}"/>
+
             <control:PokemonSimple
                 Grid.Row="2"
-                Margin="20"/>
+                Margin="20"
+                DataContext="{Binding Dresseur.Depot.PokemonsEquipes[2]}"/>
         </Grid>
 
         <Button

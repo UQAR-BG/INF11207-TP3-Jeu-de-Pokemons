@@ -20,8 +20,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblNiveau"
-                Content="'niveau'"
+                Content="{Binding Dresseur.Level}"
                 VerticalAlignment="Center"
                 Grid.Row="0"
                 FontSize="15"/>
@@ -33,6 +32,6 @@
             Margin="0,10,10,10"
             Minimum="0"
             Maximum="100"
-            Value="75"/>
+            Value="{Binding Dresseur.XpGauge.Value}"/>
     </Grid>
 </UserControl>

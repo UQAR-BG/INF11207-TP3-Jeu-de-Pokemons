@@ -12,6 +12,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         public int CombatsGagnes { get; set; }
         public int CombatsPerdus { get; set; }
 
+        public string PrintMontantAccumule { get { return $"{MontantAccumule}$"; } }
+        public string PrintMontantDepense { get { return $"{MontantDepense}$"; } }
+
         [JsonConstructor]
         public Statistiques() { }
 
