@@ -17,6 +17,20 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public int Id { get; set; }
         public List<OrigineType> Types { get; set; }
+
+        public string PrintTypes
+        {
+            get
+            {
+                string types = "";
+                for (int i = 0; i < Types.Count; i++)
+                {
+                    types += Types[i].ToString() + (i < Types.Count - 1 ? ", " : "");
+                }
+                return types;
+            }
+        }
+
         public Evolution Evolution { get; set; }
 
         public string Description

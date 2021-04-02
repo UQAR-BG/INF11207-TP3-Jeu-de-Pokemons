@@ -6,7 +6,7 @@
              xmlns:control="clr-namespace:INF11207_TP3_Jeu_de_Pokemons.Views.UserControls"
              mc:Ignorable="d" 
              
-             d:DesignHeight="650" d:DesignWidth="300">
+             d:DesignHeight="800" d:DesignWidth="350">
     <Grid
         Margin="10,0,10,0">
         <Grid.RowDefinitions>
@@ -14,12 +14,13 @@
             <RowDefinition Height="0.8*"/>
             <RowDefinition Height="0.8*"/>
             <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="0.6*"/>
             <RowDefinition Height="0.6*"/>
             <RowDefinition Height="0.6*"/>
-            <RowDefinition Height="1.5*"/>
-            <RowDefinition Height="1.5*"/>
-            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.1*"/>
+            <RowDefinition Height="1.1*"/>
+            <RowDefinition Height="1.1*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -28,7 +29,7 @@
         </Grid.ColumnDefinitions>
 
         <Image 
-            Source="/Resources/Images/1.png"
+            Source="{Binding Pokemon.Image}"
             Grid.ColumnSpan="2"/>
 
         <StackPanel 
@@ -41,8 +42,7 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblNom"
-                Content="'nom'"
+                Content="{Binding Pokemon.Name}"
                 VerticalAlignment="Center"
                 FontSize="15"/>
         </StackPanel>
@@ -57,60 +57,42 @@
                 FontSize="15"/>
 
             <Label
-                x:Name="lblType"
-                Content="'type'"
+                Content="{Binding Pokemon.PrintTypes}"
                 VerticalAlignment="Center"
                 FontSize="15"/>
         </StackPanel>
 
-        <StackPanel 
-            Orientation="Horizontal" 
+        <Label
+            Content="Description: "
+            VerticalAlignment="Center"
             Grid.ColumnSpan="2" 
-            Grid.Row="3">
-            <Label
-                Content="Description: "
-                VerticalAlignment="Center"
-                FontSize="15"/>
+            Grid.Row="3"
+            FontSize="15"/>
 
-            <Label
-                x:Name="lblDescription"
-                Content="'description'"
-                VerticalAlignment="Center"
-                FontSize="15"/>
-        </StackPanel>
+        <TextBox
+            Text="{Binding Pokemon.Description}"
+            TextWrapping="Wrap"
+            AcceptsReturn="True"
+            VerticalScrollBarVisibility="Visible"
+            Grid.ColumnSpan="2"
+            Grid.Row="4"/>
 
         <control:JaugeXp 
-                Grid.RowSpan="3"
-                Grid.Row="4"/>
-
-        <StackPanel 
-            Orientation="Horizontal" 
-            Grid.Column="1"
-            Grid.Row="4">
-            <Label
-                Content="HP: "
-                VerticalAlignment="Center"
-                FontSize="15"/>
-
-            <Label
-                x:Name="lblHp"
-                Content="'hp'"
-                VerticalAlignment="Center"
-                FontSize="15"/>
-        </StackPanel>
+            Grid.RowSpan="3"
+            Grid.Row="5"
+            DataContext="{Binding Pokemon}"/>
 
         <StackPanel 
             Orientation="Horizontal" 
             Grid.Column="1"
             Grid.Row="5">
             <Label
-                Content="ATK: "
+                Content="HP: "
                 VerticalAlignment="Center"
                 FontSize="15"/>
 
             <Label
-                x:Name="lblAtk"
-                Content="'atk'"
+                Content="{Binding Pokemon.HpGauge.MaxValue}"
                 VerticalAlignment="Center"
                 FontSize="15"/>
         </StackPanel>
@@ -120,13 +102,27 @@
             Grid.Column="1"
             Grid.Row="6">
             <Label
+                Content="ATK: "
+                VerticalAlignment="Center"
+                FontSize="15"/>
+
+            <Label
+                Content="{Binding Pokemon.ATK}"
+                VerticalAlignment="Center"
+                FontSize="15"/>
+        </StackPanel>
+
+        <StackPanel 
+            Orientation="Horizontal" 
+            Grid.Column="1"
+            Grid.Row="7">
+            <Label
                 Content="DEF: "
                 VerticalAlignment="Center"
                 FontSize="15"/>
 
             <Label
-                x:Name="lblDef"
-                Content="'def'"
+                Content="{Binding Pokemon.ATK}"
                 VerticalAlignment="Center"
                 FontSize="15"/>
         </StackPanel>
@@ -134,16 +130,19 @@
         <control:AttaqueCondense
             Background="#FF008080"
             Grid.ColumnSpan="2"
-            Grid.Row="7"/>
+            Grid.Row="8"
+            DataContext="{Binding Pokemon.Attacks[0]}"/>
 
         <control:AttaqueCondense
             Background="#FF008080"
             Grid.ColumnSpan="2"
-            Grid.Row="8"/>
+            Grid.Row="9"
+            DataContext="{Binding Pokemon.Attacks[1]}"/>
 
         <control:AttaqueCondense
             Background="#FF008080"
             Grid.ColumnSpan="2"
-            Grid.Row="9"/>
+            Grid.Row="10"
+            DataContext="{Binding Pokemon.Attacks[2]}"/>
     </Grid>
 </UserControl>

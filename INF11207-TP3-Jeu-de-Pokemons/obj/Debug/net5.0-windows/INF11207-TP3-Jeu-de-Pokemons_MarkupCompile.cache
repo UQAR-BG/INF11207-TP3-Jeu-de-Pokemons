@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Universite\POO2\TP3 - Jeu de pokemons Bastien Goulet\INF11207-TP3-Jeu-de-Pokemons\INF11207-TP3-Jeu-de-Pokemons\App.xaml
-16-113074410
+161433131167
 155-1540671611
-51-331696574
+51-1534295472
 194-921464286
-Views\Accueil.xaml;Views\ChoixAttaque.xaml;Views\CreationJoueur.xaml;Views\Inventaire.xaml;Views\Joueur.xaml;Views\LancementCombat.xaml;Views\MainWindow.xaml;Views\Pokemons.xaml;Views\Statistiques.xaml;Views\UserControls\ActionsPokemonAchete.xaml;Views\UserControls\ActionsPokemonDebloque.xaml;Views\UserControls\AttaqueCondense.xaml;Views\UserControls\JaugeXp.xaml;Views\UserControls\Menu.xaml;Views\UserControls\PokemonDetails.xaml;Views\UserControls\PokemonSimple.xaml;
+Views\Accueil.xaml;Views\ChoixAttaque.xaml;Views\CreationJoueur.xaml;Views\Inventaire.xaml;Views\Joueur.xaml;Views\LancementCombat.xaml;Views\MainWindow.xaml;Views\Pokemons.xaml;Views\Statistiques.xaml;Views\UserControls\ActionsPokemon.xaml;Views\UserControls\ActionsPokemonDebloque.xaml;Views\UserControls\AttaqueCondense.xaml;Views\UserControls\JaugeXp.xaml;Views\UserControls\Menu.xaml;Views\UserControls\PokemonDetails.xaml;Views\UserControls\PokemonSimple.xaml;
 
 False
 

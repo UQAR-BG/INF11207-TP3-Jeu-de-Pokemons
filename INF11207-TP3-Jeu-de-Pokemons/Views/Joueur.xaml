@@ -114,7 +114,8 @@
             <control:JaugeXp 
                 Grid.ColumnSpan="2"
                 Grid.Row="4"
-                Margin="30,0,0,0"/>
+                Margin="30,0,0,0"
+                DataContext="{Binding Dresseur}"/>
         </Grid>
 
         <Grid

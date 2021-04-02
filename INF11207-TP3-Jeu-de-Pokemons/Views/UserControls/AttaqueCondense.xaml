@@ -22,14 +22,11 @@
             Grid.ColumnSpan="2">
             <Label
                 Content="Attaque: "
-                VerticalAlignment="Center"
-                FontSize="15"/>
+                VerticalAlignment="Top"/>
 
             <Label
-                x:Name="lblAttaque"
-                Content="'attaque'"
-                VerticalAlignment="Center"
-                FontSize="15"/>
+                Content="{Binding Name}"
+                VerticalAlignment="Top"/>
         </StackPanel>
 
         <StackPanel 
@@ -37,14 +34,11 @@
             Grid.Row="1">
             <Label
                 Content="Type: "
-                VerticalAlignment="Center"
-                FontSize="15"/>
+                VerticalAlignment="Top"/>
 
             <Label
-                x:Name="lblType"
-                Content="'type'"
-                VerticalAlignment="Center"
-                FontSize="15"/>
+                Content="{Binding Type}"
+                VerticalAlignment="Top"/>
         </StackPanel>
 
         <StackPanel 
@@ -53,14 +47,11 @@
             Grid.Row="1">
             <Label
                 Content="Dégâts: "
-                VerticalAlignment="Center"
-                FontSize="15"/>
+                VerticalAlignment="Top"/>
 
             <Label
-                x:Name="lblDegats"
-                Content="'dégâts'"
-                VerticalAlignment="Center"
-                FontSize="15"/>
+                Content="{Binding Damage}"
+                VerticalAlignment="Top"/>
         </StackPanel>
     </Grid>
 </UserControl>

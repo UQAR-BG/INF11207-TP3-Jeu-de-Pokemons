@@ -11,26 +11,17 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Label
-            x:Name="lblPrix"
             HorizontalAlignment="Left"
             Content="Prix: "
             Grid.Row="0"
             FontSize="15"/>
 
         <Button
-            x:Name="btnAcheter"
             Content="Acheter"
             Grid.Row="1"
-            Background="Gray"/>
-
-        <Button
-            x:Name="btnEquiper"
-            Content="Équiper"
-            Grid.Row="2"
             Background="Gray"/>
     </Grid>
 </UserControl>

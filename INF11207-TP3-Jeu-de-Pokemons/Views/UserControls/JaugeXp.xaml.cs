@@ -11,7 +11,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views.UserControls
         public JaugeXp()
         {
             InitializeComponent();
-            DataContext = new JaugeXpViewModel();
         }
     }
 }
