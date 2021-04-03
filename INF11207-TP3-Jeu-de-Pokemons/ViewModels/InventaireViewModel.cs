@@ -1,7 +1,4 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
-using INF11207_TP3_Jeu_de_Pokemons.Models;
-using INF11207_TP3_Jeu_de_Pokemons.Services;
-using System.Collections.Generic;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
@@ -12,7 +9,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
     {
         private Pokemon _pokemon;
         private PokemonEquipe _pokemonEquipe;
-        private List<Pokemon> _pokemonsDebloques;
         private ObservableCollection<Pokemon> _resultats;
 
         public ICommand CommandeReinitialiser { get; set; }
@@ -117,21 +113,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         private void Rechercher()
         {
-            if (Game.Recherche.Filtre != FiltreRecherche.Achetes)
-            {
-                ChargerPokemonsDebloques();
-            }
-
-            Resultats = new ObservableCollection<Pokemon>(Recherche.Rechercher(_pokemonsDebloques));
-        }
-
-        private void ChargerPokemonsDebloques()
-        {
-            _pokemonsDebloques = new List<Pokemon>();
-            foreach (int id in Game.Dresseur.Guide.IdPokemonsDebloques)
-            {
-                _pokemonsDebloques.Add(Game.PokemonsDeBase.Find(x => x.Id == id));
-            }
+            Resultats = new ObservableCollection<Pokemon>(Recherche.Rechercher());
         }
 
         private void Acheter()

@@ -9,6 +9,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
     {
         private FiltreRecherche _filtre;
         private string _nom;
+
+        private List<Pokemon> _pokemonsDebloques;
         private List<Pokemon> _resultats;
 
         public FiltreRecherche Filtre
@@ -56,16 +58,35 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             _resultats = new List<Pokemon>();
         }
 
-        public List<Pokemon> Rechercher(List<Pokemon> pokemonsDebloques)
+        public List<Pokemon> Rechercher()
+        {
+            if (Filtre != FiltreRecherche.Achetes)
+            {
+                ChargerPokemonsDebloques();
+            }
+
+            return RecupererResultatsRecherche();
+        }
+
+        private void ChargerPokemonsDebloques()
+        {
+            _pokemonsDebloques = new List<Pokemon>();
+            foreach (int id in Game.Dresseur.Guide.IdPokemonsDebloques)
+            {
+                _pokemonsDebloques.Add(Game.PokemonsDeBase.Find(x => x.Id == id));
+            }
+        }
+
+        private List<Pokemon> RecupererResultatsRecherche()
         {
             switch (Filtre)
             {
                 case FiltreRecherche.Tous:
                     _resultats = RechercherPokemons(Game.Dresseur.Depot.PokemonsAchetes);
-                    _resultats.AddRange(RechercherPokemons(pokemonsDebloques));
+                    _resultats.AddRange(RechercherPokemons(_pokemonsDebloques));
                     break;
                 case FiltreRecherche.Debloques:
-                    _resultats = RechercherPokemons(pokemonsDebloques);
+                    _resultats = RechercherPokemons(_pokemonsDebloques);
                     break;
                 case FiltreRecherche.Achetes:
                     _resultats = RechercherPokemons(Game.Dresseur.Depot.PokemonsAchetes);
