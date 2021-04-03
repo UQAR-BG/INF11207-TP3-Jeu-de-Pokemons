@@ -7,13 +7,20 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
     public class Game
     {
         private static readonly string _cheminVersSauvegarde = "Resources/Save/Sauvegarde.json";
+        private static bool _sauvegardeChargee = false;
+
         private static MainWindowViewModel _mainViewModel = new MainWindowViewModel();
         private static Dresseur _dresseur = new Dresseur(1);
-        private static bool _sauvegardeChargee = false;
+        private static Recherche _recherche = new Recherche();
 
         public static string CheminVersSauvegarde
         {
             get { return _cheminVersSauvegarde; }
+        }
+
+        public static bool SauvegardeChargee
+        {
+            get { return _sauvegardeChargee; }
         }
 
         public static MainWindowViewModel MainWindow
@@ -36,9 +43,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             }
         }
 
-        public static bool SauvegardeChargee
+        public static Recherche Recherche
         {
-            get { return _sauvegardeChargee; }
+            get { return _recherche; }
         }
 
         public static void Naviguer(string destination)

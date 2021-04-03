@@ -1,7 +1,7 @@
 {
   "FirstName": "Bastien",
   "Name": "Goulet",
-  "Age": 18,
+  "Age": 23,
   "PrintMoney": "5000$",
   "Depot": {
     "PokemonsAchetes": [
@@ -53,112 +53,6 @@
           }
         ],
         "Name": "Bulbasaur",
-        "Level": 1,
-        "XpGauge": {
-          "Value": 0,
-          "MaxValue": 100
-        }
-      },
-      {
-        "Id": 4,
-        "Types": [
-          1
-        ],
-        "PrintTypes": "Fire",
-        "Evolution": {
-          "Level": 16,
-          "To": "Charmeleon"
-        },
-        "Description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.  The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
-        "ATK": 1,
-        "DEF": 1,
-        "Health": 39,
-        "HpGauge": {
-          "Value": 45,
-          "MaxValue": 39
-        },
-        "Image": "/Resources/Images/4.png",
-        "Attacks": [
-          {
-            "Type": 1,
-            "Name": "Ember",
-            "Damage": 4.75
-          },
-          {
-            "Type": 0,
-            "Name": "Scratch",
-            "Damage": 6.0
-          },
-          {
-            "Type": 1,
-            "Name": "Flame Charge",
-            "Damage": 4.05
-          },
-          {
-            "Type": 1,
-            "Name": "Flame Burst",
-            "Damage": 7.15
-          },
-          {
-            "Type": 1,
-            "Name": "Flamethrower",
-            "Damage": 9.5
-          }
-        ],
-        "Name": "Charmander",
-        "Level": 1,
-        "XpGauge": {
-          "Value": 0,
-          "MaxValue": 100
-        }
-      },
-      {
-        "Id": 7,
-        "Types": [
-          2
-        ],
-        "PrintTypes": "Water",
-        "Evolution": {
-          "Level": 16,
-          "To": "Wartortle"
-        },
-        "Description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.  Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.",
-        "ATK": 1,
-        "DEF": 1,
-        "Health": 44,
-        "HpGauge": {
-          "Value": 45,
-          "MaxValue": 44
-        },
-        "Image": "/Resources/Images/7.png",
-        "Attacks": [
-          {
-            "Type": 2,
-            "Name": "Bubble",
-            "Damage": 5.45
-          },
-          {
-            "Type": 0,
-            "Name": "Tackle",
-            "Damage": 5.45
-          },
-          {
-            "Type": 2,
-            "Name": "Aqua Jet",
-            "Damage": 5.3
-          },
-          {
-            "Type": 2,
-            "Name": "Aqua Tail",
-            "Damage": 9.55
-          },
-          {
-            "Type": 2,
-            "Name": "Water Pulse",
-            "Damage": 5.3
-          }
-        ],
-        "Name": "Squirtle",
         "Level": 1,
         "XpGauge": {
           "Value": 0,
@@ -228,118 +122,14 @@
       },
       {
         "PrintOrdre": "2:",
-        "Pokemon": {
-          "Id": 4,
-          "Types": [
-            1
-          ],
-          "PrintTypes": "Fire",
-          "Evolution": {
-            "Level": 16,
-            "To": "Charmeleon"
-          },
-          "Description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.  The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
-          "ATK": 1,
-          "DEF": 1,
-          "Health": 39,
-          "HpGauge": {
-            "Value": 45,
-            "MaxValue": 39
-          },
-          "Image": "/Resources/Images/4.png",
-          "Attacks": [
-            {
-              "Type": 1,
-              "Name": "Ember",
-              "Damage": 4.75
-            },
-            {
-              "Type": 0,
-              "Name": "Scratch",
-              "Damage": 6.0
-            },
-            {
-              "Type": 1,
-              "Name": "Flame Charge",
-              "Damage": 4.05
-            },
-            {
-              "Type": 1,
-              "Name": "Flame Burst",
-              "Damage": 7.15
-            },
-            {
-              "Type": 1,
-              "Name": "Flamethrower",
-              "Damage": 9.5
-            }
-          ],
-          "Name": "Charmander",
-          "Level": 1,
-          "XpGauge": {
-            "Value": 0,
-            "MaxValue": 100
-          }
-        },
-        "Equipe": true,
+        "Pokemon": null,
+        "Equipe": false,
         "Ordre": 1
       },
       {
         "PrintOrdre": "3:",
-        "Pokemon": {
-          "Id": 7,
-          "Types": [
-            2
-          ],
-          "PrintTypes": "Water",
-          "Evolution": {
-            "Level": 16,
-            "To": "Wartortle"
-          },
-          "Description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.  Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.",
-          "ATK": 1,
-          "DEF": 1,
-          "Health": 44,
-          "HpGauge": {
-            "Value": 45,
-            "MaxValue": 44
-          },
-          "Image": "/Resources/Images/7.png",
-          "Attacks": [
-            {
-              "Type": 2,
-              "Name": "Bubble",
-              "Damage": 5.45
-            },
-            {
-              "Type": 0,
-              "Name": "Tackle",
-              "Damage": 5.45
-            },
-            {
-              "Type": 2,
-              "Name": "Aqua Jet",
-              "Damage": 5.3
-            },
-            {
-              "Type": 2,
-              "Name": "Aqua Tail",
-              "Damage": 9.55
-            },
-            {
-              "Type": 2,
-              "Name": "Water Pulse",
-              "Damage": 5.3
-            }
-          ],
-          "Name": "Squirtle",
-          "Level": 1,
-          "XpGauge": {
-            "Value": 0,
-            "MaxValue": 100
-          }
-        },
-        "Equipe": true,
+        "Pokemon": null,
+        "Equipe": false,
         "Ordre": 2
       }
     ]
@@ -348,17 +138,6 @@
   "XpGauge": {
     "Value": 0,
     "MaxValue": 100
-  },
-  "Statistiques": {
-    "MontantAccumule": 5000,
-    "MontantDepense": 0,
-    "PokemonsAchetes": 1,
-    "PokemonsDebloques": 1,
-    "CombatsTotal": 0,
-    "CombatsGagnes": 0,
-    "CombatsPerdus": 0,
-    "PrintMontantAccumule": "5000$",
-    "PrintMontantDepense": "0$"
   },
   "Guide": {
     "CorrespondanceNiveauPokemon": {
@@ -593,6 +372,17 @@
     "IdPokemonsDebloques": [
       1
     ]
+  },
+  "Statistiques": {
+    "MontantAccumule": 5000,
+    "MontantDepense": 0,
+    "PokemonsAchetes": 1,
+    "PokemonsDebloques": 1,
+    "CombatsTotal": 0,
+    "CombatsGagnes": 0,
+    "CombatsPerdus": 0,
+    "PrintMontantAccumule": "5000$",
+    "PrintMontantDepense": "0$"
   },
   "Money": 5000,
   "IsValid": true

@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
+using System.Windows.Controls;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
 {
@@ -10,6 +11,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         public Inventaire()
         {
             InitializeComponent();
+            DataContext = Game.VueActuelle;
         }
     }
 }

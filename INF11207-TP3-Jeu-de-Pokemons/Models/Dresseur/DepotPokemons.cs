@@ -64,8 +64,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
             PokemonsAchetes = pokemonsAchetes;
             EquiperPokemon(0, PokemonsAchetes[0]);
-            EquiperPokemon(1, PokemonsAchetes[1]);
-            EquiperPokemon(2, PokemonsAchetes[2]);
         }
 
         private bool PositionValide(int position)
