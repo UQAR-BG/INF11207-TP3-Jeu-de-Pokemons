@@ -38,6 +38,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         {
             VueActuelle = accueilViewModel;
             CommandeNavigation = new RelayCommandWithParam<string>(Navigation);
+
+            Game.ChargerPokemonsBase();
         }
 
         public void Navigation(string destination)

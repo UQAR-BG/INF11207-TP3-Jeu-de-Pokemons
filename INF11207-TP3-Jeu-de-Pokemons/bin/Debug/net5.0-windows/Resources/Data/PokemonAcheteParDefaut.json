@@ -42,6 +42,8 @@
 				"Damage": 12.5
 			}
 		],
+		"Price": 100,
+		"Achete": true,
 		"Health": 45,
 		"HpGauge": {
           "Value": 45,

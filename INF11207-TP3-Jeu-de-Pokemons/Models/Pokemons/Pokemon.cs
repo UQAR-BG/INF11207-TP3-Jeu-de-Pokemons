@@ -9,9 +9,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private string description;
         private int atk;
         private int def;
+        private int price;
         private int health;
         private JaugeVie hpGauge;
         private string image;
+        private bool achete;
 
         private List<Attaque> attacks;
 
@@ -72,6 +74,24 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
+        public int Price
+        {
+            get { return price; }
+            set
+            {
+                if (price != value)
+                {
+                    price = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public string PrintPrice
+        {
+            get { return $"{price}$"; }
+        }
+
         public int Health
         {
             get { return health; }
@@ -120,6 +140,19 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
                 if (attacks != value)
                 {
                     attacks = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public bool Achete
+        {
+            get { return achete; }
+            set
+            {
+                if (achete != value)
+                {
+                    achete = value;
                     OnPropertyChanged();
                 }
             }

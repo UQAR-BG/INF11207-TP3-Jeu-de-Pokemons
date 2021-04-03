@@ -1,144 +1,4 @@
 {
-  "FirstName": "Bastien",
-  "Name": "Goulet",
-  "Age": 23,
-  "PrintMoney": "5000$",
-  "Depot": {
-    "PokemonsAchetes": [
-      {
-        "Id": 1,
-        "Types": [
-          7,
-          4
-        ],
-        "PrintTypes": "Poison, Grass",
-        "Evolution": {
-          "Level": 16,
-          "To": "Ivysaur"
-        },
-        "Description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
-        "ATK": 1,
-        "DEF": 1,
-        "Health": 45,
-        "HpGauge": {
-          "Value": 45,
-          "MaxValue": 45
-        },
-        "Image": "/Resources/Images/1.png",
-        "Attacks": [
-          {
-            "Type": 4,
-            "Name": "Vine Whip",
-            "Damage": 5.4
-          },
-          {
-            "Type": 0,
-            "Name": "Tackle",
-            "Damage": 5.45
-          },
-          {
-            "Type": 7,
-            "Name": "Sludge Bomb",
-            "Damage": 10.6
-          },
-          {
-            "Type": 4,
-            "Name": "Seed Bomb",
-            "Damage": 8.35
-          },
-          {
-            "Type": 4,
-            "Name": "Power Whip",
-            "Damage": 12.5
-          }
-        ],
-        "Name": "Bulbasaur",
-        "Level": 1,
-        "XpGauge": {
-          "Value": 0,
-          "MaxValue": 100
-        }
-      }
-    ],
-    "PokemonsEquipes": [
-      {
-        "PrintOrdre": "1:",
-        "Pokemon": {
-          "Id": 1,
-          "Types": [
-            7,
-            4
-          ],
-          "PrintTypes": "Poison, Grass",
-          "Evolution": {
-            "Level": 16,
-            "To": "Ivysaur"
-          },
-          "Description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
-          "ATK": 1,
-          "DEF": 1,
-          "Health": 45,
-          "HpGauge": {
-            "Value": 45,
-            "MaxValue": 45
-          },
-          "Image": "/Resources/Images/1.png",
-          "Attacks": [
-            {
-              "Type": 4,
-              "Name": "Vine Whip",
-              "Damage": 5.4
-            },
-            {
-              "Type": 0,
-              "Name": "Tackle",
-              "Damage": 5.45
-            },
-            {
-              "Type": 7,
-              "Name": "Sludge Bomb",
-              "Damage": 10.6
-            },
-            {
-              "Type": 4,
-              "Name": "Seed Bomb",
-              "Damage": 8.35
-            },
-            {
-              "Type": 4,
-              "Name": "Power Whip",
-              "Damage": 12.5
-            }
-          ],
-          "Name": "Bulbasaur",
-          "Level": 1,
-          "XpGauge": {
-            "Value": 0,
-            "MaxValue": 100
-          }
-        },
-        "Equipe": true,
-        "Ordre": 0
-      },
-      {
-        "PrintOrdre": "2:",
-        "Pokemon": null,
-        "Equipe": false,
-        "Ordre": 1
-      },
-      {
-        "PrintOrdre": "3:",
-        "Pokemon": null,
-        "Equipe": false,
-        "Ordre": 2
-      }
-    ]
-  },
-  "Level": 1,
-  "XpGauge": {
-    "Value": 0,
-    "MaxValue": 100
-  },
   "Guide": {
     "CorrespondanceNiveauPokemon": {
       "1": [
@@ -373,6 +233,143 @@
       1
     ]
   },
+  "Depot": {
+    "PokemonsAchetes": [
+      {
+        "Id": 1,
+        "Types": [
+          7,
+          4
+        ],
+        "PrintTypes": "Poison, Grass",
+        "Evolution": {
+          "Level": 16,
+          "To": "Ivysaur"
+        },
+        "Description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+        "ATK": 1,
+        "DEF": 1,
+        "Price": 100,
+        "PrintPrice": "100$",
+        "Health": 45,
+        "HpGauge": {
+          "Value": 45,
+          "MaxValue": 45
+        },
+        "Image": "/Resources/Images/1.png",
+        "Attacks": [
+          {
+            "Type": 4,
+            "Name": "Vine Whip",
+            "Damage": 5.4
+          },
+          {
+            "Type": 0,
+            "Name": "Tackle",
+            "Damage": 5.45
+          },
+          {
+            "Type": 7,
+            "Name": "Sludge Bomb",
+            "Damage": 10.6
+          },
+          {
+            "Type": 4,
+            "Name": "Seed Bomb",
+            "Damage": 8.35
+          },
+          {
+            "Type": 4,
+            "Name": "Power Whip",
+            "Damage": 12.5
+          }
+        ],
+        "Achete": true,
+        "Name": "Bulbasaur",
+        "Level": 1,
+        "XpGauge": {
+          "Value": 0,
+          "MaxValue": 100
+        }
+      }
+    ],
+    "PokemonsEquipes": [
+      {
+        "Pokemon": {
+          "Id": 1,
+          "Types": [
+            7,
+            4
+          ],
+          "PrintTypes": "Poison, Grass",
+          "Evolution": {
+            "Level": 16,
+            "To": "Ivysaur"
+          },
+          "Description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+          "ATK": 1,
+          "DEF": 1,
+          "Price": 100,
+          "PrintPrice": "100$",
+          "Health": 45,
+          "HpGauge": {
+            "Value": 45,
+            "MaxValue": 45
+          },
+          "Image": "/Resources/Images/1.png",
+          "Attacks": [
+            {
+              "Type": 4,
+              "Name": "Vine Whip",
+              "Damage": 5.4
+            },
+            {
+              "Type": 0,
+              "Name": "Tackle",
+              "Damage": 5.45
+            },
+            {
+              "Type": 7,
+              "Name": "Sludge Bomb",
+              "Damage": 10.6
+            },
+            {
+              "Type": 4,
+              "Name": "Seed Bomb",
+              "Damage": 8.35
+            },
+            {
+              "Type": 4,
+              "Name": "Power Whip",
+              "Damage": 12.5
+            }
+          ],
+          "Achete": true,
+          "Name": "Bulbasaur",
+          "Level": 1,
+          "XpGauge": {
+            "Value": 0,
+            "MaxValue": 100
+          }
+        },
+        "Equipe": true,
+        "Ordre": 0,
+        "PrintOrdre": "1:"
+      },
+      {
+        "Pokemon": null,
+        "Equipe": false,
+        "Ordre": 1,
+        "PrintOrdre": "2:"
+      },
+      {
+        "Pokemon": null,
+        "Equipe": false,
+        "Ordre": 2,
+        "PrintOrdre": "3:"
+      }
+    ]
+  },
   "Statistiques": {
     "MontantAccumule": 5000,
     "MontantDepense": 0,
@@ -384,6 +381,15 @@
     "PrintMontantAccumule": "5000$",
     "PrintMontantDepense": "0$"
   },
+  "FirstName": "Bastien",
+  "Age": 23,
   "Money": 5000,
-  "IsValid": true
+  "PrintMoney": "5000$",
+  "IsValid": true,
+  "Name": "Goulet",
+  "Level": 1,
+  "XpGauge": {
+    "Value": 0,
+    "MaxValue": 100
+  }
 }

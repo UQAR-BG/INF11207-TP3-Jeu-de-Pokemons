@@ -42,7 +42,9 @@
                 "Damage": 12.5
             }
         ],
-        "Health": 45
+        "Price": 100,
+		"Achete": false,
+		"Health": 45
     },
     {
         "Id": 2,
@@ -87,7 +89,9 @@
                 "Damage": 12.5
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 3,
@@ -129,7 +133,9 @@
                 "Damage": 12.25
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 4,
@@ -173,7 +179,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 39
+        "Price": 100,
+		"Achete": false,
+		"Health": 39
     },
     {
         "Id": 5,
@@ -217,7 +225,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 58
+        "Price": 100,
+		"Achete": false,
+		"Health": 58
     },
     {
         "Id": 6,
@@ -259,7 +269,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 78
+        "Price": 100,
+		"Achete": false,
+		"Health": 78
     },
     {
         "Id": 7,
@@ -303,7 +315,9 @@
                 "Damage": 5.3
             }
         ],
-        "Health": 44
+        "Price": 100,
+		"Achete": false,
+		"Health": 44
     },
     {
         "Id": 8,
@@ -347,7 +361,9 @@
                 "Damage": 11.85
             }
         ],
-        "Health": 59
+        "Price": 100,
+		"Achete": false,
+		"Health": 59
     },
     {
         "Id": 9,
@@ -388,7 +404,9 @@
                 "Damage": 11.85
             }
         ],
-        "Health": 79
+        "Price": 100,
+		"Achete": false,
+		"Health": 79
     },
     {
         "Id": 10,
@@ -422,7 +440,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 45
+        "Price": 100,
+		"Achete": false,
+		"Health": 45
     },
     {
         "Id": 11,
@@ -456,7 +476,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 12,
@@ -498,7 +520,9 @@
                 "Damage": 7.25
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 13,
@@ -533,7 +557,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 14,
@@ -568,7 +594,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 45
+        "Price": 100,
+		"Achete": false,
+		"Health": 45
     },
     {
         "Id": 15,
@@ -610,7 +638,9 @@
                 "Damage": 8.35
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 16,
@@ -655,7 +685,9 @@
                 "Damage": 4.55
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 17,
@@ -700,7 +732,9 @@
                 "Damage": 4.55
             }
         ],
-        "Health": 63
+        "Price": 100,
+		"Achete": false,
+		"Health": 63
     },
     {
         "Id": 18,
@@ -742,7 +776,9 @@
                 "Damage": 4.55
             }
         ],
-        "Health": 83
+        "Price": 100,
+		"Achete": false,
+		"Health": 83
     },
     {
         "Id": 19,
@@ -786,7 +822,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 30
+        "Price": 100,
+		"Achete": false,
+		"Health": 30
     },
     {
         "Id": 20,
@@ -827,7 +865,9 @@
                 "Damage": 12.0
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 21,
@@ -872,7 +912,9 @@
                 "Damage": 4.65
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 22,
@@ -914,7 +956,9 @@
                 "Damage": 4.65
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 23,
@@ -958,7 +1002,9 @@
                 "Damage": 10.85
             }
         ],
-        "Health": 35
+        "Price": 100,
+		"Achete": false,
+		"Health": 35
     },
     {
         "Id": 24,
@@ -999,7 +1045,9 @@
                 "Damage": 10.85
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 25,
@@ -1040,7 +1088,9 @@
                 "Damage": 11.65
             }
         ],
-        "Health": 35
+        "Price": 100,
+		"Achete": false,
+		"Health": 35
     },
     {
         "Id": 26,
@@ -1081,7 +1131,9 @@
                 "Damage": 11.65
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 27,
@@ -1125,7 +1177,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 28,
@@ -1166,7 +1220,9 @@
                 "Damage": 5.15
             }
         ],
-        "Health": 75
+        "Price": 100,
+		"Achete": false,
+		"Health": 75
     },
     {
         "Id": 29,
@@ -1210,7 +1266,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 30,
@@ -1251,7 +1309,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 70
+        "Price": 100,
+		"Achete": false,
+		"Health": 70
     },
     {
         "Id": 31,
@@ -1293,7 +1353,9 @@
                 "Damage": 12.9
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 32,
@@ -1337,7 +1399,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 46
+        "Price": 100,
+		"Achete": false,
+		"Health": 46
     },
     {
         "Id": 33,
@@ -1378,7 +1442,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 61
+        "Price": 100,
+		"Achete": false,
+		"Health": 61
     },
     {
         "Id": 34,
@@ -1420,7 +1486,9 @@
                 "Damage": 12.5
             }
         ],
-        "Health": 81
+        "Price": 100,
+		"Achete": false,
+		"Health": 81
     },
     {
         "Id": 35,
@@ -1461,7 +1529,9 @@
                 "Damage": 10.35
             }
         ],
-        "Health": 70
+        "Price": 100,
+		"Achete": false,
+		"Health": 70
     },
     {
         "Id": 36,
@@ -1502,7 +1572,9 @@
                 "Damage": 10.35
             }
         ],
-        "Health": 95
+        "Price": 100,
+		"Achete": false,
+		"Health": 95
     },
     {
         "Id": 37,
@@ -1543,7 +1615,9 @@
                 "Damage": 4.05
             }
         ],
-        "Health": 38
+        "Price": 100,
+		"Achete": false,
+		"Health": 38
     },
     {
         "Id": 38,
@@ -1584,7 +1658,9 @@
                 "Damage": 12.2
             }
         ],
-        "Health": 73
+        "Price": 100,
+		"Achete": false,
+		"Health": 73
     },
     {
         "Id": 39,
@@ -1631,7 +1707,9 @@
                 "Damage": 6.55
             }
         ],
-        "Health": 115
+        "Price": 100,
+		"Achete": false,
+		"Health": 115
     },
     {
         "Id": 40,
@@ -1673,7 +1751,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 140
+        "Price": 100,
+		"Achete": false,
+		"Health": 140
     },
     {
         "Id": 41,
@@ -1718,7 +1798,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 42,
@@ -1760,7 +1842,9 @@
                 "Damage": 4.85
             }
         ],
-        "Health": 75
+        "Price": 100,
+		"Achete": false,
+		"Health": 75
     },
     {
         "Id": 43,
@@ -1805,7 +1889,9 @@
                 "Damage": 10.35
             }
         ],
-        "Health": 45
+        "Price": 100,
+		"Achete": false,
+		"Health": 45
     },
     {
         "Id": 44,
@@ -1847,7 +1933,9 @@
                 "Damage": 10.35
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 45,
@@ -1889,7 +1977,9 @@
                 "Damage": 10.35
             }
         ],
-        "Health": 75
+        "Price": 100,
+		"Achete": false,
+		"Health": 75
     },
     {
         "Id": 46,
@@ -1934,7 +2024,9 @@
                 "Damage": 8.35
             }
         ],
-        "Health": 35
+        "Price": 100,
+		"Achete": false,
+		"Health": 35
     },
     {
         "Id": 47,
@@ -1976,7 +2068,9 @@
                 "Damage": 12.25
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 48,
@@ -2021,7 +2115,9 @@
                 "Damage": 7.25
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 49,
@@ -2063,7 +2159,9 @@
                 "Damage": 8.8
             }
         ],
-        "Health": 70
+        "Price": 100,
+		"Achete": false,
+		"Health": 70
     },
     {
         "Id": 50,
@@ -2112,7 +2210,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 10
+        "Price": 100,
+		"Achete": false,
+		"Health": 10
     },
     {
         "Id": 51,
@@ -2158,7 +2258,9 @@
                 "Damage": 12.9
             }
         ],
-        "Health": 35
+        "Price": 100,
+		"Achete": false,
+		"Health": 35
     },
     {
         "Id": 52,
@@ -2202,7 +2304,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 53,
@@ -2243,7 +2347,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 54,
@@ -2287,7 +2393,9 @@
                 "Damage": 15.0
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 55,
@@ -2328,7 +2436,9 @@
                 "Damage": 8.9
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 56,
@@ -2372,7 +2482,9 @@
                 "Damage": 9.4
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 57,
@@ -2413,7 +2525,9 @@
                 "Damage": 5.55
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 58,
@@ -2454,7 +2568,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 59,
@@ -2495,7 +2611,9 @@
                 "Damage": 5.15
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 60,
@@ -2539,7 +2657,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 61,
@@ -2580,7 +2700,9 @@
                 "Damage": 5.15
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 62,
@@ -2622,7 +2744,9 @@
                 "Damage": 6.45
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 63,
@@ -2661,7 +2785,9 @@
                 "Damage": 7.3
             }
         ],
-        "Health": 25
+        "Price": 100,
+		"Achete": false,
+		"Health": 25
     },
     {
         "Id": 64,
@@ -2702,7 +2828,9 @@
                 "Damage": 7.3
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 65,
@@ -2743,7 +2871,9 @@
                 "Damage": 7.3
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 66,
@@ -2787,7 +2917,9 @@
                 "Damage": 15.0
             }
         ],
-        "Health": 70
+        "Price": 100,
+		"Achete": false,
+		"Health": 70
     },
     {
         "Id": 67,
@@ -2828,7 +2960,9 @@
                 "Damage": 15.0
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 68,
@@ -2869,7 +3003,9 @@
                 "Damage": 15.0
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 69,
@@ -2914,7 +3050,9 @@
                 "Damage": 3.15
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 70,
@@ -2956,7 +3094,9 @@
                 "Damage": 8.35
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 71,
@@ -2998,7 +3138,9 @@
                 "Damage": 12.25
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 72,
@@ -3043,7 +3185,9 @@
                 "Damage": 3.15
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 73,
@@ -3085,7 +3229,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 74,
@@ -3130,7 +3276,9 @@
                 "Damage": 6.05
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 75,
@@ -3177,7 +3325,9 @@
                 "Damage": 7.8
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 76,
@@ -3224,7 +3374,9 @@
                 "Damage": 11.9
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 77,
@@ -3268,7 +3420,9 @@
                 "Damage": 12.2
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 78,
@@ -3309,7 +3463,9 @@
                 "Damage": 10.55
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 79,
@@ -3351,7 +3507,9 @@
                 "Damage": 9.8
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 80,
@@ -3393,7 +3551,9 @@
                 "Damage": 8.9
             }
         ],
-        "Health": 95
+        "Price": 100,
+		"Achete": false,
+		"Health": 95
     },
     {
         "Id": 81,
@@ -3438,7 +3598,9 @@
                 "Damage": 10.2
             }
         ],
-        "Health": 25
+        "Price": 100,
+		"Achete": false,
+		"Health": 25
     },
     {
         "Id": 82,
@@ -3480,7 +3642,9 @@
                 "Damage": 7.7
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 83,
@@ -3522,7 +3686,9 @@
                 "Damage": 9.8
             }
         ],
-        "Health": 52
+        "Price": 100,
+		"Achete": false,
+		"Health": 52
     },
     {
         "Id": 84,
@@ -3567,7 +3733,9 @@
                 "Damage": 5.0
             }
         ],
-        "Health": 35
+        "Price": 100,
+		"Achete": false,
+		"Health": 35
     },
     {
         "Id": 85,
@@ -3609,7 +3777,9 @@
                 "Damage": 4.55
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 86,
@@ -3658,7 +3828,9 @@
                 "Damage": 9.55
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 87,
@@ -3700,7 +3872,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 88,
@@ -3749,7 +3923,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 89,
@@ -3795,7 +3971,9 @@
                 "Damage": 10.3
             }
         ],
-        "Health": 105
+        "Price": 100,
+		"Achete": false,
+		"Health": 105
     },
     {
         "Id": 90,
@@ -3836,7 +4014,9 @@
                 "Damage": 3.3
             }
         ],
-        "Health": 30
+        "Price": 100,
+		"Achete": false,
+		"Health": 30
     },
     {
         "Id": 91,
@@ -3878,7 +4058,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 92,
@@ -3923,7 +4105,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 30
+        "Price": 100,
+		"Achete": false,
+		"Health": 30
     },
     {
         "Id": 93,
@@ -3965,7 +4149,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 45
+        "Price": 100,
+		"Achete": false,
+		"Health": 45
     },
     {
         "Id": 94,
@@ -4012,7 +4198,9 @@
                 "Damage": 10.6
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 95,
@@ -4054,7 +4242,9 @@
                 "Damage": 7.5
             }
         ],
-        "Health": 35
+        "Price": 100,
+		"Achete": false,
+		"Health": 35
     },
     {
         "Id": 96,
@@ -4098,7 +4288,9 @@
                 "Damage": 9.8
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 97,
@@ -4139,7 +4331,9 @@
                 "Damage": 7.3
             }
         ],
-        "Health": 85
+        "Price": 100,
+		"Achete": false,
+		"Health": 85
     },
     {
         "Id": 98,
@@ -4183,7 +4377,9 @@
                 "Damage": 5.3
             }
         ],
-        "Health": 30
+        "Price": 100,
+		"Achete": false,
+		"Health": 30
     },
     {
         "Id": 99,
@@ -4224,7 +4420,9 @@
                 "Damage": 5.3
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 100,
@@ -4268,7 +4466,9 @@
                 "Damage": 7.25
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 101,
@@ -4309,7 +4509,9 @@
                 "Damage": 12.0
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 102,
@@ -4346,7 +4548,9 @@
                 "Damage": 4.85
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 103,
@@ -4388,7 +4592,9 @@
                 "Damage": 12.25
             }
         ],
-        "Health": 95
+        "Price": 100,
+		"Achete": false,
+		"Health": 95
     },
     {
         "Id": 104,
@@ -4432,7 +4638,9 @@
                 "Damage": 5.15
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 105,
@@ -4473,7 +4681,9 @@
                 "Damage": 11.9
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 106,
@@ -4519,7 +4729,9 @@
                 "Damage": 9.4
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 107,
@@ -4565,7 +4777,9 @@
                 "Damage": 9.4
             }
         ],
-        "Health": 50
+        "Price": 100,
+		"Achete": false,
+		"Health": 50
     },
     {
         "Id": 108,
@@ -4606,7 +4820,9 @@
                 "Damage": 12.5
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 109,
@@ -4650,7 +4866,9 @@
                 "Damage": 6.45
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 110,
@@ -4691,7 +4909,9 @@
                 "Damage": 6.45
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 111,
@@ -4736,7 +4956,9 @@
                 "Damage": 7.15
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 112,
@@ -4778,7 +5000,9 @@
                 "Damage": 12.9
             }
         ],
-        "Health": 105
+        "Price": 100,
+		"Achete": false,
+		"Health": 105
     },
     {
         "Id": 113,
@@ -4824,7 +5048,9 @@
                 "Damage": 12.0
             }
         ],
-        "Health": 250
+        "Price": 100,
+		"Achete": false,
+		"Health": 250
     },
     {
         "Id": 114,
@@ -4860,7 +5086,9 @@
                 "Damage": 12.25
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 115,
@@ -4901,7 +5129,9 @@
                 "Damage": 7.15
             }
         ],
-        "Health": 105
+        "Price": 100,
+		"Achete": false,
+		"Health": 105
     },
     {
         "Id": 116,
@@ -4945,7 +5175,9 @@
                 "Damage": 7.7
             }
         ],
-        "Health": 30
+        "Price": 100,
+		"Achete": false,
+		"Health": 30
     },
     {
         "Id": 117,
@@ -4986,7 +5218,9 @@
                 "Damage": 11.85
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 118,
@@ -5030,7 +5264,9 @@
                 "Damage": 9.55
             }
         ],
-        "Health": 45
+        "Price": 100,
+		"Achete": false,
+		"Health": 45
     },
     {
         "Id": 119,
@@ -5071,7 +5307,9 @@
                 "Damage": 12.5
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 120,
@@ -5117,7 +5355,9 @@
                 "Damage": 6.9
             }
         ],
-        "Health": 30
+        "Price": 100,
+		"Achete": false,
+		"Health": 30
     },
     {
         "Id": 121,
@@ -5169,7 +5409,9 @@
                 "Damage": 9.8
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 122,
@@ -5211,7 +5453,9 @@
                 "Damage": 7.3
             }
         ],
-        "Health": 40
+        "Price": 100,
+		"Achete": false,
+		"Health": 40
     },
     {
         "Id": 123,
@@ -5253,7 +5497,9 @@
                 "Damage": 8.8
             }
         ],
-        "Health": 70
+        "Price": 100,
+		"Achete": false,
+		"Health": 70
     },
     {
         "Id": 124,
@@ -5295,7 +5541,9 @@
                 "Damage": 7.4
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 125,
@@ -5336,7 +5584,9 @@
                 "Damage": 11.65
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 126,
@@ -5377,7 +5627,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 127,
@@ -5418,7 +5670,9 @@
                 "Damage": 7.15
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 128,
@@ -5459,7 +5713,9 @@
                 "Damage": 11.9
             }
         ],
-        "Health": 75
+        "Price": 100,
+		"Achete": false,
+		"Health": 75
     },
     {
         "Id": 129,
@@ -5488,7 +5744,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 20
+        "Price": 100,
+		"Achete": false,
+		"Health": 20
     },
     {
         "Id": 130,
@@ -5530,7 +5788,9 @@
                 "Damage": 9.05
             }
         ],
-        "Health": 95
+        "Price": 100,
+		"Achete": false,
+		"Health": 95
     },
     {
         "Id": 131,
@@ -5572,7 +5832,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 130
+        "Price": 100,
+		"Achete": false,
+		"Health": 130
     },
     {
         "Id": 132,
@@ -5598,7 +5860,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 48
+        "Price": 100,
+		"Achete": false,
+		"Health": 48
     },
     {
         "Id": 133,
@@ -5639,7 +5903,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 55
+        "Price": 100,
+		"Achete": false,
+		"Health": 55
     },
     {
         "Id": 134,
@@ -5675,7 +5941,9 @@
                 "Damage": 9.55
             }
         ],
-        "Health": 130
+        "Price": 100,
+		"Achete": false,
+		"Health": 130
     },
     {
         "Id": 135,
@@ -5711,7 +5979,9 @@
                 "Damage": 11.65
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 136,
@@ -5747,7 +6017,9 @@
                 "Damage": 10.55
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 137,
@@ -5793,7 +6065,9 @@
                 "Damage": 7.0
             }
         ],
-        "Health": 65
+        "Price": 100,
+		"Achete": false,
+		"Health": 65
     },
     {
         "Id": 138,
@@ -5838,7 +6112,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 35
+        "Price": 100,
+		"Achete": false,
+		"Health": 35
     },
     {
         "Id": 139,
@@ -5885,7 +6161,9 @@
                 "Damage": 7.8
             }
         ],
-        "Health": 70
+        "Price": 100,
+		"Achete": false,
+		"Health": 70
     },
     {
         "Id": 140,
@@ -5930,7 +6208,9 @@
                 "Damage": 4.4
             }
         ],
-        "Health": 30
+        "Price": 100,
+		"Achete": false,
+		"Health": 30
     },
     {
         "Id": 141,
@@ -5972,7 +6252,9 @@
                 "Damage": 12.9
             }
         ],
-        "Health": 60
+        "Price": 100,
+		"Achete": false,
+		"Health": 60
     },
     {
         "Id": 142,
@@ -6014,7 +6296,9 @@
                 "Damage": 12.0
             }
         ],
-        "Health": 80
+        "Price": 100,
+		"Achete": false,
+		"Health": 80
     },
     {
         "Id": 143,
@@ -6055,7 +6339,9 @@
                 "Damage": 11.9
             }
         ],
-        "Health": 160
+        "Price": 100,
+		"Achete": false,
+		"Health": 160
     },
     {
         "Id": 144,
@@ -6092,7 +6378,9 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 145,
@@ -6129,7 +6417,9 @@
                 "Damage": 11.65
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 146,
@@ -6166,7 +6456,9 @@
                 "Damage": 9.5
             }
         ],
-        "Health": 90
+        "Price": 100,
+		"Achete": false,
+		"Health": 90
     },
     {
         "Id": 147,
@@ -6205,7 +6497,9 @@
                 "Damage": 9.55
             }
         ],
-        "Health": 41
+        "Price": 100,
+		"Achete": false,
+		"Health": 41
     },
     {
         "Id": 148,
@@ -6244,7 +6538,9 @@
                 "Damage": 9.05
             }
         ],
-        "Health": 61
+        "Price": 100,
+		"Achete": false,
+		"Health": 61
     },
     {
         "Id": 149,
@@ -6286,7 +6582,9 @@
                 "Damage": 10.95
             }
         ],
-        "Health": 91
+        "Price": 100,
+		"Achete": false,
+		"Health": 91
     },
     {
         "Id": 150,
@@ -6327,7 +6625,9 @@
                 "Damage": 12.0
             }
         ],
-        "Health": 106
+        "Price": 100,
+		"Achete": false,
+		"Health": 106
     },
     {
         "Id": 151,
@@ -6398,6 +6698,8 @@
                 "Damage": 12.8
             }
         ],
-        "Health": 100
+        "Price": 100,
+		"Achete": false,
+		"Health": 100
     }
 ]

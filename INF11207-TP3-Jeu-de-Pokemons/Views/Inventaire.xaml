@@ -36,10 +36,32 @@
 
         <control:PokemonDetails
             Grid.Column="0"
-            Grid.Row="2"/>
+            Grid.Row="2"
+            DataContext="{Binding PokemonSelectionne}"/>
 
-        <control:ActionsPokemonDebloque
-            Grid.Row="3"/>
+        <StackPanel
+            Orientation="Vertical"
+            Grid.Row="3"
+            Margin="10,0,0,0">
+            <StackPanel
+                Orientation="Horizontal">
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="Prix: "
+                    FontSize="15"/>
+
+                <Label
+                    HorizontalAlignment="Left"
+                    Content="{Binding Pokemon.PrintPrice}"
+                    FontSize="15"/>
+            </StackPanel>
+
+            <Button
+                Content="{Binding TexteBoutonAction}"
+                Background="Gray"
+                Height="40"
+                Command="{Binding Action}"/>
+        </StackPanel>
 
         <Grid
             Grid.RowSpan="2"
@@ -53,13 +75,15 @@
             <DataGrid
                 HorizontalAlignment="Center"
                 AutoGenerateColumns="False"
-                FontSize="20">
+                FontSize="20"
+                ItemsSource="{Binding Resultats}"
+                SelectedItem="{Binding Pokemon, Mode=TwoWay}">
 
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Nom" MinWidth="75"/>
-                    <DataGridTextColumn Header="Type" MinWidth="75"/>
-                    <DataGridTextColumn Header="Niveau"/>
-                    <DataGridTextColumn Header="Statut"/>
+                    <DataGridTextColumn Header="Nom" MinWidth="75" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Type" MinWidth="75" Binding="{Binding PrintTypes}"/>
+                    <DataGridTextColumn Header="Niveau" Binding="{Binding Level}"/>
+                    <DataGridTextColumn Header="Acheté" Binding="{Binding Achete}"/>
                 </DataGrid.Columns>
             </DataGrid>
 
@@ -87,7 +111,8 @@
                     VerticalAlignment="Top"
                     Grid.Row="1"
                     Height="40"
-                    Margin="20,0,0,0"/>
+                    Margin="20,0,0,0"
+                    Text="{Binding Recherche.Nom, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <Button
                     Content="Rechercher"
@@ -98,7 +123,8 @@
                     Height="40"
                     Width="100"
                     Margin="15,0,0,0"
-                    FontSize="15"/>
+                    FontSize="15"
+                    Command="{Binding CommandeRechercher}"/>
 
                 <StackPanel 
                     Grid.Row="2"
@@ -144,7 +170,8 @@
                     Height="40"
                     Width="100"
                     Margin="15,0,0,0"
-                    FontSize="15"/>
+                    FontSize="15"
+                    Command="{Binding CommandeReinitialiser}"/>
             </Grid>
         </Grid>
     </Grid>

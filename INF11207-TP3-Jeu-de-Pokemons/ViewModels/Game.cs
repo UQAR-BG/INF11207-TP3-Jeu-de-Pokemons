@@ -1,5 +1,6 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
 using INF11207_TP3_Jeu_de_Pokemons.Services;
+using System.Collections.Generic;
 using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
@@ -8,6 +9,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
     {
         private static readonly string _cheminVersSauvegarde = "Resources/Save/Sauvegarde.json";
         private static bool _sauvegardeChargee = false;
+
+        private static List<Pokemon> _pokemonsBase;
 
         private static MainWindowViewModel _mainViewModel = new MainWindowViewModel();
         private static Dresseur _dresseur = new Dresseur(1);
@@ -48,6 +51,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             get { return _recherche; }
         }
 
+        public static List<Pokemon> PokemonsDeBase
+        {
+            get { return _pokemonsBase; }
+        }
+
         public static void Naviguer(string destination)
         {
             _mainViewModel.Navigation(destination);
@@ -64,5 +72,16 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
                 MessageBox.Show("Une erreur s'est produite lors de la sauvegarde.", "Erreur", MessageBoxButton.OK);
             }
         }
+
+        public static void ChargerPokemonsBase()
+        {
+            _pokemonsBase = new List<Pokemon>();
+            if (!Loader.Charger(out _pokemonsBase, "Resources/Data/PokemonInfo.json"))
+            {
+                MessageBox.Show("Le fichier PokemonInfo.json est manquant. Le jeu pourra donc rencontrer des comportements étranges.",
+                    "Données manquantes", MessageBoxButton.OK);
+            }
+        }
+
     }
 }

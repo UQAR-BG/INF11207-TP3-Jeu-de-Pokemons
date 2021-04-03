@@ -1,6 +1,7 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
 using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
@@ -50,14 +51,39 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public void Reinitialiser()
         {
-            _filtre = FiltreRecherche.Tous;
-            _nom = "";
+            Filtre = FiltreRecherche.Tous;
+            Nom = "";
             _resultats = new List<Pokemon>();
         }
 
-        public List<Pokemon> Rechercher()
+        public List<Pokemon> Rechercher(List<Pokemon> pokemonsDebloques)
         {
+            switch (Filtre)
+            {
+                case FiltreRecherche.Tous:
+                    _resultats = RechercherPokemons(Game.Dresseur.Depot.PokemonsAchetes);
+                    _resultats.AddRange(RechercherPokemons(pokemonsDebloques));
+                    break;
+                case FiltreRecherche.Debloques:
+                    _resultats = RechercherPokemons(pokemonsDebloques);
+                    break;
+                case FiltreRecherche.Achetes:
+                    _resultats = RechercherPokemons(Game.Dresseur.Depot.PokemonsAchetes);
+                    break;
+            }
+
             return _resultats;
+        }
+
+        private List<Pokemon> RechercherPokemons(List<Pokemon> pokemons)
+        {
+            List<Pokemon> buffer = new List<Pokemon>(pokemons);
+            if (string.IsNullOrEmpty(Nom))
+            {
+                return buffer;
+            }
+
+            return buffer.Where(p => p.Name.StartsWith(Nom)).ToList();
         }
     }
 }
