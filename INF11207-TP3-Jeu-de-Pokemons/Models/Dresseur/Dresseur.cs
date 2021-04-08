@@ -9,10 +9,12 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private int age;
         private int money;
 
-        private DepotPokemons depot;
+        //private DepotPokemons depot;
 
         public GuidePourDebloquerPokemons Guide { get; set; }
+
         public DepotPokemons Depot { get; set; }
+
         public Statistiques Statistiques { get; set; }
 
         public string FirstName
@@ -65,7 +67,10 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         }
 
         [JsonConstructor]
-        public Dresseur() { }
+        public Dresseur()
+        {
+            Depot = new DepotPokemons();
+        }
 
         public Dresseur(int level, string name = "", string firstName = "", int age = 18, int experience = 100, int money = 5000) : base(name, level, experience)
         {
@@ -97,43 +102,23 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             return pokemonAcheteAvecSucces;
         }
 
-        public void Equiper(Pokemon pokemon, Emplacement emplacement)
+        public void Equiper(int indexPokemon, Emplacement emplacement)
         {
+            Pokemon pokemon = Depot.PokemonsAchetes[indexPokemon];
+
             if (pokemon.Equipe)
             {
                 Echanger(pokemon.Emplacement, emplacement);
             }
             else
             {
-                Depot.EquiperPokemon(emplacement, pokemon);
+                Depot.EquiperPokemon(emplacement, indexPokemon);
             }
         }
 
         public void Echanger(Emplacement emplacement1, Emplacement emplacement2)
         {
-            int position1 = (int)emplacement1;
-            int position2 = (int)emplacement2;
-
-            if (emplacement1 != emplacement2)
-            {
-                PokemonEquipe pokemon1 = Depot.PokemonsEquipes[position1];
-                pokemon1.Ordre = emplacement2;
-
-                Depot.PokemonsEquipes[position1] = Depot.PokemonsEquipes[position2];
-                Depot.PokemonsEquipes[position1].Ordre = emplacement1;
-
-                Depot.PokemonsEquipes[position2] = pokemon1;
-
-                if (Depot.PokemonsEquipes[position1].Equipe)
-                {
-                    Depot.PokemonsEquipes[position1].Pokemon.Emplacement = emplacement1;
-                }
-
-                if (Depot.PokemonsEquipes[position2].Equipe)
-                {
-                    Depot.PokemonsEquipes[position2].Pokemon.Emplacement = emplacement2;
-                }
-            }
+            Depot.Echanger(emplacement1, emplacement2);
         }
 
         public void Desequiper(Emplacement emplacement)

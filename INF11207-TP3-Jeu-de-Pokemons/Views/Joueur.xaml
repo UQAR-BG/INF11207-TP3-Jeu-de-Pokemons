@@ -130,17 +130,17 @@
 
             <control:PokemonSimple
                 Margin="20"
-                DataContext="{Binding Dresseur.Depot.PokemonsEquipes[0]}"/>
+                DataContext="{Binding Dresseur.Depot.Emplacements[0]}"/>
 
             <control:PokemonSimple
                 Grid.Row="1"
                 Margin="20"
-                DataContext="{Binding Dresseur.Depot.PokemonsEquipes[1]}"/>
+                DataContext="{Binding Dresseur.Depot.Emplacements[1]}"/>
 
             <control:PokemonSimple
                 Grid.Row="2"
                 Margin="20"
-                DataContext="{Binding Dresseur.Depot.PokemonsEquipes[2]}"/>
+                DataContext="{Binding Dresseur.Depot.Emplacements[2]}"/>
         </Grid>
 
         <Button

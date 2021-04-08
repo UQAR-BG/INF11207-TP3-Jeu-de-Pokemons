@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         
         d:DesignHeight="900" d:DesignWidth="1000">
-    <Grid>
+    <Grid x:Name="pokemonsGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
@@ -33,7 +33,7 @@
         <control:PokemonDetails
             Grid.Column="0"
             Grid.Row="2"
-            DataContext="{Binding Dresseur.Depot.PokemonsEquipes[0]}"/>
+            DataContext="{Binding Pokemons[0]}"/>
 
         <StackPanel
             Orientation="Vertical"
@@ -59,7 +59,7 @@
         <control:PokemonDetails
             Grid.Column="1"
             Grid.Row="2"
-            DataContext="{Binding Dresseur.Depot.PokemonsEquipes[1]}"/>
+            DataContext="{Binding Pokemons[1]}"/>
 
         <StackPanel
             Orientation="Vertical"
@@ -85,7 +85,7 @@
         <control:PokemonDetails
             Grid.Column="3"
             Grid.Row="2"
-            DataContext="{Binding Dresseur.Depot.PokemonsEquipes[2]}"/>
+            DataContext="{Binding Pokemons[2]}"/>
 
         <StackPanel
             Orientation="Vertical"

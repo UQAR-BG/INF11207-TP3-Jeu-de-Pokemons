@@ -11,6 +11,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
         public Pokemons()
         {
             InitializeComponent();
+            DataContext = Game.VueActuelle;
         }
     }
 }

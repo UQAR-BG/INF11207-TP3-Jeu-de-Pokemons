@@ -4,11 +4,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels.UserControlViewModels
 {
     public class PokemonSimpleViewModel : BaseViewModel
     {
-        private PokemonEquipe _pokemon;
+        private EmplacementPokemon _pokemon;
 
-        public PokemonEquipe Pokemon { get { return _pokemon; } }
+        public EmplacementPokemon Pokemon { get { return _pokemon; } }
 
-        public PokemonSimpleViewModel(PokemonEquipe pokemon)
+        public PokemonSimpleViewModel(EmplacementPokemon pokemon)
         {
             _pokemon = pokemon;
         }

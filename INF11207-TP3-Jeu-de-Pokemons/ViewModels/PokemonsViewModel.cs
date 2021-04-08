@@ -1,36 +1,35 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
 using INF11207_TP3_Jeu_de_Pokemons.Models;
 using INF11207_TP3_Jeu_de_Pokemons.Views;
-using System.Windows;
-using System.Windows.Controls;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 {
     public class PokemonsViewModel : BaseViewModel
     {
-        private UserControl control;
-
         public ICommand CommandeEchangerEmplacement1 { get; set; }
         public ICommand CommandeEchangerEmplacement2 { get; set; }
         public ICommand CommandeEchangerEmplacement3 { get; set; }
 
         public ICommand CommandeActon { get; set; }
 
+        public ObservableCollection<EmplacementPokemon> Pokemons
+        {
+            get 
+            {
+                return Dresseur.Depot.Emplacements;
+            }
+        }
+
         public PokemonsViewModel(WindowSize size) : base(size)
         {
             CreerCommandes();
         }
 
-        public PokemonsViewModel(UserControl window) : base(new WindowSize(900, 1000))
-        {
-            control = window;
-            CreerCommandes();
-        }
-
         public bool EmplacementEstEquipe(Emplacement emplacement)
         {
-            return Dresseur.Depot.PokemonsEquipes[(int)emplacement].Equipe;
+            return Dresseur.Depot.Equipe(emplacement);
         }
 
         private void CreerCommandes()
@@ -73,7 +72,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             choix.ShowDialog();
 
             Dresseur.Echanger(emplacement, Game.Emplacement);
-            Game.Naviguer("refresh");
         }
 
         private void Equiper(Emplacement emplacement)
@@ -85,7 +83,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         private void Desequiper(Emplacement emplacement)
         {
             Dresseur.Desequiper(emplacement);
-            Game.Naviguer("refresh");
         }
     }
 }

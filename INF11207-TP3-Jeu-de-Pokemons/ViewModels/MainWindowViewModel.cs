@@ -8,13 +8,13 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         private Visibility _peutAfficherMenu = Visibility.Visible;
 
         private BaseViewModel _vueActuelle;
-        private AccueilViewModel accueilViewModel = new AccueilViewModel(new WindowSize(450, 800));
-        private CreationJoueurViewModel creationJoueurViewModel = new CreationJoueurViewModel(new WindowSize(450, 600));
-        private JoueurViewModel joueurViewModel = new JoueurViewModel(new WindowSize(450, 800));
-        private PokemonsViewModel pokemonsViewModel = new PokemonsViewModel(new WindowSize(900, 1000));
-        private InventaireViewModel inventaireViewModel = new InventaireViewModel(new WindowSize(900, 800));
-        private StatsViewModel statsViewModel = new StatsViewModel(new WindowSize(500, 800));
-        private LancementCombatViewModel lancementCombatViewModel = new LancementCombatViewModel(new WindowSize(350, 600));
+        private AccueilViewModel accueilViewModel;
+        private CreationJoueurViewModel creationJoueurViewModel;
+        private JoueurViewModel joueurViewModel;
+        private PokemonsViewModel pokemonsViewModel;
+        private InventaireViewModel inventaireViewModel;
+        private StatsViewModel statsViewModel;
+        private LancementCombatViewModel lancementCombatViewModel;
 
         public Visibility PeutAfficherMenu
         {
@@ -36,10 +36,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         public MainWindowViewModel()
         {
+            Game.ChargerPokemonsBase();
+            InitializeViewModels();
+
             VueActuelle = accueilViewModel;
             CommandeNavigation = new RelayCommandWithParam<string>(Navigation);
-
-            Game.ChargerPokemonsBase();
         }
 
         public void Navigation(string destination)
@@ -83,5 +84,16 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             Visibility visibiliteMenu = VueActuelle is not AccueilViewModel && VueActuelle is not CreationJoueurViewModel ? Visibility.Visible : Visibility.Hidden;
             PeutAfficherMenu = visibiliteMenu;
         }
+
+        private void InitializeViewModels()
+        {
+            accueilViewModel = new AccueilViewModel(new WindowSize(450, 800));
+            creationJoueurViewModel = new CreationJoueurViewModel(new WindowSize(450, 600));
+            joueurViewModel = new JoueurViewModel(new WindowSize(450, 800));
+            pokemonsViewModel = new PokemonsViewModel(new WindowSize(900, 1000));
+            inventaireViewModel = new InventaireViewModel(new WindowSize(900, 800));
+            statsViewModel = new StatsViewModel(new WindowSize(500, 800));
+            lancementCombatViewModel = new LancementCombatViewModel(new WindowSize(350, 600));
+    }
     }
 }

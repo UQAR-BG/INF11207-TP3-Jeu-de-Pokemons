@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
-    public class PokemonEquipe : Binding
+    public class EmplacementPokemon : Binding
     {
         private Emplacement _ordre;
         private Pokemon _pokemon;
@@ -14,8 +14,25 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             get { return _pokemon; }
             set { EquiperPokemon(value); }
         }
-        public bool Equipe { get { return _pokemon != null; } }
-        public Emplacement Ordre { get; set; }
+
+        public bool Equipe 
+        {
+            get { return _pokemon != null; }
+        }
+
+        public Emplacement Ordre
+        {
+            get { return _ordre; }
+            set
+            {
+                if (_ordre != value)
+                {
+                    _ordre = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public string PrintOrdre 
         { 
             get 
@@ -26,9 +43,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         }
 
         [JsonConstructor]
-        public PokemonEquipe() { }
+        public EmplacementPokemon() { }
 
-        public PokemonEquipe(Emplacement ordre)
+        public EmplacementPokemon(Emplacement ordre)
         {
             _ordre = ordre;
         }
@@ -40,6 +57,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public void DesequiperPokemon()
         {
+            _pokemon.Emplacement = Emplacement.Desequipe;
             _pokemon = null;
         }
     }

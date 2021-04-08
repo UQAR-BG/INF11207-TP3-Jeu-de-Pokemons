@@ -1,4 +1,5 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.Models;
 using INF11207_TP3_Jeu_de_Pokemons.Views;
 using System.Collections.ObjectModel;
 using System.Windows;
@@ -9,7 +10,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
     public class InventaireViewModel : BaseViewModel
     {
         private Pokemon _pokemon;
-        private PokemonEquipe _pokemonEquipe;
+        private EmplacementPokemon _pokemonEquipe;
         private ObservableCollection<Pokemon> _resultats;
 
         public ICommand CommandeReinitialiser { get; set; }
@@ -48,7 +49,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             }
         }
 
-        public PokemonEquipe PokemonSelectionne
+        public EmplacementPokemon PokemonSelectionne
         {
             get { return _pokemonEquipe; }
         }
@@ -59,7 +60,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             set
             {
                 _pokemon = value;
-                _pokemonEquipe = new PokemonEquipe(0);
+                _pokemonEquipe = new EmplacementPokemon(Emplacement.Emplacement1);
                 _pokemonEquipe.Pokemon = _pokemon;
                 OnPropertyChanged();
             }
@@ -134,7 +135,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             ChoixEmplacement choix = new ChoixEmplacement();
             choix.ShowDialog();
 
-            Game.Dresseur.Equiper(Pokemon, Game.Emplacement);
+            Game.Dresseur.Equiper(Pokemon.Id - 1, Game.Emplacement);
             MessageBox.Show($"{Pokemon.Name} a été équipé.", "Pokémon équipé", MessageBoxButton.OK);
         }
     }

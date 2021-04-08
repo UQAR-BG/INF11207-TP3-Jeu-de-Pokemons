@@ -1,53 +1,105 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
 using INF11207_TP3_Jeu_de_Pokemons.Services;
+using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
-    public class DepotPokemons
+    public class DepotPokemons : Binding
     {
+        [JsonIgnore]
+        private ObservableCollection<EmplacementPokemon> _emplacements;
+        private ObservableCollection<int> _indexPokemonsEquipes;
+
         public List<Pokemon> PokemonsAchetes { get; set; }
-        public PokemonEquipe[] PokemonsEquipes { get; set; } 
+
+        public ObservableCollection<int> IndexPokemonsEquipes
+        {
+            get { return _indexPokemonsEquipes; }
+            set
+            {
+                if (_indexPokemonsEquipes != value)
+                {
+                    _indexPokemonsEquipes = value;
+                    OnPropertyChanged();
+                }
+            }
+        } 
+
+        [JsonIgnore]
+        public ObservableCollection<EmplacementPokemon> Emplacements
+        {
+            get { return _emplacements; }
+            set
+            {
+                if (_emplacements != value)
+                {
+                    _emplacements = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         [JsonConstructor]
-        public DepotPokemons() { }
+        public DepotPokemons() 
+        {
+            Emplacements = new ObservableCollection<EmplacementPokemon>();
+        }
 
         public DepotPokemons(int niveauDresseur)
         {
             PokemonsAchetes = new List<Pokemon>();
+            Emplacements = new ObservableCollection<EmplacementPokemon>();
 
-            PokemonsEquipes = new PokemonEquipe[3];
+            ChargerIndexPokemonsEquipes();
             RechargerEmplacements();
 
             ChargerDepotParDefaut();
         }
 
-        public PokemonEquipe Pokemon(int indexPokemon = 0)
+        public bool Equipe(Emplacement emplacement)
         {
-            if (indexPokemon >= 0 && indexPokemon < PokemonsEquipes.Length)
-            {
-                return PokemonsEquipes[indexPokemon];
-            }
-            return null;
+            int position = (int)emplacement;
+
+            return IndexPokemonsEquipes[position] > -1;
         }
 
-        public void EquiperPokemon(Emplacement emplacement, Pokemon pokemon)
+        public void EquiperPokemon(Emplacement emplacement, int indexPokemon)
         {
-            PokemonEquipe pokemonEquipe = new PokemonEquipe(emplacement);
-            pokemonEquipe.Pokemon = pokemon;
-            pokemonEquipe.Pokemon.Emplacement = emplacement;
-            PokemonsEquipes[(int)emplacement] = pokemonEquipe;
+            int position = (int)emplacement;
+
+            Pokemon pokemon = PokemonsAchetes[indexPokemon];
+            Emplacements[position].EquiperPokemon(pokemon);
+            SetPokemon(emplacement, Emplacements[position]);
         }
 
         public void DesequiperPokemon(Emplacement emplacement)
         {
             int position = (int)emplacement;
-            if (PokemonsEquipes[position].Pokemon != null)
+            if (Equipe(emplacement))
             {
-                PokemonsEquipes[position].Pokemon.Emplacement = Emplacement.Desequipe;
-                PokemonsEquipes[position].Pokemon = null;
+                Emplacements[position].DesequiperPokemon();
+                SetPokemon(emplacement, Emplacements[position]);
+            }
+        }
+
+        public void Echanger(Emplacement emplacement1, Emplacement emplacement2)
+        {
+            int position1 = (int)emplacement1;
+            int position2 = (int)emplacement2;
+
+            if (emplacement1 != emplacement2)
+            {
+                EmplacementPokemon pokemon1 = Emplacements[position1];
+
+                Emplacements[position1] = Emplacements[position2];
+                Emplacements[position2] = pokemon1;
+
+                SetPokemon(emplacement1, Emplacements[position1]);
+                SetPokemon(emplacement2, Emplacements[position2]);
             }
         }
 
@@ -55,10 +107,30 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         {
             for (int i = 0; i < 3; i++)
             {
-                if (PokemonsEquipes[i] == null || !PokemonsEquipes[i].Equipe)
+                Emplacement emplacement = (Emplacement)i;
+
+                if (!Equipe(emplacement))
                 {
-                    PokemonsEquipes[i] = new PokemonEquipe((Emplacement)i);
+                    SetPokemon(emplacement, new EmplacementPokemon(emplacement));
                 }
+                else
+                {
+                    int indexPokemonEquipe = IndexPokemonsEquipes[i];
+                    Pokemon pokemon = PokemonsAchetes[indexPokemonEquipe];
+
+                    EmplacementPokemon pokemonEquipe = new EmplacementPokemon(emplacement);
+                    pokemonEquipe.Pokemon = pokemon;
+                    SetPokemon(emplacement, pokemonEquipe);
+                }
+            }
+        }
+
+        private void ChargerIndexPokemonsEquipes()
+        {
+            IndexPokemonsEquipes = new ObservableCollection<int>();
+            for (int i = 0; i < 3; i++)
+            {
+                IndexPokemonsEquipes.Add(-1);
             }
         }
 
@@ -72,7 +144,34 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
                     "Données manquantes", MessageBoxButton.OK);
             }
             PokemonsAchetes = pokemonsAchetes;
-            EquiperPokemon(0, PokemonsAchetes[0]);
+            EquiperPokemon(0, 0);
+        }
+
+        private void SetPokemon(Emplacement emplacement, EmplacementPokemon pokemon)
+        {
+            int position = (int)emplacement;
+
+            EmplacementPokemon tempPokemonEquipe = pokemon;
+            tempPokemonEquipe.Ordre = emplacement;
+            if (tempPokemonEquipe.Equipe)
+            {
+                tempPokemonEquipe.Pokemon.Emplacement = emplacement;
+                IndexPokemonsEquipes[position] = tempPokemonEquipe.Pokemon.Id - 1;
+            }
+            else
+            {
+                IndexPokemonsEquipes[position] = -1;
+            }
+
+            if (Emplacements.Count == 3)
+            {
+                Emplacements.RemoveAt(position);
+                Emplacements.Insert(position, tempPokemonEquipe);
+            }
+            else
+            {
+                Emplacements.Add(pokemon);
+            }
         }
     }
 }

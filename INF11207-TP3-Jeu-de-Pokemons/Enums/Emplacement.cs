@@ -2,9 +2,9 @@
 {
     public enum Emplacement
     {
-        Emplacement1 = 0,
+        Desequipe = -1,
+        Emplacement1,
         Emplacement2,
-        Emplacement3,
-        Desequipe
+        Emplacement3
     }
 }

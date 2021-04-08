@@ -12,7 +12,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views.UserControls
         public PokemonSimple()
         {
             InitializeComponent();
-            PokemonEquipe pokemon = (PokemonEquipe)DataContext;
+            EmplacementPokemon pokemon = (EmplacementPokemon)DataContext;
             DataContext = new PokemonSimpleViewModel(pokemon);
         }
     }

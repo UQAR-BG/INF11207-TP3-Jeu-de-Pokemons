@@ -5,11 +5,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels.UserControlViewModels
 {
     public class ActionsPokemonViewModel : BaseViewModel
     {
-        private PokemonEquipe _pokemon;
+        private EmplacementPokemon _pokemon;
         private RelayCommand _commandeEquiper;
         private RelayCommand _commandeDesequiper;
 
-        public PokemonEquipe Pokemon { get { return _pokemon; } }
+        public EmplacementPokemon Pokemon { get { return _pokemon; } }
 
         public string ContentButtonAction
         {
@@ -55,7 +55,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels.UserControlViewModels
             }
         }
 
-        public ActionsPokemonViewModel(PokemonEquipe pokemon)
+        public ActionsPokemonViewModel(EmplacementPokemon pokemon)
         {
             _pokemon = pokemon;
 
