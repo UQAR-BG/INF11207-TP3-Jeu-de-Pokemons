@@ -2,15 +2,11 @@
   "Guide": {
     "CorrespondanceNiveauPokemon": {
       "1": [
-        1
-      ],
-      "2": [
+        1,
         2,
         3,
         4,
-        5
-      ],
-      "3": [
+        5,
         6,
         7,
         8
@@ -230,7 +226,14 @@
       ]
     },
     "IdPokemonsDebloques": [
-      1
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   "Depot": {
@@ -285,7 +288,127 @@
           }
         ],
         "Achete": true,
+        "Equipe": true,
+        "Emplacement": 0,
         "Name": "Bulbasaur",
+        "Level": 1,
+        "XpGauge": {
+          "Value": 0,
+          "MaxValue": 100
+        }
+      },
+      {
+        "Id": 2,
+        "Types": [
+          7,
+          4
+        ],
+        "PrintTypes": "Poison, Grass",
+        "Evolution": {
+          "Level": 32,
+          "To": "Venusaur"
+        },
+        "Description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.  There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+        "ATK": 1,
+        "DEF": 1,
+        "Price": 100,
+        "PrintPrice": "100$",
+        "Health": 60,
+        "HpGauge": {
+          "Value": 60,
+          "MaxValue": 60
+        },
+        "Image": "/Resources/Images/2.png",
+        "Attacks": [
+          {
+            "Type": 4,
+            "Name": "Razor Leaf",
+            "Damage": 5.15
+          },
+          {
+            "Type": 4,
+            "Name": "Vine Whip",
+            "Damage": 5.4
+          },
+          {
+            "Type": 7,
+            "Name": "Sludge Bomb",
+            "Damage": 10.6
+          },
+          {
+            "Type": 4,
+            "Name": "Solar Beam",
+            "Damage": 12.25
+          },
+          {
+            "Type": 4,
+            "Name": "Power Whip",
+            "Damage": 12.5
+          }
+        ],
+        "Achete": true,
+        "Equipe": true,
+        "Emplacement": 1,
+        "Name": "Ivysaur",
+        "Level": 1,
+        "XpGauge": {
+          "Value": 0,
+          "MaxValue": 100
+        }
+      },
+      {
+        "Id": 6,
+        "Types": [
+          10,
+          1
+        ],
+        "PrintTypes": "Flying, Fire",
+        "Evolution": {
+          "Level": 1,
+          "To": ""
+        },
+        "Description": "Charizard flies around the sky in search of powerful opponents. It breathes Fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.  Charizard flies around the sky in search of powerful opponents. It breathes Fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
+        "ATK": 1,
+        "DEF": 1,
+        "Price": 100,
+        "PrintPrice": "100$",
+        "Health": 78,
+        "HpGauge": {
+          "Value": 78,
+          "MaxValue": 78
+        },
+        "Image": "/Resources/Images/6.png",
+        "Attacks": [
+          {
+            "Type": 1,
+            "Name": "Ember",
+            "Damage": 4.75
+          },
+          {
+            "Type": 10,
+            "Name": "Wing Attack",
+            "Damage": 6.0
+          },
+          {
+            "Type": 1,
+            "Name": "Fire Blast",
+            "Damage": 12.2
+          },
+          {
+            "Type": 16,
+            "Name": "Dragon Claw",
+            "Damage": 10.95
+          },
+          {
+            "Type": 1,
+            "Name": "Flamethrower",
+            "Damage": 9.5
+          }
+        ],
+        "Achete": true,
+        "Equipe": true,
+        "Emplacement": 2,
+        "Name": "Charizard",
         "Level": 1,
         "XpGauge": {
           "Value": 0,
@@ -294,6 +417,70 @@
       }
     ],
     "PokemonsEquipes": [
+      {
+        "Pokemon": {
+          "Id": 6,
+          "Types": [
+            10,
+            1
+          ],
+          "PrintTypes": "Flying, Fire",
+          "Evolution": {
+            "Level": 1,
+            "To": ""
+          },
+          "Description": "Charizard flies around the sky in search of powerful opponents. It breathes Fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.  Charizard flies around the sky in search of powerful opponents. It breathes Fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
+          "ATK": 1,
+          "DEF": 1,
+          "Price": 100,
+          "PrintPrice": "100$",
+          "Health": 78,
+          "HpGauge": {
+            "Value": 78,
+            "MaxValue": 78
+          },
+          "Image": "/Resources/Images/6.png",
+          "Attacks": [
+            {
+              "Type": 1,
+              "Name": "Ember",
+              "Damage": 4.75
+            },
+            {
+              "Type": 10,
+              "Name": "Wing Attack",
+              "Damage": 6.0
+            },
+            {
+              "Type": 1,
+              "Name": "Fire Blast",
+              "Damage": 12.2
+            },
+            {
+              "Type": 16,
+              "Name": "Dragon Claw",
+              "Damage": 10.95
+            },
+            {
+              "Type": 1,
+              "Name": "Flamethrower",
+              "Damage": 9.5
+            }
+          ],
+          "Achete": true,
+          "Equipe": true,
+          "Emplacement": 2,
+          "Name": "Charizard",
+          "Level": 1,
+          "XpGauge": {
+            "Value": 0,
+            "MaxValue": 100
+          }
+        },
+        "Equipe": true,
+        "Ordre": 0,
+        "PrintOrdre": "3:"
+      },
       {
         "Pokemon": {
           "Id": 1,
@@ -345,6 +532,8 @@
             }
           ],
           "Achete": true,
+          "Equipe": true,
+          "Emplacement": 0,
           "Name": "Bulbasaur",
           "Level": 1,
           "XpGauge": {
@@ -353,20 +542,72 @@
           }
         },
         "Equipe": true,
-        "Ordre": 0,
+        "Ordre": 1,
         "PrintOrdre": "1:"
       },
       {
-        "Pokemon": null,
-        "Equipe": false,
-        "Ordre": 1,
-        "PrintOrdre": "2:"
-      },
-      {
-        "Pokemon": null,
-        "Equipe": false,
+        "Pokemon": {
+          "Id": 2,
+          "Types": [
+            7,
+            4
+          ],
+          "PrintTypes": "Poison, Grass",
+          "Evolution": {
+            "Level": 32,
+            "To": "Venusaur"
+          },
+          "Description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.  There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+          "ATK": 1,
+          "DEF": 1,
+          "Price": 100,
+          "PrintPrice": "100$",
+          "Health": 60,
+          "HpGauge": {
+            "Value": 60,
+            "MaxValue": 60
+          },
+          "Image": "/Resources/Images/2.png",
+          "Attacks": [
+            {
+              "Type": 4,
+              "Name": "Razor Leaf",
+              "Damage": 5.15
+            },
+            {
+              "Type": 4,
+              "Name": "Vine Whip",
+              "Damage": 5.4
+            },
+            {
+              "Type": 7,
+              "Name": "Sludge Bomb",
+              "Damage": 10.6
+            },
+            {
+              "Type": 4,
+              "Name": "Solar Beam",
+              "Damage": 12.25
+            },
+            {
+              "Type": 4,
+              "Name": "Power Whip",
+              "Damage": 12.5
+            }
+          ],
+          "Achete": true,
+          "Equipe": true,
+          "Emplacement": 1,
+          "Name": "Ivysaur",
+          "Level": 1,
+          "XpGauge": {
+            "Value": 0,
+            "MaxValue": 100
+          }
+        },
+        "Equipe": true,
         "Ordre": 2,
-        "PrintOrdre": "3:"
+        "PrintOrdre": "2:"
       }
     ]
   },
@@ -383,8 +624,8 @@
   },
   "FirstName": "Bastien",
   "Age": 23,
-  "Money": 5000,
-  "PrintMoney": "5000$",
+  "Money": 4800,
+  "PrintMoney": "4800$",
   "IsValid": true,
   "Name": "Goulet",
   "Level": 1,

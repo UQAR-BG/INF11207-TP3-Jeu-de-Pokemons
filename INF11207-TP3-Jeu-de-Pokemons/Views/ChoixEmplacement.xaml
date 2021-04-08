@@ -1,0 +1,75 @@
+﻿<Window x:Class="INF11207_TP3_Jeu_de_Pokemons.Views.ChoixEmplacement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:services="clr-namespace:INF11207_TP3_Jeu_de_Pokemons.Services"
+        mc:Ignorable="d"
+        
+        Title="Choisissez l'emplacement" 
+        Height="200" 
+        Width="250"
+        MinHeight="200"
+        MinWidth="250"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <services:ConversionEnumVersBooleen x:Key="conversionEnum" />
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.3*"/>
+        </Grid.RowDefinitions>
+
+        <Label
+            Content="Veuillez choisir l'emplacement"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15"/>
+
+        <StackPanel 
+            Grid.Row="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Orientation="Vertical">
+            <RadioButton
+                GroupName="SelectionEmplacement"
+                FontSize="15"
+                IsChecked="{Binding Path=Emplacement, Mode=TwoWay, 
+                            Converter={StaticResource conversionEnum},
+                            ConverterParameter=Emplacement1}">
+                Emplacement 1
+            </RadioButton>
+
+            <RadioButton
+                GroupName="SelectionEmplacement"
+                FontSize="15"
+                IsChecked="{Binding Path=Emplacement, Mode=TwoWay, 
+                            Converter={StaticResource conversionEnum},
+                            ConverterParameter=Emplacement2}">
+                Emplacement 2
+            </RadioButton>
+
+            <RadioButton
+                GroupName="SelectionEmplacement"
+                FontSize="15"
+                IsChecked="{Binding Path=Emplacement, Mode=TwoWay, 
+                            Converter={StaticResource conversionEnum},
+                            ConverterParameter=Emplacement3}">
+                Emplacement 3
+            </RadioButton>
+        </StackPanel>
+
+        <Button
+            Content="Choisir"
+            Grid.Row="2"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Height="30"
+            Width="100"
+            Command="{Binding CommandeChoisirEmplacement}"
+            CommandParameter="{Binding ElementName=ChoixEmplacement}"/>
+    </Grid>
+</Window>

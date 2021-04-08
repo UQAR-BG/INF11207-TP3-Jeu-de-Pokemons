@@ -1,11 +1,12 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
 using Newtonsoft.Json;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
     public class PokemonEquipe : Binding
     {
-        private int _ordre;
+        private Emplacement _ordre;
         private Pokemon _pokemon;
 
         public Pokemon Pokemon
@@ -14,12 +15,12 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             set { EquiperPokemon(value); }
         }
         public bool Equipe { get { return _pokemon != null; } }
-        public int Ordre { get { return _ordre; } }
+        public Emplacement Ordre { get; set; }
         public string PrintOrdre 
         { 
             get 
             {
-                int ordrePourAfficher = _ordre + 1;
+                int ordrePourAfficher = (int)_ordre + 1;
                 return $"{ordrePourAfficher}:"; 
             } 
         }
@@ -27,7 +28,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         [JsonConstructor]
         public PokemonEquipe() { }
 
-        public PokemonEquipe(int ordre)
+        public PokemonEquipe(Emplacement ordre)
         {
             _ordre = ordre;
         }

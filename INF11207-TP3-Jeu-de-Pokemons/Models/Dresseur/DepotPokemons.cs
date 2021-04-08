@@ -1,4 +1,5 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Services;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.Services;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Windows;
@@ -32,13 +33,21 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             return null;
         }
 
-        public void EquiperPokemon(int position, Pokemon pokemon)
+        public void EquiperPokemon(Emplacement emplacement, Pokemon pokemon)
         {
-            if (PositionValide(position))
+            PokemonEquipe pokemonEquipe = new PokemonEquipe(emplacement);
+            pokemonEquipe.Pokemon = pokemon;
+            pokemonEquipe.Pokemon.Emplacement = emplacement;
+            PokemonsEquipes[(int)emplacement] = pokemonEquipe;
+        }
+
+        public void DesequiperPokemon(Emplacement emplacement)
+        {
+            int position = (int)emplacement;
+            if (PokemonsEquipes[position].Pokemon != null)
             {
-                PokemonEquipe pokemonEquipe = new PokemonEquipe(position);
-                pokemonEquipe.Pokemon = pokemon;
-                PokemonsEquipes[position] = pokemonEquipe;
+                PokemonsEquipes[position].Pokemon.Emplacement = Emplacement.Desequipe;
+                PokemonsEquipes[position].Pokemon = null;
             }
         }
 
@@ -48,7 +57,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             {
                 if (PokemonsEquipes[i] == null || !PokemonsEquipes[i].Equipe)
                 {
-                    PokemonsEquipes[i] = new PokemonEquipe(i);
+                    PokemonsEquipes[i] = new PokemonEquipe((Emplacement)i);
                 }
             }
         }
@@ -64,11 +73,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
             PokemonsAchetes = pokemonsAchetes;
             EquiperPokemon(0, PokemonsAchetes[0]);
-        }
-
-        private bool PositionValide(int position)
-        {
-            return position >= 0 && position < 3;
         }
     }
 }

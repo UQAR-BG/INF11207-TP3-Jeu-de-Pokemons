@@ -1,4 +1,5 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+using INF11207_TP3_Jeu_de_Pokemons.Views;
 using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
@@ -118,12 +119,23 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         private void Acheter()
         {
-
+            if (Game.Dresseur.Acheter(Pokemon))
+            {
+                MessageBox.Show($"{Pokemon.Name} a été acheté avec succès!", "Achat effectué", MessageBoxButton.OK);
+            }
+            else
+            {
+                MessageBox.Show($"Vous n'avez pas les {Pokemon.Price}$ requis pour acheter ce pokémon.", "Incapable de payer", MessageBoxButton.OK);
+            }
         }
 
         private void Equiper()
         {
+            ChoixEmplacement choix = new ChoixEmplacement();
+            choix.ShowDialog();
 
+            Game.Dresseur.Equiper(Pokemon, Game.Emplacement);
+            MessageBox.Show($"{Pokemon.Name} a été équipé.", "Pokémon équipé", MessageBoxButton.OK);
         }
     }
 }

@@ -1,10 +1,16 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.Models;
+using INF11207_TP3_Jeu_de_Pokemons.Views;
+using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 {
     public class PokemonsViewModel : BaseViewModel
     {
+        private UserControl control;
+
         public ICommand CommandeEchangerEmplacement1 { get; set; }
         public ICommand CommandeEchangerEmplacement2 { get; set; }
         public ICommand CommandeEchangerEmplacement3 { get; set; }
@@ -13,67 +19,73 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         public PokemonsViewModel(WindowSize size) : base(size)
         {
+            CreerCommandes();
+        }
+
+        public PokemonsViewModel(UserControl window) : base(new WindowSize(900, 1000))
+        {
+            control = window;
+            CreerCommandes();
+        }
+
+        public bool EmplacementEstEquipe(Emplacement emplacement)
+        {
+            return Dresseur.Depot.PokemonsEquipes[(int)emplacement].Equipe;
+        }
+
+        private void CreerCommandes()
+        {
             CommandeEchangerEmplacement1 = new RelayCommand(
-                o => EmplacementEstEquipe(0),
-                o => Equiper(0)
+                o => EmplacementEstEquipe(Emplacement.Emplacement1),
+                o => Echanger(Emplacement.Emplacement1)
             );
 
             CommandeEchangerEmplacement2 = new RelayCommand(
-                o => EmplacementEstEquipe(1),
-                o => Equiper(1)
+                o => EmplacementEstEquipe(Emplacement.Emplacement2),
+                o => Echanger(Emplacement.Emplacement2)
             );
 
             CommandeEchangerEmplacement3 = new RelayCommand(
-                o => EmplacementEstEquipe(2),
-                o => Equiper(2)
+                o => EmplacementEstEquipe(Emplacement.Emplacement3),
+                o => Echanger(Emplacement.Emplacement3)
             );
 
             CommandeActon = new RelayCommandWithParam<string>(Action);
         }
 
-        public bool EmplacementEstEquipe(int emplacement)
+        private void Action(string parametre)
         {
-            if (EmplacementValide(emplacement))
+            int position = int.Parse(parametre);
+            Emplacement emplacement = (Emplacement)position;
+            if (EmplacementEstEquipe(emplacement))
             {
-                return Dresseur.Depot.PokemonsEquipes[emplacement].Equipe;
+                Desequiper(emplacement);
             }
-            return false;
-        }
-
-        private void Action(string indexEmplacement)
-        {
-            int emplacement = int.Parse(indexEmplacement);
-            if (EmplacementValide(emplacement))
+            else
             {
-                if (EmplacementEstEquipe(emplacement))
-                {
-                    Desequiper(emplacement);
-                }
-                else
-                {
-                    Equiper(emplacement);
-                }
+                Equiper(emplacement);
             }
         }
 
-        private void Echanger(int emplacement)
+        private void Echanger(Emplacement emplacement)
         {
+            ChoixEmplacement choix = new ChoixEmplacement();
+            choix.ShowDialog();
 
+            Dresseur.Echanger(emplacement, Game.Emplacement);
+            Game.Naviguer("refresh");
         }
 
-        private void Equiper(int emplacement)
+        private void Equiper(Emplacement emplacement)
         {
-
+            Game.Recherche.Filtre = FiltreRecherche.Achetes;
+            Game.Naviguer("inventaire");
         }
 
-        private void Desequiper(int emplacement)
+        private void Desequiper(Emplacement emplacement)
         {
-
-        }
-
-        private bool EmplacementValide(int emplacement)
-        {
-            return emplacement >= 0 && emplacement < 3;
+            Dresseur.Desequiper(emplacement);
+            Game.Naviguer("refresh");
         }
     }
 }

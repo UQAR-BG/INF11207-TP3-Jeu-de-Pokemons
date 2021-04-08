@@ -1,4 +1,5 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.Models;
 using INF11207_TP3_Jeu_de_Pokemons.Services;
 using System.Collections.Generic;
 using System.Windows;
@@ -25,6 +26,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         {
             get { return _sauvegardeChargee; }
         }
+
+        public static Emplacement Emplacement { get; set; }
 
         public static MainWindowViewModel MainWindow
         {
