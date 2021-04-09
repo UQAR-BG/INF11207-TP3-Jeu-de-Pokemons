@@ -17,11 +17,19 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
 
         private void Window_Closing(object sender, CancelEventArgs e)
         {
-            MessageBoxResult reponse =  MessageBox.Show("Souhaitez-vous sauvegarder avant de quitter?", "Quitter", MessageBoxButton.YesNo);
-            if (reponse == MessageBoxResult.Yes)
+            if (PeutSauvegarder())
             {
-                Game.Sauvegarder();
+                MessageBoxResult reponse = MessageBox.Show("Souhaitez-vous sauvegarder avant de quitter?", "Quitter", MessageBoxButton.YesNo);
+                if (reponse == MessageBoxResult.Yes)
+                {
+                    Game.Sauvegarder();
+                }
             }
+        }
+
+        private bool PeutSauvegarder()
+        {
+            return Game.VueActuelle is not AccueilViewModel && Game.VueActuelle is not CreationJoueurViewModel;
         }
     }
 }

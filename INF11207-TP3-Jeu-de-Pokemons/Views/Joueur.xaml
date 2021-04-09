@@ -163,6 +163,7 @@
             Width="120"
             Margin="30,0,0,0"
             Padding="10"
-            FontSize="15"/>
+            FontSize="15"
+            Command="{Binding CommandeQuitter}"/>
     </Grid>
 </UserControl>
