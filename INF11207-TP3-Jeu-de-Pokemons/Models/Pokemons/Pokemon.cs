@@ -1,11 +1,12 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.Interfaces;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
-    public class Pokemon : Personnage, ICloneable
+    public class Pokemon : Personnage, ICloneable, ICombattant
     {
         private string description;
         private int atk;
@@ -14,6 +15,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private int health;
         private Emplacement emplacement;
         private JaugeVie hpGauge;
+        private Evolution evolution;
         private string image;
         private bool achete;
         private bool equipe;
@@ -36,7 +38,23 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public Evolution Evolution { get; set; }
+        public bool Evolue
+        {
+            get { return evolution != null; }
+        }
+
+        public Evolution Evolution
+        {
+            get { return evolution; }
+            set
+            {
+                if (evolution != value)
+                {
+                    evolution = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public string Description
         {
@@ -201,6 +219,17 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         public object Clone()
         {
             return MemberwiseClone();
+        }
+
+        public bool EncoreValide()
+        {
+            return HpGauge.Value > 0;
+        }
+
+        public void TerminerUnCombat(ResultatCombat resultats)
+        {
+            HpGauge.Reinitialiser();
+            Level += XpGauge.AjouterExperience(resultats.Experience);
         }
     }
 }

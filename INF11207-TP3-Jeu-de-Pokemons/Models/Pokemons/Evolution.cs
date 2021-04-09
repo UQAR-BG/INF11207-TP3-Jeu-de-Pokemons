@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
+using Newtonsoft.Json;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
@@ -12,6 +13,26 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         {
             Level = 1;
             To = "";
+        }
+
+        public Pokemon EvoluerSiAtteintLeNiveau(Pokemon pokemon)
+        {
+            if (pokemon.Evolue && pokemon.Level >= Level && !pokemon.Name.Equals(To))
+            {
+                Pokemon evolution = (Pokemon)Game.PokemonsDeBase
+                    .Find(p => p.Name.Equals(To))
+                    .Clone();
+
+                evolution.Achete = true;
+                evolution.ATK = pokemon.ATK;
+                evolution.DEF = pokemon.DEF;
+                evolution.Emplacement = pokemon.Emplacement;
+                evolution.Level = pokemon.Level;
+                evolution.XpGauge = pokemon.XpGauge;
+
+                return evolution;
+            }
+            return null;
         }
     }
 }

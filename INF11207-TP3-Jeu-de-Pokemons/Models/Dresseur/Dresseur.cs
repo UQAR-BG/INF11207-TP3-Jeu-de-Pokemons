@@ -1,15 +1,15 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.Interfaces;
 using Newtonsoft.Json;
+using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
-    public class Dresseur : Personnage
+    public class Dresseur : Personnage, ICombattant
     {
         private string firstName;
         private int age;
         private int money;
-
-        //private DepotPokemons depot;
 
         public GuidePourDebloquerPokemons Guide { get; set; }
 
@@ -80,6 +80,45 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             Guide = new GuidePourDebloquerPokemons(level);
             Depot = new DepotPokemons(level);
             Statistiques = new Statistiques(money, 1);
+        }
+
+        public bool EncorePokemonsValides()
+        {
+            bool pokemonsValides = false;
+            foreach (EmplacementPokemon emplacement in Depot.Emplacements)
+            {
+                if (Depot.Equipe(emplacement.Ordre) && emplacement.Pokemon.EncoreValide())
+                {
+                    pokemonsValides = true;
+                }
+            }
+            return pokemonsValides;
+        }
+
+        public void TerminerUnCombat(ResultatCombat resultats)
+        {
+            Level += XpGauge.AjouterExperience(resultats.Experience);
+            Money += resultats.Mise;
+
+            Guide.AppliquerCorrespondance(Level);
+
+            foreach (EmplacementPokemon emplacement in Depot.Emplacements)
+            {
+                if (emplacement.Equipe)
+                {
+                    int index = emplacement.Pokemon.Id;
+
+                    emplacement.Pokemon.TerminerUnCombat(resultats);
+                    Pokemon evolution = emplacement.Pokemon.Evolution.EvoluerSiAtteintLeNiveau(emplacement.Pokemon);
+                    MessageBox.Show($"{emplacement.Pokemon.Name} va évoluer!", "Évolution", MessageBoxButton.OK);
+
+                    if (evolution != null)
+                    {
+                        emplacement.Pokemon = evolution;
+                        Depot.Evolution(index, evolution);
+                    }
+                }
+            }
         }
 
         public bool Acheter(Pokemon pokemon)

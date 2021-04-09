@@ -125,6 +125,15 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
+        public void Evolution(int index, Pokemon evolution)
+        {
+            if (index >= 0 && index < PokemonsAchetes.Count)
+            {
+                PokemonsAchetes.RemoveAt(index);
+                PokemonsAchetes.Insert(index, evolution);
+            }
+        }
+
         private void ChargerIndexPokemonsEquipes()
         {
             IndexPokemonsEquipes = new ObservableCollection<int>();

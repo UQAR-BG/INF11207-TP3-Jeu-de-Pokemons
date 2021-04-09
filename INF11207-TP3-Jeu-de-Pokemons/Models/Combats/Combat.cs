@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace INF11207_TP3_Jeu_de_Pokemons.Models.Combats
+﻿namespace INF11207_TP3_Jeu_de_Pokemons.Models.Combats
 {
     public class Combat
     {
+        private readonly int experience = 20;
+
         private int mise;
         private Dresseur joueur;
         private Dresseur adversaire;
+
+        private ResultatCombat gagnant;
+        private ResultatCombat perdant;
 
         public int Mise
         {
@@ -26,22 +25,27 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models.Combats
 
         public void MettreFin()
         {
+            gagnant = new ResultatCombat(true, mise, experience);
+            perdant = new ResultatCombat(false, 0, experience / 2);
 
+            DeterminerGagnant();
         }
 
         private void DeterminerGagnant()
         {
-
+            if (joueur.EncorePokemonsValides())
+            {
+                AttribuerResultats(gagnant);
+            }
+            else
+            {
+                AttribuerResultats(perdant);
+            }
         }
 
-        private void RemporterMise(Dresseur dresseur)
+        private void AttribuerResultats(ResultatCombat resultats)
         {
-
-        }
-
-        private void AjouterExperience()
-        {
-
+            joueur.TerminerUnCombat(resultats);
         }
     }
 }

@@ -12,11 +12,16 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public JaugeVie(int maxValue) : base(maxValue) 
         {
-            Value = maxValue;
+            Reinitialiser();
         }
 
         [JsonConstructor]
         public JaugeVie() { }
+
+        public void Reinitialiser()
+        {
+            Value = MaxValue;
+        }
 
         public override void AugmenterNiveau(Personnage personnage)
         {

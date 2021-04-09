@@ -18,10 +18,22 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public GuidePourDebloquerPokemons(int niveauDresseur)
         {
-            IdPokemonsDebloques = new List<int>();
-
             LireCorrespondances();
             AppliquerCorrespondance(niveauDresseur);
+        }
+
+        public void AppliquerCorrespondance(int niveauDresseur)
+        {
+            if (niveauDresseur > 0)
+            {
+                IdPokemonsDebloques = new List<int>();
+
+                while (niveauDresseur > 0)
+                {
+                    AppliquerCorrespondanceParNiveau(niveauDresseur);
+                    niveauDresseur--;
+                }
+            }
         }
 
         private void LireCorrespondances()
@@ -34,18 +46,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
                     "Données manquantes", MessageBoxButton.OK);
             }
             CorrespondanceNiveauPokemon = correspondance;
-        }
-
-        private void AppliquerCorrespondance(int niveauDresseur)
-        {
-            if (niveauDresseur > 0)
-            {
-                while (niveauDresseur > 0)
-                {
-                    AppliquerCorrespondanceParNiveau(niveauDresseur);
-                    niveauDresseur--;
-                }
-            }
         }
 
         private void AppliquerCorrespondanceParNiveau(int niveauDresseur)
