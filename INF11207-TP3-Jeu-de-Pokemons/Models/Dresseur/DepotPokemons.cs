@@ -2,6 +2,7 @@
 using INF11207_TP3_Jeu_de_Pokemons.Services;
 using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
 using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows;
@@ -67,13 +68,21 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             return IndexPokemonsEquipes[position] > -1;
         }
 
+        public int ChercherIndexDePokemonAchete(Guid idPokemonAchete)
+        {
+            return PokemonsAchetes.FindIndex(p => p.IdPokemonAchete.Equals(idPokemonAchete));
+        }
+
         public void EquiperPokemon(Emplacement emplacement, int indexPokemon)
         {
             int position = (int)emplacement;
 
-            Pokemon pokemon = PokemonsAchetes[indexPokemon];
-            Emplacements[position].EquiperPokemon(pokemon);
-            SetPokemon(emplacement, Emplacements[position]);
+            if (IndexValide(indexPokemon))
+            {
+                Pokemon pokemon = PokemonsAchetes[indexPokemon];
+                Emplacements[position].EquiperPokemon(pokemon);
+                SetPokemon(emplacement, Emplacements[position]);
+            }
         }
 
         public void DesequiperPokemon(Emplacement emplacement)
@@ -127,7 +136,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public void Evolution(int index, Pokemon evolution)
         {
-            if (index >= 0 && index < PokemonsAchetes.Count)
+            if (IndexValide(index))
             {
                 PokemonsAchetes.RemoveAt(index);
                 PokemonsAchetes.Insert(index, evolution);
@@ -156,21 +165,25 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             EquiperPokemon(0, 0);
         }
 
+        private bool IndexValide(int indexPokemon)
+        {
+            return indexPokemon >= 0 && indexPokemon < PokemonsAchetes.Count;
+        }
+
         private void SetPokemon(Emplacement emplacement, EmplacementPokemon pokemon)
         {
             int position = (int)emplacement;
+            int indexPokemon = -1;
 
             EmplacementPokemon tempPokemonEquipe = pokemon;
             tempPokemonEquipe.Ordre = emplacement;
             if (tempPokemonEquipe.Equipe)
             {
+                indexPokemon = ChercherIndexDePokemonAchete(pokemon.Pokemon.IdPokemonAchete);
                 tempPokemonEquipe.Pokemon.Emplacement = emplacement;
-                IndexPokemonsEquipes[position] = tempPokemonEquipe.Pokemon.Id - 1;
             }
-            else
-            {
-                IndexPokemonsEquipes[position] = -1;
-            }
+
+            IndexPokemonsEquipes[position] = indexPokemon;
 
             if (Emplacements.Count == 3)
             {

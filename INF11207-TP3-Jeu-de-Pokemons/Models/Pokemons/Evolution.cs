@@ -23,7 +23,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
                     .Find(p => p.Name.Equals(To))
                     .Clone();
 
-                evolution.Achete = true;
+                evolution.Acheter();
                 evolution.ATK = pokemon.ATK;
                 evolution.DEF = pokemon.DEF;
                 evolution.Emplacement = pokemon.Emplacement;

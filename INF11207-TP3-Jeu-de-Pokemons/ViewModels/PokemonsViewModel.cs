@@ -56,6 +56,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         {
             int position = int.Parse(parametre);
             Emplacement emplacement = (Emplacement)position;
+
             if (EmplacementEstEquipe(emplacement))
             {
                 Desequiper(emplacement);

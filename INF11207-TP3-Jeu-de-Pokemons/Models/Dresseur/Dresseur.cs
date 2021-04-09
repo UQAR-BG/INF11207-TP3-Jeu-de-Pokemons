@@ -106,7 +106,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             {
                 if (emplacement.Equipe)
                 {
-                    int index = emplacement.Pokemon.Id;
+                    int indexPokemon = Depot.IndexPokemonsEquipes[(int)emplacement.Ordre];
 
                     emplacement.Pokemon.TerminerUnCombat(resultats);
                     Pokemon evolution = emplacement.Pokemon.Evolution.EvoluerSiAtteintLeNiveau(emplacement.Pokemon);
@@ -115,7 +115,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
                     if (evolution != null)
                     {
                         emplacement.Pokemon = evolution;
-                        Depot.Evolution(index, evolution);
+                        Depot.Evolution(indexPokemon, evolution);
                     }
                 }
             }
@@ -130,7 +130,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             {
                 Money -= prix;
                 Pokemon pokemonAchete = (Pokemon)pokemon.Clone();
-                pokemonAchete.Achete = true;
+                pokemonAchete.Acheter();
                 Depot.PokemonsAchetes.Add(pokemonAchete);
             }
             else
@@ -151,6 +151,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
             else
             {
+                Desequiper(emplacement);
                 Depot.EquiperPokemon(emplacement, indexPokemon);
             }
         }

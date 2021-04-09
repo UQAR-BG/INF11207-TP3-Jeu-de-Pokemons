@@ -245,6 +245,7 @@
           4
         ],
         "PrintTypes": "Poison, Grass",
+        "Evolue": true,
         "Evolution": {
           "Level": 16,
           "To": "Ivysaur"
@@ -290,6 +291,7 @@
         "Achete": true,
         "Equipe": true,
         "Emplacement": 2,
+        "IdPokemonAchete": "0f8fad5b-d9cb-469f-a165-70867728950e",
         "Name": "Bulbasaur",
         "Level": 1,
         "XpGauge": {
@@ -304,6 +306,7 @@
           4
         ],
         "PrintTypes": "Poison, Grass",
+        "Evolue": true,
         "Evolution": {
           "Level": 32,
           "To": "Venusaur"
@@ -347,8 +350,9 @@
           }
         ],
         "Achete": true,
-        "Equipe": true,
-        "Emplacement": 1,
+        "Equipe": false,
+        "Emplacement": -1,
+        "IdPokemonAchete": "5fe84706-255e-4973-8c0e-6fc7ca944531",
         "Name": "Ivysaur",
         "Level": 1,
         "XpGauge": {
@@ -363,6 +367,7 @@
           4
         ],
         "PrintTypes": "Poison, Grass",
+        "Evolue": true,
         "Evolution": {
           "Level": 1,
           "To": ""
@@ -408,6 +413,7 @@
         "Achete": true,
         "Equipe": true,
         "Emplacement": 0,
+        "IdPokemonAchete": "b8e64894-7a73-4872-a99b-c135279be027",
         "Name": "Venusaur",
         "Level": 1,
         "XpGauge": {
@@ -418,7 +424,7 @@
     ],
     "IndexPokemonsEquipes": [
       2,
-      1,
+      -1,
       0
     ]
   },

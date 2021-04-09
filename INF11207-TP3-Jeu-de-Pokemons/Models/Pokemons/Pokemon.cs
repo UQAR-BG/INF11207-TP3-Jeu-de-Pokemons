@@ -16,6 +16,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private Emplacement emplacement;
         private JaugeVie hpGauge;
         private Evolution evolution;
+        private Guid idPokemonAchete;
         private string image;
         private bool achete;
         private bool equipe;
@@ -213,12 +214,34 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
+        public Guid IdPokemonAchete 
+        { 
+            get { return idPokemonAchete; }
+            set
+            {
+                if (idPokemonAchete != value)
+                {
+                    idPokemonAchete = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         [JsonConstructor]
         public Pokemon() : base("", 1, 100) { }
 
         public object Clone()
         {
             return MemberwiseClone();
+        }
+
+        public void Acheter()
+        {
+            Achete = true;
+            if (idPokemonAchete.Equals(Guid.Empty))
+            {
+                idPokemonAchete = Guid.NewGuid();
+            }
         }
 
         public bool EncoreValide()
