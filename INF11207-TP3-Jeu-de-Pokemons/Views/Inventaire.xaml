@@ -7,7 +7,7 @@
         xmlns:services="clr-namespace:INF11207_TP3_Jeu_de_Pokemons.Services"
         mc:Ignorable="d"
              
-        d:DesignHeight="900" d:DesignWidth="800">
+        d:DesignHeight="900" d:DesignWidth="800" IsVisibleChanged="UserControl_IsVisibleChanged">
     <UserControl.Resources>
         <services:ConversionEnumVersBooleen x:Key="conversionEnum" />
     </UserControl.Resources>

@@ -1,4 +1,5 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
+using INF11207_TP3_Jeu_de_Pokemons.Models;
 using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
@@ -36,8 +37,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         public MainWindowViewModel()
         {
-            Game.ChargerPokemonsBase();
-            Game.ChargerEfficacitesAttaques();
+            Game.Initialiser();
             InitializeViewModels();
 
             VueActuelle = accueilViewModel;

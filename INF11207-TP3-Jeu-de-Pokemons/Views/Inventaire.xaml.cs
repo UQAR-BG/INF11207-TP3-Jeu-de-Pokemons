@@ -13,5 +13,13 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
             InitializeComponent();
             DataContext = Game.VueActuelle;
         }
+
+        private void UserControl_IsVisibleChanged(object sender, System.Windows.DependencyPropertyChangedEventArgs e)
+        {
+            if (IsVisible)
+            {
+                ((InventaireViewModel)DataContext).Rechercher();
+            }
+        }
     }
 }

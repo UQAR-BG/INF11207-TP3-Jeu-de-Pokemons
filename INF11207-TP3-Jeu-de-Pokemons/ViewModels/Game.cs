@@ -16,7 +16,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         private static MainWindowViewModel _mainViewModel = new MainWindowViewModel();
         private static Dresseur _dresseur = new Dresseur(1);
-        private static Recherche _recherche = new Recherche();
+        private static Recherche _recherche;
 
         public static string CheminVersSauvegarde
         {
@@ -63,6 +63,14 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         public static List<EfficaciteAttaque> Efficacites
         {
             get { return _efficacites; }
+        }
+
+        public static void Initialiser()
+        {
+            ChargerPokemonsBase();
+            ChargerEfficacitesAttaques();
+            _recherche = new Recherche();
+            _recherche.Filtre = FiltreRecherche.Tous;
         }
 
         public static void Naviguer(string destination)

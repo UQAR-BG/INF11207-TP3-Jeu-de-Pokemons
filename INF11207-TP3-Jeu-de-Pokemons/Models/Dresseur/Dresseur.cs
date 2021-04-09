@@ -121,24 +121,20 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public bool Acheter(Pokemon pokemon)
+        public Pokemon Acheter(Pokemon pokemon)
         {
-            bool pokemonAcheteAvecSucces = true;
+            Pokemon pokemonAchete = new Pokemon();
             int prix = pokemon.Price;
 
-            if (Money >= prix)
+            if (Money >= prix && !pokemon.Achete)
             {
                 Money -= prix;
-                Pokemon pokemonAchete = (Pokemon)pokemon.Clone();
+                pokemonAchete = (Pokemon)pokemon.Clone();
                 pokemonAchete.Acheter();
                 Depot.PokemonsAchetes.Add(pokemonAchete);
             }
-            else
-            {
-                pokemonAcheteAvecSucces = false;
-            }
 
-            return pokemonAcheteAvecSucces;
+            return pokemonAchete;
         }
 
         public void Equiper(int indexPokemon, Emplacement emplacement)

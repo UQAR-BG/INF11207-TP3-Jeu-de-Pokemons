@@ -420,6 +420,66 @@
           "Value": 0,
           "MaxValue": 100
         }
+      },
+      {
+        "Id": 7,
+        "Types": [
+          2
+        ],
+        "PrintTypes": "Water",
+        "Evolue": true,
+        "Evolution": {
+          "Level": 16,
+          "To": "Wartortle"
+        },
+        "Description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.  Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.",
+        "ATK": 1,
+        "DEF": 1,
+        "Price": 100,
+        "PrintPrice": "100$",
+        "Health": 44,
+        "HpGauge": {
+          "Value": 44,
+          "MaxValue": 44
+        },
+        "Image": "/Resources/Images/7.png",
+        "Attacks": [
+          {
+            "Type": 2,
+            "Name": "Bubble",
+            "Damage": 5.45
+          },
+          {
+            "Type": 0,
+            "Name": "Tackle",
+            "Damage": 5.45
+          },
+          {
+            "Type": 2,
+            "Name": "Aqua Jet",
+            "Damage": 5.3
+          },
+          {
+            "Type": 2,
+            "Name": "Aqua Tail",
+            "Damage": 9.55
+          },
+          {
+            "Type": 2,
+            "Name": "Water Pulse",
+            "Damage": 5.3
+          }
+        ],
+        "Achete": true,
+        "Equipe": false,
+        "Emplacement": -1,
+        "IdPokemonAchete": "dc5eb6df-d4fd-4d98-91d7-1be16f451a7a",
+        "Name": "Squirtle",
+        "Level": 1,
+        "XpGauge": {
+          "Value": 0,
+          "MaxValue": 100
+        }
       }
     ],
     "IndexPokemonsEquipes": [
@@ -441,8 +501,8 @@
   },
   "FirstName": "B",
   "Age": 18,
-  "Money": 4800,
-  "PrintMoney": "4800$",
+  "Money": 4700,
+  "PrintMoney": "4700$",
   "IsValid": true,
   "Name": "G",
   "Level": 1,

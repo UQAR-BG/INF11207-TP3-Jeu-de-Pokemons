@@ -107,21 +107,24 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             );
         }
 
-        private void Reinitialiser()
+        public void Reinitialiser()
         {
             Recherche.Reinitialiser();
-            Resultats.Clear();
+            Rechercher();
         }
 
-        private void Rechercher()
+        public void Rechercher()
         {
             Resultats = new ObservableCollection<Pokemon>(Recherche.Rechercher());
         }
 
         private void Acheter()
         {
-            if (Game.Dresseur.Acheter(Pokemon))
+            Pokemon pokemonAchete = Game.Dresseur.Acheter(Pokemon);
+            if (!string.IsNullOrEmpty(pokemonAchete.Name))
             {
+                Pokemon = pokemonAchete;
+                Reinitialiser();
                 MessageBox.Show($"{Pokemon.Name} a été acheté avec succès!", "Achat effectué", MessageBoxButton.OK);
             }
             else
