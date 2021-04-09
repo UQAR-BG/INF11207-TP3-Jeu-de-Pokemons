@@ -23,6 +23,18 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             Value = MaxValue;
         }
 
+        public void PerdreDeLaVie(int hp)
+        {
+            if (Value >= hp)
+            {
+                Value -= hp;
+            }
+            else
+            {
+                Value = 0;
+            }
+        }
+
         public override void AugmenterNiveau(Personnage personnage)
         {
             throw new NotImplementedException();

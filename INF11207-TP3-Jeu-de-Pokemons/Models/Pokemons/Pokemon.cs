@@ -249,6 +249,18 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             return HpGauge.Value > 0;
         }
 
+        public void Attaquer(Pokemon adversaire, Attaque attaque)
+        {
+            double efficacite = attaque.CalculerDegats(adversaire);
+
+            adversaire.RecevoirUneAttaque(efficacite); 
+        }
+
+        public void RecevoirUneAttaque(double efficacite)
+        {
+            HpGauge.DiminuerVie((int)efficacite);
+        }
+
         public void TerminerUnCombat(ResultatCombat resultats)
         {
             HpGauge.Reinitialiser();

@@ -37,6 +37,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         public MainWindowViewModel()
         {
             Game.ChargerPokemonsBase();
+            Game.ChargerEfficacitesAttaques();
             InitializeViewModels();
 
             VueActuelle = accueilViewModel;

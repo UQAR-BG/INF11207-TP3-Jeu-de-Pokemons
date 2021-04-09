@@ -47,5 +47,16 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
                 }
             }
         }
+
+        public double CalculerDegats(Pokemon adversaire)
+        {
+            double efficaciteTotale = 1;
+
+            foreach (OrigineType typeAdversaire in adversaire.Types)
+            {
+                efficaciteTotale *= Game.ChercherEfficacite(type, typeAdversaire);
+            }
+            return efficaciteTotale;
+        }
     }
 }
