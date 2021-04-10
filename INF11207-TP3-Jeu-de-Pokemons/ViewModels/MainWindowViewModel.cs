@@ -80,7 +80,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         private void VerifierSiPeutAfficherMenu()
         {
-            Visibility visibiliteMenu = VueActuelle is not AccueilViewModel && VueActuelle is not CreationJoueurViewModel ? Visibility.Visible : Visibility.Hidden;
+            Visibility visibiliteMenu = VueActuelle is not AccueilViewModel && VueActuelle is not CreationJoueurViewModel 
+                && VueActuelle is not CombatsViewModel ? Visibility.Visible : Visibility.Hidden;
             PeutAfficherMenu = visibiliteMenu;
         }
 

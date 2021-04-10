@@ -19,7 +19,7 @@
                 FontSize="15"/>
 
             <Label
-                Content="{Binding HpGauge.Value}"
+                Content="{Binding Value}"
                 VerticalAlignment="Center"
                 FontSize="15"/>
         </StackPanel>
@@ -28,7 +28,7 @@
             Grid.Column="1"
             Margin="0,10,10,10"
             Minimum="0"
-            Maximum="{Binding HpGauge.MaxValue}"
-            Value="{Binding HpGauge.Value}"/>
+            Maximum="{Binding MaxValue}"
+            Value="{Binding Value}"/>
     </Grid>
 </UserControl>
