@@ -1,4 +1,4 @@
-﻿namespace INF11207_TP3_Jeu_de_Pokemons.Models.Combats
+﻿namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
     public class Combat
     {

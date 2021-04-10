@@ -6,15 +6,33 @@
         xmlns:control="clr-namespace:INF11207_TP3_Jeu_de_Pokemons.Views.UserControls"
         mc:Ignorable="d"
         
-        d:DesignHeight="350" d:DesignWidth="600">
+        d:DesignHeight="500" d:DesignWidth="800" IsVisibleChanged="UserControl_IsVisibleChanged">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <DataGrid
+            Grid.Row="1"
+            HorizontalAlignment="Center"
+            AutoGenerateColumns="False"
+            FontSize="20"
+            IsReadOnly="True"
+            ItemsSource="{Binding Resultats}"
+            SelectedItem="{Binding InvitationSelectionne, Mode=TwoWay}">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nom du créateur" Binding="{Binding NomCreateur}"/>
+                <DataGridTextColumn Header="Niveau" Binding="{Binding Niveau}"/>
+                <DataGridTextColumn Header="Mise" Binding="{Binding MiseCreateur}"/>
+                <DataGridTextColumn Header="Date de création" Binding="{Binding DateCreation}"/>
+                <DataGridTextColumn Header="Statut" Binding="{Binding Statut}"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
         <Label 
             Content="Lancer un nouveau combat"
@@ -22,13 +40,13 @@
             HorizontalAlignment="Center"
             Grid.ColumnSpan="2"
             Grid.Column="0"
-            Grid.Row="1"
+            Grid.Row="2"
             FontSize="30"/>
 
         <StackPanel
             Orientation="Horizontal"
             HorizontalAlignment="Center"
-            Grid.Row="2">
+            Grid.Row="3">
             <Label 
                 Content="Votre mise:"
                 VerticalAlignment="Center"
@@ -36,31 +54,33 @@
                 FontSize="15" />
 
             <TextBox 
-                x:Name="txtMise"
                 Height="25"
                 MinWidth="200"
-                PreviewTextInput="VerifierSiEntreeEstNombre"/>
+                PreviewTextInput="VerifierSiEntreeEstNombre"
+                Text="{Binding Invitation.MiseCreateur, UpdateSourceTrigger=PropertyChanged}"/>
         </StackPanel>
 
-        <Button
-            x:Name="btnLancerCombat"
-            Content="Lancer un combat"
-            HorizontalAlignment="Center"
+        <StackPanel
+            Orientation="Horizontal"
             Grid.ColumnSpan="2"
-            Grid.Column="0"
-            Grid.Row="3"
-            Height="50"
-            Padding="30,0,30,0"
-            FontSize="20"/>
-
-        <Label 
-            x:Name="lblStatutInvitation"
-            Content="Statut de l'invitation: 'statut'"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Grid.ColumnSpan="2"
-            Grid.Column="0"
             Grid.Row="4"
-            FontSize="15"/>
+            HorizontalAlignment="Center">
+            
+            <Button
+                Content="Créer une invitation"
+                Height="50"
+                Padding="20,0,20,0"
+                Margin="0,0,10,0"
+                FontSize="15"
+                Command="{Binding CommandeCreer}"/>
+
+            <Button
+                Content="Lancer un combat"
+                Height="50"
+                Padding="20,0,20,0"
+                Margin="10,0,0,0"
+                FontSize="15"
+                Command="{Binding CommandeLancer}"/>
+        </StackPanel>
     </Grid>
 </UserControl>

@@ -76,6 +76,7 @@
                 HorizontalAlignment="Center"
                 AutoGenerateColumns="False"
                 FontSize="20"
+                IsReadOnly="True"
                 ItemsSource="{Binding Resultats}"
                 SelectedItem="{Binding Pokemon, Mode=TwoWay}">
 

@@ -69,11 +69,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
                 case "lancercombat":
                     VueActuelle = lancementCombatViewModel;
                     break;
-                case "refresh":
-                    BaseViewModel buffer = VueActuelle;
-                    VueActuelle = this;
-                    VueActuelle = buffer;
-                    break;
                 default:
                     VueActuelle = VueActuelle;
                     break;
@@ -94,7 +89,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             pokemonsViewModel = new PokemonsViewModel(new WindowSize(900, 1000));
             inventaireViewModel = new InventaireViewModel(new WindowSize(900, 800));
             statsViewModel = new StatsViewModel(new WindowSize(500, 800));
-            lancementCombatViewModel = new LancementCombatViewModel(new WindowSize(350, 600));
+            lancementCombatViewModel = new LancementCombatViewModel(new WindowSize(500, 800));
     }
     }
 }

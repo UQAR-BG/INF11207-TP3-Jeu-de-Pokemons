@@ -42,7 +42,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Services
                     JsonSerializer serializer = new JsonSerializer();
                     objetACharger = (T)serializer.Deserialize(contenuFichier, typeof(T));
                 }
-            } catch (JsonSerializationException)
+            } catch (JsonSerializationException e)
             {
                 chargementReussi = false;
             }

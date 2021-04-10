@@ -7,7 +7,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
     public class GuidePourDebloquerPokemons
     {
-        public Dictionary<int, List<int>> CorrespondanceNiveauPokemon { get; private set; }
+        [JsonIgnore]
+        public Dictionary<int, List<int>> CorrespondanceNiveauPokemon { get; set; }
+
         public List<int> IdPokemonsDebloques { get; set; }
 
         [JsonConstructor]

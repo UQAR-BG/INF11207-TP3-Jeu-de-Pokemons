@@ -1,0 +1,226 @@
+[
+	{
+	  "Statut": 0,
+	  "Niveau": 5,
+	  "NomAdversaire": null,
+	  "NomCreateur": "John Doe",
+	  "MiseCreateur": 100,
+	  "MiseAdversaire": 0,
+	  "DateCreation": "2021-04-10T11:16:38.9054522-05:00",
+	  "Createur": {
+		"Guide": {
+		  "IdPokemonsDebloques": [
+			1,
+			2,
+			3,
+			4,
+			5,
+			6,
+			7,
+			8
+		  ]
+		},
+		"Depot": {
+		  "PokemonsAchetes": [
+			{
+			  "Id": 1,
+			  "Types": [
+				7,
+				4
+			  ],
+			  "PrintTypes": "Poison, Grass",
+			  "Evolue": true,
+			  "Evolution": {
+				"Level": 16,
+				"To": "Ivysaur"
+			  },
+			  "Description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.  Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+			  "ATK": 1,
+			  "DEF": 1,
+			  "Price": 100,
+			  "PrintPrice": "100$",
+			  "Health": 45,
+			  "HpGauge": {
+				"Value": 45,
+				"MaxValue": 45
+			  },
+			  "Image": "/Resources/Images/1.png",
+			  "Attacks": [
+				{
+				  "Type": 4,
+				  "Name": "Vine Whip",
+				  "Damage": 5.4
+				},
+				{
+				  "Type": 0,
+				  "Name": "Tackle",
+				  "Damage": 5.45
+				},
+				{
+				  "Type": 7,
+				  "Name": "Sludge Bomb",
+				  "Damage": 10.6
+				},
+				{
+				  "Type": 4,
+				  "Name": "Seed Bomb",
+				  "Damage": 8.35
+				},
+				{
+				  "Type": 4,
+				  "Name": "Power Whip",
+				  "Damage": 12.5
+				}
+			  ],
+			  "Achete": true,
+			  "Equipe": true,
+			  "Emplacement": 0,
+			  "IdPokemonAchete": "0f8fad5b-d9cb-469f-a165-70867728950e",
+			  "Name": "Bulbasaur",
+			  "Level": 1,
+			  "XpGauge": {
+				"Value": 0,
+				"MaxValue": 100
+			  }
+			},
+			{
+			  "Id": 4,
+			  "Types": [
+				1
+			  ],
+			  "PrintTypes": "Fire",
+			  "Evolue": true,
+			  "Evolution": {
+				"Level": 16,
+				"To": "Charmeleon"
+			  },
+			  "Description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.  The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
+			  "ATK": 2,
+			  "DEF": 2,
+			  "Price": 100,
+			  "PrintPrice": "100$",
+			  "Health": 39,
+			  "HpGauge": {
+				"Value": 39,
+				"MaxValue": 39
+			  },
+			  "Image": "/Resources/Images/4.png",
+			  "Attacks": [
+				{
+				  "Type": 1,
+				  "Name": "Ember",
+				  "Damage": 4.75
+				},
+				{
+				  "Type": 0,
+				  "Name": "Scratch",
+				  "Damage": 6.0
+				},
+				{
+				  "Type": 1,
+				  "Name": "Flame Charge",
+				  "Damage": 4.05
+				},
+				{
+				  "Type": 1,
+				  "Name": "Flame Burst",
+				  "Damage": 7.15
+				},
+				{
+				  "Type": 1,
+				  "Name": "Flamethrower",
+				  "Damage": 9.5
+				}
+			  ],
+			  "Achete": true,
+			  "Equipe": true,
+			  "Emplacement": 1,
+			  "IdPokemonAchete": "5adb9e2e-987c-4d04-b61d-6151e869f4f8",
+			  "Name": "Charmander",
+			  "Level": 2,
+			  "XpGauge": {
+				"Value": 0,
+				"MaxValue": 100
+			  }
+			},
+			{
+			  "Id": 7,
+			  "Types": [
+				2
+			  ],
+			  "PrintTypes": "Water",
+			  "Evolue": true,
+			  "Evolution": {
+				"Level": 16,
+				"To": "Wartortle"
+			  },
+			  "Description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.  Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.",
+			  "ATK": 3,
+			  "DEF": 3,
+			  "Price": 100,
+			  "PrintPrice": "100$",
+			  "Health": 44,
+			  "HpGauge": {
+				"Value": 44,
+				"MaxValue": 44
+			  },
+			  "Image": "/Resources/Images/7.png",
+			  "Attacks": [
+				{
+				  "Type": 2,
+				  "Name": "Bubble",
+				  "Damage": 5.45
+				},
+				{
+				  "Type": 0,
+				  "Name": "Tackle",
+				  "Damage": 5.45
+				},
+				{
+				  "Type": 2,
+				  "Name": "Aqua Jet",
+				  "Damage": 5.3
+				},
+				{
+				  "Type": 2,
+				  "Name": "Aqua Tail",
+				  "Damage": 9.55
+				},
+				{
+				  "Type": 2,
+				  "Name": "Water Pulse",
+				  "Damage": 5.3
+				}
+			  ],
+			  "Achete": true,
+			  "Equipe": true,
+			  "Emplacement": 2,
+			  "IdPokemonAchete": "90bcb3c6-0ed7-4179-8a8f-ec6277b8288b",
+			  "Name": "Squirtle",
+			  "Level": 3,
+			  "XpGauge": {
+				"Value": 0,
+				"MaxValue": 100
+			  }
+			}
+		  ],
+		  "IndexPokemonsEquipes": [
+			0,
+			1,
+			2
+		  ]
+		},
+		"FirstName": "John",
+		"Age": 35,
+		"Money": 5000,
+		"PrintMoney": "5000$",
+		"IsValid": true,
+		"Name": "Doe",
+		"Level": 5,
+		"XpGauge": {
+		  "Value": 0,
+		  "MaxValue": 100
+		}
+	  }
+	}
+]

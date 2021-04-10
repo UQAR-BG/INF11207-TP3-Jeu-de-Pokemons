@@ -1,6 +1,7 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
 using INF11207_TP3_Jeu_de_Pokemons.Interfaces;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
@@ -16,6 +17,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         public DepotPokemons Depot { get; set; }
 
         public Statistiques Statistiques { get; set; }
+
+        public List<Invitation> Invitations { get; set; }
 
         public string FirstName
         {
@@ -70,6 +73,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         public Dresseur()
         {
             Depot = new DepotPokemons();
+            Invitations = new List<Invitation>();
         }
 
         public Dresseur(int level, string name = "", string firstName = "", int age = 18, int experience = 100, int money = 5000) : base(name, level, experience)
@@ -80,6 +84,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             Guide = new GuidePourDebloquerPokemons(level);
             Depot = new DepotPokemons(level);
             Statistiques = new Statistiques(money, 1);
+            Invitations = new List<Invitation>();
         }
 
         public bool EncorePokemonsValides()
