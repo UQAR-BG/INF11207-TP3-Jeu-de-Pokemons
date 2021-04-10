@@ -74,13 +74,25 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
 
         private void CreerInvitation()
         {
+            Invitation.Statut = StatutType.Accepte;
             Dresseur.Invitations.Add(Invitation);
             RechercherInvitations();
+
+            InvitationSelectionne = Invitation;
+            MessageBox.Show($" Le dresseur {Resultats[0].NomCreateur} a accepté votre invitation.\nLancement du combat en cours...", 
+                "Nouveau combat", MessageBoxButton.OK);
+
+            LancerUnCombat();
         }
 
         private void LancerUnCombat()
         {
+            int mise = InvitationSelectionne.MiseCreateur + Resultats[0].MiseCreateur;
+            Dresseur adversaire = Resultats[0].Createur;
+            adversaire.Depot.RechargerEmplacements();
+            Game.Combat = new Combat(Dresseur, adversaire, mise);
 
+            Game.Naviguer("combats");
         }
 
         private List<Invitation> ChargerInvitations()

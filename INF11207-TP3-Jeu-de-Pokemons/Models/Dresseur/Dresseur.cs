@@ -90,14 +90,23 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         public bool EncorePokemonsValides()
         {
             bool pokemonsValides = false;
-            foreach (EmplacementPokemon emplacement in Depot.Emplacements)
+            if (PokemonsValides().Count > 0)
             {
-                if (Depot.Equipe(emplacement.Ordre) && emplacement.Pokemon.EncoreValide())
-                {
-                    pokemonsValides = true;
-                }
+                pokemonsValides = true;
             }
             return pokemonsValides;
+        }
+
+        public Pokemon PremierPokemonValide()
+        {
+            List<Pokemon> pokemonsValides = PokemonsValides();
+            Pokemon premierPokemon = new Pokemon();
+
+            if (pokemonsValides.Count > 0)
+            {
+                premierPokemon = pokemonsValides[0];
+            }
+            return premierPokemon;
         }
 
         public void TerminerUnCombat(ResultatCombat resultats)
@@ -170,6 +179,20 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         protected override void SetIsValid()
         {
             isValid = !string.IsNullOrEmpty(Name) && !string.IsNullOrEmpty(FirstName) && Age > 0;
+        }
+
+        private List<Pokemon> PokemonsValides()
+        {
+            List<Pokemon> pokemonValides = new List<Pokemon>();
+
+            foreach (EmplacementPokemon emplacement in Depot.Emplacements)
+            {
+                if (Depot.Equipe(emplacement.Ordre) && emplacement.Pokemon.EncoreValide())
+                {
+                    pokemonValides.Add(emplacement.Pokemon);
+                }
+            }
+            return pokemonValides;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using INF11207_TP3_Jeu_de_Pokemons.Enums;
-using INF11207_TP3_Jeu_de_Pokemons.Models;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
 using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
@@ -16,6 +15,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         private InventaireViewModel inventaireViewModel;
         private StatsViewModel statsViewModel;
         private LancementCombatViewModel lancementCombatViewModel;
+        private CombatsViewModel combatsViewModel;
 
         public Visibility PeutAfficherMenu
         {
@@ -69,6 +69,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
                 case "lancercombat":
                     VueActuelle = lancementCombatViewModel;
                     break;
+                case "combats":
+                    VueActuelle = combatsViewModel;
+                    break;
                 default:
                     VueActuelle = VueActuelle;
                     break;
@@ -90,6 +93,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             inventaireViewModel = new InventaireViewModel(new WindowSize(900, 800));
             statsViewModel = new StatsViewModel(new WindowSize(500, 800));
             lancementCombatViewModel = new LancementCombatViewModel(new WindowSize(500, 800));
-    }
+            combatsViewModel = new CombatsViewModel(new WindowSize(800, 700));
+        }
     }
 }

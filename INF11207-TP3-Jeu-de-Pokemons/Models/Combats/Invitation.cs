@@ -15,6 +15,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private string nomCreateur;
         private int miseCreateur;
         private int miseAdversaire;
+        private int niveau;
 
         private DateTime dateCreation;
         private Dresseur createur;
@@ -34,7 +35,15 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public int Niveau
         {
-            get { return createur.Level; }
+            get { return niveau; }
+            set
+            {
+                if (niveau != value)
+                {
+                    niveau = value;
+                    OnPropertyChanged();
+                }
+            }
         }
 
         public string NomAdversaire
@@ -138,6 +147,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
             this.createur = createur;
             NomCreateur = $"{createur.FirstName} {createur.Name}";
+            Niveau = createur.Level;
             DateCreation = DateTime.Now;
         }
 

@@ -55,6 +55,8 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             get { return _recherche; }
         }
 
+        public static Combat Combat { get; set; }
+
         public static List<Pokemon> PokemonsDeBase
         {
             get { return _pokemonsBase; }
@@ -71,6 +73,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
             ChargerEfficacitesAttaques();
             _recherche = new Recherche();
             _recherche.Filtre = FiltreRecherche.Tous;
+            Combat = new Combat(new Dresseur(1), new Dresseur(1), 0);
         }
 
         public static void Naviguer(string destination)

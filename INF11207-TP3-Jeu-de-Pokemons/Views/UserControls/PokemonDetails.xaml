@@ -122,7 +122,7 @@
                 FontSize="15"/>
 
             <Label
-                Content="{Binding Pokemon.ATK}"
+                Content="{Binding Pokemon.DEF}"
                 VerticalAlignment="Center"
                 FontSize="15"/>
         </StackPanel>

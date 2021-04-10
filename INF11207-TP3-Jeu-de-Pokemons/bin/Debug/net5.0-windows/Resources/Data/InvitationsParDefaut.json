@@ -6,20 +6,7 @@
 	  "NomCreateur": "John Doe",
 	  "MiseCreateur": 100,
 	  "MiseAdversaire": 0,
-	  "DateCreation": "2021-04-10T11:16:38.9054522-05:00",
 	  "Createur": {
-		"Guide": {
-		  "IdPokemonsDebloques": [
-			1,
-			2,
-			3,
-			4,
-			5,
-			6,
-			7,
-			8
-		  ]
-		},
 		"Depot": {
 		  "PokemonsAchetes": [
 			{
@@ -84,59 +71,60 @@
 			  }
 			},
 			{
-			  "Id": 4,
+			  "Id": 2,
 			  "Types": [
-				1
+				7,
+				4
 			  ],
-			  "PrintTypes": "Fire",
+			  "PrintTypes": "Poison, Grass",
 			  "Evolue": true,
 			  "Evolution": {
-				"Level": 16,
-				"To": "Charmeleon"
+				"Level": 32,
+				"To": "Venusaur"
 			  },
-			  "Description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.  The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
-			  "ATK": 2,
-			  "DEF": 2,
+			  "Description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.  There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+			  "ATK": 1,
+			  "DEF": 1,
 			  "Price": 100,
 			  "PrintPrice": "100$",
-			  "Health": 39,
+			  "Health": 60,
 			  "HpGauge": {
-				"Value": 39,
-				"MaxValue": 39
+				"Value": 60,
+				"MaxValue": 60
 			  },
-			  "Image": "/Resources/Images/4.png",
+			  "Image": "/Resources/Images/2.png",
 			  "Attacks": [
 				{
-				  "Type": 1,
-				  "Name": "Ember",
-				  "Damage": 4.75
+				  "Type": 4,
+				  "Name": "Razor Leaf",
+				  "Damage": 5.15
 				},
 				{
-				  "Type": 0,
-				  "Name": "Scratch",
-				  "Damage": 6.0
+				  "Type": 4,
+				  "Name": "Vine Whip",
+				  "Damage": 5.4
 				},
 				{
-				  "Type": 1,
-				  "Name": "Flame Charge",
-				  "Damage": 4.05
+				  "Type": 7,
+				  "Name": "Sludge Bomb",
+				  "Damage": 10.6
 				},
 				{
-				  "Type": 1,
-				  "Name": "Flame Burst",
-				  "Damage": 7.15
+				  "Type": 4,
+				  "Name": "Solar Beam",
+				  "Damage": 12.25
 				},
 				{
-				  "Type": 1,
-				  "Name": "Flamethrower",
-				  "Damage": 9.5
+				  "Type": 4,
+				  "Name": "Power Whip",
+				  "Damage": 12.5
 				}
 			  ],
 			  "Achete": true,
 			  "Equipe": true,
 			  "Emplacement": 1,
-			  "IdPokemonAchete": "5adb9e2e-987c-4d04-b61d-6151e869f4f8",
-			  "Name": "Charmander",
+			  "IdPokemonAchete": "5fe84706-255e-4973-8c0e-6fc7ca944531",
+			  "Name": "Ivysaur",
 			  "Level": 2,
 			  "XpGauge": {
 				"Value": 0,
@@ -144,70 +132,71 @@
 			  }
 			},
 			{
-			  "Id": 7,
+			  "Id": 3,
 			  "Types": [
-				2
+				7,
+				4
 			  ],
-			  "PrintTypes": "Water",
+			  "PrintTypes": "Poison, Grass",
 			  "Evolue": true,
 			  "Evolution": {
-				"Level": 16,
-				"To": "Wartortle"
+				"Level": 1,
+				"To": ""
 			  },
-			  "Description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.  Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in Water, enabling this Pokémon to swim at high speeds.",
-			  "ATK": 3,
-			  "DEF": 3,
+			  "Description": "There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.  There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.",
+			  "ATK": 1,
+			  "DEF": 1,
 			  "Price": 100,
 			  "PrintPrice": "100$",
-			  "Health": 44,
+			  "Health": 80,
 			  "HpGauge": {
-				"Value": 44,
-				"MaxValue": 44
+				"Value": 80,
+				"MaxValue": 80
 			  },
-			  "Image": "/Resources/Images/7.png",
+			  "Image": "/Resources/Images/3.png",
 			  "Attacks": [
 				{
-				  "Type": 2,
-				  "Name": "Bubble",
-				  "Damage": 5.45
+				  "Type": 4,
+				  "Name": "Razor Leaf",
+				  "Damage": 5.15
 				},
 				{
-				  "Type": 0,
-				  "Name": "Tackle",
-				  "Damage": 5.45
+				  "Type": 4,
+				  "Name": "Vine Whip",
+				  "Damage": 5.4
 				},
 				{
-				  "Type": 2,
-				  "Name": "Aqua Jet",
-				  "Damage": 5.3
+				  "Type": 7,
+				  "Name": "Sludge Bomb",
+				  "Damage": 10.6
 				},
 				{
-				  "Type": 2,
-				  "Name": "Aqua Tail",
-				  "Damage": 9.55
+				  "Type": 4,
+				  "Name": "Petal Blizzard",
+				  "Damage": 10.15
 				},
 				{
-				  "Type": 2,
-				  "Name": "Water Pulse",
-				  "Damage": 5.3
+				  "Type": 4,
+				  "Name": "Solar Beam",
+				  "Damage": 12.25
 				}
 			  ],
 			  "Achete": true,
 			  "Equipe": true,
 			  "Emplacement": 2,
-			  "IdPokemonAchete": "90bcb3c6-0ed7-4179-8a8f-ec6277b8288b",
-			  "Name": "Squirtle",
+			  "IdPokemonAchete": "b8e64894-7a73-4872-a99b-c135279be027",
+			  "Name": "Venusaur",
 			  "Level": 3,
 			  "XpGauge": {
 				"Value": 0,
 				"MaxValue": 100
 			  }
 			}
-		  ],
+			],
 		  "IndexPokemonsEquipes": [
-			0,
+			2,
 			1,
-			2
+			0
 		  ]
 		},
 		"FirstName": "John",
