@@ -7,7 +7,7 @@
         
         Title="ChoixAttaque" 
         Height="350" 
-        Width="500"
+        Width="00"
         MinHeight="350" 
         MinWidth="500" 
         WindowStartupLocation="CenterScreen">
@@ -23,32 +23,117 @@
             Content="Choisissez la prochaine attaque"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            Grid.Column="0"
-            Grid.Row="0"
-            FontSize="30"/>
+            FontSize="25"/>
 
         <Button
-            x:Name="btnAttaque1"
-            Content="Attaque: 'nom'  Type: 'type'  Dégâts: 'nombre'"
-            Grid.Column="0"
             Grid.Row="1"
             Margin="30,0,30,10"
-            FontSize="20"/>
+            Command="{Binding CommandeChoisirAttaque}"
+            CommandParameter="0"/>
+
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Row="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+
+            <Label
+                Content="Attaque: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[0].Name}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+
+            <Label
+                Content="Type: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[0].Type}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+
+            <Label
+                Content="Dégâts: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[0].Dammage}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+        </StackPanel>
 
         <Button
-            x:Name="btnAttaque2"
-            Content="Attaque: 'nom'  Type: 'type'  Dégâts: 'nombre'"
-            Grid.Column="0"
             Grid.Row="2"
             Margin="30,0,30,10"
-            FontSize="20"/>
+            Command="{Binding CommandeChoisirAttaque}"
+            CommandParameter="1"/>
+
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Row="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+
+            <Label
+                Content="Attaque: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[1].Name}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+
+            <Label
+                Content="Type: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[1].Type}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+
+            <Label
+                Content="Dégâts: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[1].Dammage}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+        </StackPanel>
 
         <Button
-            x:Name="btnAttaque3"
-            Content="Attaque: 'nom'  Type: 'type'  Dégâts: 'nombre'"
-            Grid.Column="0"
             Grid.Row="3"
             Margin="30,0,30,10"
-            FontSize="20"/>
+            Command="{Binding CommandeChoisirAttaque}"
+            CommandParameter="2"/>
+
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Row="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+
+            <Label
+                Content="Attaque: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[2].Name}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+
+            <Label
+                Content="Type: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[2].Type}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+
+            <Label
+                Content="Dégâts: "
+                FontSize="15"/>
+            <Label
+                Content="{Binding Attacks[2].Dammage}"
+                FontSize="15"
+                Margin="0,0,10,0"/>
+        </StackPanel>
     </Grid>
 </Window>

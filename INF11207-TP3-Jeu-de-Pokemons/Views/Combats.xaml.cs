@@ -1,4 +1,6 @@
 ﻿using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
+using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
@@ -14,11 +16,15 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
             DataContext = Game.VueActuelle;
         }
 
-        private void UserControl_IsVisibleChanged(object sender, System.Windows.DependencyPropertyChangedEventArgs e)
+        private void UserControl_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             if (IsVisible)
             {
-                ((CombatsViewModel)DataContext).LancerCombat();
+                try
+                {
+                    ((CombatsViewModel)DataContext).LancerCombat();
+                }
+                catch (Exception) { }
             }
         }
     }

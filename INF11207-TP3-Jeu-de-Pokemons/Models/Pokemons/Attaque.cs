@@ -56,7 +56,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             {
                 efficaciteTotale *= Game.ChercherEfficacite(type, typeAdversaire);
             }
-            return efficaciteTotale;
+            return damage * efficaciteTotale;
         }
     }
 }

@@ -2,7 +2,6 @@
 using INF11207_TP3_Jeu_de_Pokemons.Interfaces;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Windows;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Models
 {
@@ -11,6 +10,9 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         private string firstName;
         private int age;
         private int money;
+
+        [JsonIgnore]
+        private Pokemon pokemonEquipe;
 
         public GuidePourDebloquerPokemons Guide { get; set; }
 
@@ -64,6 +66,27 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             get { return $"{Money}$"; }
         }
 
+        [JsonIgnore]
+        public Pokemon PokemonEquipe
+        {
+            get 
+            { 
+                if (pokemonEquipe != null)
+                {
+                    return pokemonEquipe;
+                }
+                return new Pokemon(); 
+            }
+            set
+            {
+                if (pokemonEquipe != value)
+                {
+                    pokemonEquipe = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public bool IsValid
         {
             get { return isValid; }
@@ -109,6 +132,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             return premierPokemon;
         }
 
+        public void MettreAJourPokemonEquipe()
+        {
+            PokemonEquipe = PremierPokemonValide();
+        }
+
         public void TerminerUnCombat(ResultatCombat resultats)
         {
             Level += XpGauge.AjouterExperience(resultats.Experience);
@@ -124,7 +152,6 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
                     emplacement.Pokemon.TerminerUnCombat(resultats);
                     Pokemon evolution = emplacement.Pokemon.Evolution.EvoluerSiAtteintLeNiveau(emplacement.Pokemon);
-                    MessageBox.Show($"{emplacement.Pokemon.Name} va évoluer!", "Évolution", MessageBoxButton.OK);
 
                     if (evolution != null)
                     {

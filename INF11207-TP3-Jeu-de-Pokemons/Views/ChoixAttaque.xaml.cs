@@ -1,16 +1,7 @@
-﻿using System;
+﻿using INF11207_TP3_Jeu_de_Pokemons.Models;
+using INF11207_TP3_Jeu_de_Pokemons.ViewModels;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace INF11207_TP3_Jeu_de_Pokemons.Views
 {
@@ -19,9 +10,10 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views
     /// </summary>
     public partial class ChoixAttaque : Window
     {
-        public ChoixAttaque()
+        public ChoixAttaque(List<Attaque> attaques)
         {
             InitializeComponent();
+            DataContext = new ChoixAttaqueViewModel(this, attaques);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
             if (experience >= 0)
             {
-                Value += experienceTotale % MaxValue;
+                Value = experienceTotale % MaxValue;
                 niveauxEnPlus += experienceTotale / MaxValue;
             }
 

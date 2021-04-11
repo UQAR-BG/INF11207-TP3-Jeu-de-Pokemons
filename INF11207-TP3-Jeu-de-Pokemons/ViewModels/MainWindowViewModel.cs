@@ -72,6 +72,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
                 case "combats":
                     VueActuelle = combatsViewModel;
                     break;
+                case "refresh":
+                    BaseViewModel buffer = VueActuelle;
+                    VueActuelle = this;
+                    VueActuelle = buffer;
+                    break;
                 default:
                     VueActuelle = VueActuelle;
                     break;

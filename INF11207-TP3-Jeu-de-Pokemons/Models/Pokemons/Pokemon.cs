@@ -41,7 +41,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public bool Evolue
         {
-            get { return evolution != null; }
+            get { return evolution != null && !string.IsNullOrEmpty(evolution.To); }
         }
 
         public Evolution Evolution
@@ -249,16 +249,19 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             return HpGauge.Value > 0;
         }
 
-        public void Attaquer(Pokemon adversaire, Attaque attaque)
+        public bool Attaquer(Pokemon adversaire, Attaque attaque)
         {
-            double efficacite = attaque.CalculerDegats(adversaire);
+            double degats = attaque.CalculerDegats(adversaire) + ATK;
 
-            adversaire.RecevoirUneAttaque(efficacite); 
+            return adversaire.RecevoirUneAttaque(degats); 
         }
 
-        public void RecevoirUneAttaque(double efficacite)
+        public bool RecevoirUneAttaque(double degats)
         {
-            HpGauge.DiminuerVie((int)efficacite);
+            int degatsArrondis = (int)Math.Ceiling(degats) - DEF;
+            HpGauge.PerdreDeLaVie(degatsArrondis);
+
+            return HpGauge.Value == 0;
         }
 
         public void TerminerUnCombat(ResultatCombat resultats)

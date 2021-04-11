@@ -29,6 +29,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         }
 
         public static Emplacement Emplacement { get; set; }
+        public static Attaque Attaque { get; set; }
 
         public static MainWindowViewModel MainWindow
         {

@@ -30,10 +30,5 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         public Jauge() { }
 
         public abstract void AugmenterNiveau(Personnage personnage);
-
-        public virtual void DiminuerVie(int montant)
-        {
-
-        }
     }
 }

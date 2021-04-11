@@ -50,11 +50,13 @@ namespace INF11207_TP3_Jeu_de_Pokemons.ViewModels
         public void LancerCombat()
         {
             _combat = Game.Combat;
+            Joueur.MettreAJourPokemonEquipe();
+            Adversaire.MettreAJourPokemonEquipe();
         }
 
         private void Attaquer()
         {
-
+            _combat.Attaquer();
         }
     }
 }
