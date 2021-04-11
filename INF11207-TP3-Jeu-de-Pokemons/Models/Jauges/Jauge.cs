@@ -5,7 +5,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
     public abstract class Jauge : Binding
     {
         private int value;
-        private readonly int maxValue;
+        private int maxValue;
 
         public int Value
         {
@@ -20,7 +20,18 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
-        public int MaxValue { get { return maxValue; } }
+        public int MaxValue 
+        { 
+            get { return maxValue; }
+            set
+            {
+                if (maxValue != value)
+                {
+                    maxValue = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public Jauge(int maxValue)
         {

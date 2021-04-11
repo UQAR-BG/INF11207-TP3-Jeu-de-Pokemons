@@ -140,9 +140,19 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
         public void TerminerUnCombat(ResultatCombat resultats)
         {
             Level += XpGauge.AjouterExperience(resultats.Experience);
-            Money += resultats.Mise;
+            ModifierArgent(resultats.Mise);
 
             Guide.AppliquerCorrespondance(Level);
+            Statistiques.PokemonsDebloques = Guide.IdPokemonsDebloques.Count;
+            Statistiques.CombatsTotal++;
+            if (resultats.Victoire)
+            {
+                Statistiques.CombatsGagnes++;
+            }
+            else
+            {
+                Statistiques.CombatsPerdus++;
+            }
 
             foreach (EmplacementPokemon emplacement in Depot.Emplacements)
             {
@@ -162,6 +172,20 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
             }
         }
 
+        public void ModifierArgent(int montant)
+        {
+            if (montant >= 0)
+            {
+                Statistiques.MontantAccumule += montant;
+                Money += montant;
+            }
+            else
+            {
+                Statistiques.MontantDepense -= montant;
+                Money += montant;
+            }
+        }
+
         public Pokemon Acheter(Pokemon pokemon)
         {
             Pokemon pokemonAchete = new Pokemon();
@@ -169,10 +193,11 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
             if (Money >= prix && !pokemon.Achete)
             {
-                Money -= prix;
+                ModifierArgent(-prix);
                 pokemonAchete = (Pokemon)pokemon.Clone();
                 pokemonAchete.Acheter();
                 Depot.PokemonsAchetes.Add(pokemonAchete);
+                Statistiques.PokemonsAchetes++;
             }
 
             return pokemonAchete;

@@ -47,7 +47,8 @@
             </Grid.ColumnDefinitions>
 
             <control:JaugeXp 
-                Grid.ColumnSpan="2"/>
+                Grid.ColumnSpan="2"
+                DataContext="{Binding Dresseur}"/>
 
             <Label
                 Content="Montant sur soi:"

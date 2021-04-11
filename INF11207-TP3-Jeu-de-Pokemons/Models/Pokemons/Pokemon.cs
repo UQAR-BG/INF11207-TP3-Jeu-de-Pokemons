@@ -266,8 +266,16 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Models
 
         public void TerminerUnCombat(ResultatCombat resultats)
         {
+            int niveauxEnPlus = XpGauge.AjouterExperience(resultats.Experience);
+            Level += niveauxEnPlus;
+
+            for (int i = 0; i < niveauxEnPlus; i++)
+            {
+                HpGauge.MaxValue++;
+                ATK++;
+            }
+
             HpGauge.Reinitialiser();
-            Level += XpGauge.AjouterExperience(resultats.Experience);
         }
     }
 }
