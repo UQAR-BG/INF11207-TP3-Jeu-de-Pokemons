@@ -52,7 +52,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons.Views.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/INF11207-TP3-Jeu-de-Pokemons;V1.0.0.0;component/views/usercontrols/menu.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/INF11207-TP3-Jeu-de-Pokemons;component/views/usercontrols/menu.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\UserControls\Menu.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

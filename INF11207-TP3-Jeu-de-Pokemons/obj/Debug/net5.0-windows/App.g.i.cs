@@ -58,7 +58,7 @@ namespace INF11207_TP3_Jeu_de_Pokemons {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/INF11207-TP3-Jeu-de-Pokemons;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/INF11207-TP3-Jeu-de-Pokemons;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
